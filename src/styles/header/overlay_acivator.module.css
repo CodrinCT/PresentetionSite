@@ -19,26 +19,34 @@
   position: absolute;
   top: 65%;
   background-color: rgb(59, 49, 49);
-  width: 200px;
+  width: 180px;
   height: 180px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
 }
 
-.img {
-  max-width: 100%;
- max-height: auto;
- /* display: flex;
- justify-content: center;
- text-align: center;
- align-items: center;
- align-content: center; */
-  /* display: flex;
-  justify-content: center; */
+@media screen and (max-width: 1400px) {
+  .div {
+    width: 140px;
+    height: 140px;
+    top: 75%;
+  }
+
+  .link {
+    font-size: 20px;
+  }
 }
 
-.item{
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.img {
+  height: 400px;
+}
+
+.item {
   height: 60%;
   width: 50%;
 }
@@ -48,11 +56,15 @@
   color: white;
 }
 
-
 .overlay {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .overlayDiv {
@@ -63,7 +75,7 @@
   z-index: 3;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
 }
 
@@ -84,7 +96,7 @@
   line-height: 20px;
   margin: 0;
   outline: none;
-  overflow: visible;
+  overflow: hidden;
   padding: 13px 16px;
   text-align: center;
   text-transform: uppercase;
@@ -97,8 +109,8 @@
   white-space: nowrap;
   width: 5%;
   position: absolute;
-  top: 10%;
-  left: 75%;
+  top: 5%;
+  right: 5%;
   z-index: 3;
 }
 
@@ -130,7 +142,7 @@
   cursor: auto;
 }
 
-.info{
+.info {
   z-index: 3;
   color: white;
   background-color: white;
@@ -145,6 +157,6 @@
   padding: 5px;
 }
 
-h2{
+h2 {
   color: black;
 }

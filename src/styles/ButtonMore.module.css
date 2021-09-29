@@ -13,7 +13,7 @@
 }
 
 .div {
-  display: -ms-inline-grid;
+  display: flex;
   color: white;
   justify-content: flex-start;
   margin-top: 20px;

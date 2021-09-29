@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.Title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  height: 70vh;
+}
+
+.h {
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+  font-family: "Poopins", sans-serif;
+}
+
+h3 {
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+  font-family: "Ephesis", cursive;
+  line-height: 45px;
+}

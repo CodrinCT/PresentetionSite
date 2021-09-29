@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
+import Servicii from "./pages/Servicii";
+import Despre from "./pages/Despre_noi";
+import Contact from "./pages/Contact";
+import { Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/" component={Home} exact></Route>
+        <Route path="/servicii" component={Servicii}></Route>
+        <Route path="/solutii" component={Servicii}></Route>
+        <Route path="/despre_noi" component={Despre}></Route>
+        <Route path="/contact" component={Contact}></Route>
+      </Switch>
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.contactDiv{
+    display: flex;
+    flex-direction: row;
+    background-color: #292d33;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly ;
+    z-index: 3;
+}
+
+.extra_info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    font-size: 30px;
+    color: white;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+}
+
+.extra_info_specific{
+    border:1px turquoise solid;
+    margin: 30px 0;
+}
+
+p{
+    margin:0;
+}
+
+.line{
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}

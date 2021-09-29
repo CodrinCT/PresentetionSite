@@ -13,3 +13,16 @@
   justify-items: center;
   border: none;
 }
+.background{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/57e5d2424d52ae14f6da8c7dda793678153bdee757596c48732f78dd914cc45eb0_1280.jpg");
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}

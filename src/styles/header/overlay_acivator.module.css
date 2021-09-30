@@ -14,10 +14,12 @@
   transition-duration: 0.2s;
 }
 
+
 .div {
   display: flex;
-  position: absolute;
-  top: 65%;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  /* top: 65%; */
   background-color: rgb(59, 49, 49);
   width: 180px;
   height: 180px;
@@ -31,6 +33,14 @@
     width: 140px;
     height: 140px;
     top: 75%;
+  }
+
+  @media screen and (max-width: 360px) {
+    .div {
+      width: 100px;
+      height: 100px;
+      top: 85%;
+    }
   }
 
   .link {
@@ -63,20 +73,22 @@
   width: fit-content;
   height: fit-content;
   position: relative;
+  overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .overlayDiv {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   z-index: 3;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   align-content: center;
+  top:-84.5%;
 }
 
 .exitBtn {
@@ -109,7 +121,7 @@
   white-space: nowrap;
   width: 5%;
   position: absolute;
-  top: 5%;
+  top: -50%;
   right: 5%;
   z-index: 3;
 }

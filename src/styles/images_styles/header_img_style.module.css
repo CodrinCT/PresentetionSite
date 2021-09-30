@@ -1,18 +1,4 @@
-.video {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  z-index: -1;
-  width: 100vw;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  border: none;
-}
+
 .background{
   display: flex;
   flex-direction: column;
@@ -20,9 +6,12 @@
   margin: 0;
   padding: 0;
   justify-items: center;
+  /* align-items: center; */
   border: none;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+
 }
+

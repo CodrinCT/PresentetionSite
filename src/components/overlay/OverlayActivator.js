@@ -15,7 +15,7 @@ function OverlayActivator(props) {
   }
   return (
     <>
-      <div className={style.div} style={{ left: props.left }}>
+    <div className={style.div} style={{ left: props.left }}>
         <p className={style.link} onClick={clickHandler}>
           {props.text}
         </p>

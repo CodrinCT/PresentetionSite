@@ -1,31 +1,87 @@
-.cardDiv{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    text-indent: 20px;
-    justify-content: space-evenly;
-    margin: 40px;
+.cardDiv {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-indent: 20px;
+  justify-content: space-evenly;
+  margin: 20px;
+  flex-wrap: wrap;
+  /* display: none; */
 }
 
-.cardBlock{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
+.cardBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
-.card{
-    display: flex;
-    text-align: justify;
-    height: fit-content;
-    flex-direction: column;
-    max-width: 30%;
-    height: 350px;
+.body {
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width:1770px) {
-    .card{
-        
-    }
+.card {
+  display: flex;
+  text-align: justify;
+  height: fit-content;
+  flex-direction: column;
+  max-width: 40%;
+  height: 350px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1770px) {
+  .card {
+    height: max-content;
+  }
+}
+
+.cardParentDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 30%;
+}
+.parentCard {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.img {
+  height: 200px;
+  /* width: 100px; */
+}
+
+/* @media screen and (display: flex) {
+  .card {
+    animation: slide 0.6s;
+  }
+} */
+
+@keyframes slide {
+  0% {
+    display: flex;
+    transform: translateX(-100%);
+  }
+
+  20% {
+    transform: translateX(-80%);
+  }
+  40% {
+    transform: translateX(-600%);
+  }
+  60% {
+    transform: translateX(-40%);
+  }
+  80% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX();
+  }
 }

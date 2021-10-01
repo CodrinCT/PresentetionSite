@@ -12,39 +12,14 @@ function Servicii() {
       <NavigationBar></NavigationBar>
 
       <div className={style.cardBlock}>
-        <div
-          style={{
-            width: "90%",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            position: "relative",
-            marginTop: "30px",
-          }}
-        >
-          <Image src={linuxPhoto} fluid />
-          <h2
-            style={{
-              zIndex: 2,
-              color: "white",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%,-50%)",
-              textAlign: "center",
-              fontSize: "100px",
-            }}
-          >
-            PLATFORME LINUX
-          </h2>
-        </div>
-        <div className={style.cardDiv}>
+    
+        <div className={style.cardDiv1}>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}} className={style.cardBody}>
               <Card.Title style={{ textAlign: "center" }}>
                 Enterprise Linux
               </Card.Title>
-              <Card.Text style={{ fontSize: "20px" }}>
+              <Card.Text style={{ fontSize: "20px", display:'flex' }}>
                 O fundație stabilă, dovedită, suficient de versatilă pentru
                 lansarea de noi aplicații, virtualizarea mediilor și crearea
                 unui cloud hibrid mai sigur.
@@ -53,7 +28,7 @@ function Servicii() {
           </Card>
 
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 OpenStack Platform
               </Card.Title>
@@ -64,7 +39,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>Sattelite</Card.Title>
               <Card.Text style={{ fontSize: "20px" }}>
                 Cel mai simplu mod de a gestiona Enterprise Linux, menținând
@@ -74,36 +49,10 @@ function Servicii() {
             </Card.Body>
           </Card>
 
-          <div
-            style={{
-              width: "90%",
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-              position: "relative",
-              marginTop: "30px",
-            }}
-          >
-            <Image src={cloudImg} fluid></Image>
-            <h2
-              style={{
-                zIndex: 2,
-                color: "white",
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%,-50%)",
-                textAlign: "center",
-                fontSize: "100px",
-              }}
-            >
-              CLOUD COMPUTING
-            </h2>
-          </div>
         </div>
-        <div className={style.cardDiv}>
+        <div className={style.cardDiv1}>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>OpenShift</Card.Title>
               <Card.Text style={{ fontSize: "20px" }}>
                 O platformă de aplicații pentru containere care permite
@@ -113,7 +62,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 Directory Server
               </Card.Title>
@@ -125,7 +74,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', backgroundColor:'transparent'}}>
               <Card.Title style={{ textAlign: "center" }}>Quay</Card.Title>
               <Card.Text style={{ fontSize: "20px" }}>
                 Asigurați-vă că aplicațiile dvs. sunt stocate in privat,
@@ -135,35 +84,9 @@ function Servicii() {
           </Card>
         </div>
 
-        <div
-          style={{
-            width: "90%",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            position: "relative",
-            marginTop: "30px",
-          }}
-        >
-          <Image src={consultImg} fluid></Image>
-          <h2
-            style={{
-              zIndex: 2,
-              color: "white",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%,-50%)",
-              textAlign: "center",
-              fontSize: "100px",
-            }}
-          >
-            CONSULTANTA
-          </h2>
-        </div>
-        <div className={style.cardDiv}>
+        <div className={style.cardDiv1}>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 Schimbarea incepe cu tine
               </Card.Title>
@@ -176,7 +99,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 Schimba abordarea
               </Card.Title>
@@ -189,7 +112,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>Profita</Card.Title>
               <Card.Text style={{ fontSize: "20px" }}>
                 Experții noștri vă vor ajută să vă rafinați procesul și să
@@ -198,35 +121,9 @@ function Servicii() {
             </Card.Body>
           </Card>
         </div>
-        <div
-          style={{
-            width: "90%",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            position: "relative",
-            marginTop: "30px",
-          }}
-        >
-          <Image src={storage} fluid></Image>
-          <h2
-            style={{
-              zIndex: 2,
-              color: "white",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%,-50%)",
-              textAlign: "center",
-              fontSize: "140px",
-            }}
-          >
-            STORAGE
-          </h2>
-        </div>
-        <div className={style.cardDiv}>
+        <div className={style.cardDiv1}>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 Ceph Storage
               </Card.Title>
@@ -239,7 +136,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 OpenShift Container Storage
               </Card.Title>
@@ -250,7 +147,7 @@ function Servicii() {
             </Card.Body>
           </Card>
           <Card className={style.card}>
-            <Card.Body>
+            <Card.Body style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
               <Card.Title style={{ textAlign: "center" }}>
                 Cluster Storage
               </Card.Title>

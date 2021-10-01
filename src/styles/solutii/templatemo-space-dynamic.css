@@ -1150,6 +1150,7 @@ Portfolio
 .our-portfolio {
   padding-top: 120px;
   margin-top: 0px;
+  margin-bottom: 200px;
 }
 
 .our-portfolio .section-heading h2 {
@@ -1234,7 +1235,9 @@ Portfolio
 }
 
 .our-portfolio .showed-content img {
-  max-width: 100px;
+width: 200px;
+height: 100px;
+object-fit: cover;
 }
 
 /* 

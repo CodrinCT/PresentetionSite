@@ -5,13 +5,13 @@
     height: 100vh;
     color: white;
     justify-content: center;
-    /* background-image: url('../images/miles-burke-idhx-MOCDSk-unsplash.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
-
+.img{
+    height: 700px;
+    object-fit: cover;
+    object-position:top;
+}
 
 h2{
     color: white;
@@ -31,62 +31,18 @@ h2{
 
 h2{
     font-size: 35px;
+    color: white;
     /* margin-bottom: 5px; */
 }
 
 .extra_info_specific{
     margin-bottom: 25px;
+    color: white;
 }
 
-.page{
-	/* animation: slide 4s linear;
-    animation-fill-mode: forwards; */
-}
-
-.img{
-    /* overflow-y: hidden; */
-	height: 100vh;
-	
-}
-
-/* @keyframes slide {
-    0%{
-        transform: translateY(0%);
-    }
-    10%{
-        transform: translateY(0%);
-    }
-    20%{
-        transform: translateY(-10%);
-    }
-    40%{
-        transform: translateY(-20%);
-    }
-    60%{
-        transform: translateY(-30%);
-    }
-    80%{
-        transform: translateY(-40%);
-    }
-    100%{
-        transform: translateY(-60%);
-    } */
-    /* 80%{
-        transform: translateY(-80%);
-    }
-    100%{
-        transform: translateY(-120%);
-    } */
-/* } */
-
-
-.page{
-    display: flex;
-    flex-direction: column;
-}
-
-.moveSown{
-    height: 150px;
+.moveDown{
+    height: 150px !important;
+    width: 140px;
     color: black;
     text-decoration: none;
     position: absolute;

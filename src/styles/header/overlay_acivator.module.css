@@ -26,6 +26,13 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  animation: movement infinite 1s ease-in;
+  animation-direction:alternate ;
+}
+
+@keyframes movement {
+  from { width: 180px; height: 180px }
+  to { width: 200px; height: 200px  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -82,13 +89,14 @@
   background-color: rgba(0, 0, 0, 0.8);
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 3;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   align-content: center;
-  top:-84.5%;
+
 }
 
 .exitBtn {
@@ -120,8 +128,8 @@
   vertical-align: middle;
   white-space: nowrap;
   width: 5%;
-  position: absolute;
-  top: -50%;
+  position: fixed;
+  top: 10%;
   right: 5%;
   z-index: 3;
 }

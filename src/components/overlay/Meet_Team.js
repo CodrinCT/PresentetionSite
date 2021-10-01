@@ -8,7 +8,7 @@ export default function Team(props) {
     <>
       <div className={style.overlayDiv}>
         <div className={style.overlay}>
-          <Carousel fade>
+          <Carousel slide>
             <Carousel.Item>
               <img className={style.img} src={imageGeorge} alt="George" />
               <Carousel.Caption>

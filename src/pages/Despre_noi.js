@@ -1,10 +1,17 @@
 import NavigationBar from "../components/navigation/nav_bar";
 import style from '../styles/about_us.module.css'
+import headPhoto from '../images/pexels-mikhail-nilov-7988114.jpg'
+import styled from "styled-components";
 function Despre() {
   return (
     <>
     <div className={style.page}>
       <NavigationBar></NavigationBar>
+      <ImgDiv>
+      <HeadImage src={headPhoto}></HeadImage>
+      </ImgDiv>
+
+    
       <div className={style.body}>
         {/* <div className={style.picture}></div> */}
         <div className={style.infoDiv}>
@@ -28,8 +35,21 @@ function Despre() {
       @2020 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
     <p></p>
   </footer>
+  
     </>
+    
   );
-}
 
+ 
+}
+const ImgDiv = styled.div`
+  width: 100%;
+  height: 700px;
+  `;
+  const HeadImage = styled.img`
+  /* object-fit: contain; */
+  height: 700px;
+  object-fit: cover;
+  `;
 export default Despre;
+

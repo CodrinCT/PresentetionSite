@@ -1,7 +1,7 @@
 .link {
   color: wheat;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Ephesis", cursive;
   text-decoration: none;
   text-align: center;
@@ -9,37 +9,63 @@
 }
 
 .link:hover {
-  font-size: 30px;
+  font-size: 35px;
   color: yellow;
   transition-duration: 0.2s;
 }
 
-
 .div {
   display: flex;
   flex-wrap: wrap;
-  /* position: absolute; */
-  /* top: 65%; */
-  background-color: rgb(59, 49, 49);
-  width: 180px;
+  width: 200px;
   height: 180px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   animation: movement infinite 1s ease-in;
-  animation-direction:alternate ;
+  animation-direction: alternate;
+}
+
+@media screen and (max-width: 500px) {
+  .exitBtn {
+    /* position: relative; */
+    top: 5px !important;
+    left: 90% !important;
+    width: 40px !important;
+    height: fit-content !important;
+    font-size: 20px !important;
+  }
 }
 
 @keyframes movement {
-  from { width: 180px; height: 180px }
-  to { width: 200px; height: 200px  }
+  from {
+    width: 180px;
+    height: 180px;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+  }
 }
+
+/* @keyframes smallmovement {
+  from {
+    width: 120px;
+    height: 120px;
+  }
+  to {
+    width: 125px;
+    height: 125px;
+  }
+} */
 
 @media screen and (max-width: 1400px) {
   .div {
-    width: 140px;
-    height: 140px;
-    top: 75%;
+    width: 120px;
+    height: 120px;
+    top: 70%;
+    animation: smallmovement infinite 1s ease-in;
+    animation-direction: alternate;
   }
 
   @media screen and (max-width: 360px) {
@@ -47,11 +73,12 @@
       width: 100px;
       height: 100px;
       top: 85%;
+      animation: smallmovement 4s inline;
     }
   }
 
   .link {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -94,9 +121,8 @@
   z-index: 3;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   align-content: center;
-
 }
 
 .exitBtn {
@@ -127,7 +153,7 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 5%;
+  width: 10%;
   position: fixed;
   top: 10%;
   right: 5%;

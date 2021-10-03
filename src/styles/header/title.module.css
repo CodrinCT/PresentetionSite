@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 .Title {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   align-content: center;
   align-self: center;
   text-align: center;
   height: 70vh;
+  margin-top: 50px;
 }
 
 .h {

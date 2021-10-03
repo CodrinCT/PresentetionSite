@@ -1,60 +1,69 @@
-.contactDiv{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    color: white;
-    justify-content: center;
+.contactDiv {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  color: white;
+  justify-content: center;
 }
 
-.img{
-    height: 700px;
-    object-fit: cover;
-    object-position:top;
+@media screen and (max-width: 500px) {
+  .contactDiv {
+    flex-direction: column !important;
+    height: 100% !important;
+  }
 }
 
-h2{
-    color: white;
-    border-bottom: white 1px solid;
-    border-bottom-width:thick;
-    padding-bottom: 5px;
+.img {
+  height: 700px;
+  object-fit: cover;
+  object-position: top;
 }
 
-.extra_info{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-
+h2 {
+  color: white;
+  border-bottom: white 1px solid;
+  border-bottom-width: thick;
+  padding-bottom: 5px;
 }
 
-h2{
-    font-size: 35px;
-    color: white;
-    /* margin-bottom: 5px; */
+.extra_info {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
-.extra_info_specific{
-    margin-bottom: 25px;
-    color: white;
+h2 {
+  font-size: 35px;
+  color: white;
+  /* margin-bottom: 5px; */
 }
 
-.moveDown{
-    height: 150px !important;
-    width: 140px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 80%;
-    right: 10%;
-    animation-name: movement;
+.extra_info_specific {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.moveDown {
+  height: 150px !important;
+  width: 140px;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  animation-name: movement;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-    
 }
 @keyframes movement {
-    from { top: 75% }
-    to { bottom: 80% }
+  from {
+    top: 75%;
   }
+  to {
+    bottom: 80%;
+  }
+}

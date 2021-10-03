@@ -10,7 +10,8 @@ export default function MoreButton() {
     <div className={style.div}>
       <Button variant="info" className={style.button} onClick={buttonHandler}>
         CITESTE MAI MULT
-      </Button>{" "}
+      </Button>
+      {""}
     </div>
   );
 }

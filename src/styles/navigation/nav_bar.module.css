@@ -4,9 +4,10 @@
   background-color: rgb(51, 46, 46);
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.linksDiv{
+.linksDiv {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -16,8 +17,7 @@
 }
 
 .img {
- width: 70px;
-
+  width: 60px;
   margin: 10px;
-  margin-left: 150px;
+  margin-left: 100px;
 }

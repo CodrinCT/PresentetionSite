@@ -6,7 +6,13 @@
   display: flex;
   flex-direction: row;
   justify-content:space-evenly ;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   position: relative;
 }
 
+
+@media screen and (max-width:500px) {
+  .options{
+    margin-bottom: 40px !important;
+  }
+}

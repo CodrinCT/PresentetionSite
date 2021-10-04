@@ -12,7 +12,7 @@ export default function Team(props) {
             <Carousel.Item>
               <img className={style.img} src={imageGeorge} alt="George" />
               <Carousel.Caption>
-                <h3 style={{ color: "black", fontSize: "55px" }}>George</h3>
+                <h3 style={{ color: "black", fontSize: "30px" }}>George</h3>
                 <p
                   style={{
                     color: "orange",
@@ -29,7 +29,7 @@ export default function Team(props) {
             <Carousel.Item>
               <img src={imageMonica} className={style.img} alt="Monica" />
               <Carousel.Caption>
-                <h3 style={{ color: "black", fontSize: "55px" }}>Monica</h3>
+                <h3 style={{ color: "black", fontSize: "30px" }}>Monica</h3>
                 <p
                   style={{
                     color: "orange",
@@ -46,7 +46,7 @@ export default function Team(props) {
             <Carousel.Item>
               <img src={imageBogdan} className={style.img} alt="Bogdan" />
               <Carousel.Caption>
-                <h3 style={{ color: "black", fontSize: "55px" }}>Bogdan</h3>
+                <h3 style={{ color: "black", fontSize: "30px" }}>Bogdan</h3>
                 <p
                   style={{
                     color: "orange",

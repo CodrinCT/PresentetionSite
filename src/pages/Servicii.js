@@ -1,11 +1,8 @@
 import NavigationBar from "../components/navigation/nav_bar";
-import { Card, Button } from "react-bootstrap";
-import style from "../styles/servicii.module.css";
 import linuxPhoto from "../images/gabriel-heinzer-4Mw7nkQDByk-unsplash.jpg";
 import cloudImg from "../images/cloud-software.jpg";
 import consultImg from "../images/lagos-techie-IgUR1iX0mqM-unsplash.jpg";
 import storage from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash.jpg";
-import { Image } from "react-bootstrap";
 import headerImage from "../images/services-left-image.png";
 import "../styles/cardfliping.scss";
 import styled from "styled-components";
@@ -20,7 +17,7 @@ function Servicii() {
           platforme Linux, Cloud Computing si Storage.
         </HeaderParaph> */}
       </Header>
-      <CardsDiv>
+      <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -78,7 +75,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv>
+      <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -130,7 +127,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv>
+      <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -184,7 +181,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv>
+      <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -239,9 +236,31 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
+      <Footer >
+        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
+          {"TYRBUL SOLUTIONS SRL "}
+        </p>
+        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
+          RO39758389
+        </p>
+        @2020 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
+      </Footer>
     </>
   );
 }
+
+const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: rgb(34, 30, 30);
+  color: white;
+  padding: 50px 0;
+  height: 250px;
+
+`
 
 const CardsDiv = styled.div`
   display: flex;

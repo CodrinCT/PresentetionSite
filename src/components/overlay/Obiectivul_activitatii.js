@@ -7,13 +7,13 @@ import style from "../../styles/header/overlay_acivator.module.css";
 export default function Objective() {
   return (
     <>
-      <div className={style.overlayDiv}>
+      <div className={style.overlayDiv} style={{justifyContent:'center'}}>
         <div className={style.info}>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h2 style={{ color: "black", marginBottom: "10px" }}>
+            <h2 style={{ color: "black", marginBottom: "15px", textDecoration:'underline'}}>
               Obiectivul activitatii
             </h2>
-            <p style={{ color: "black", fontSize: "18px" }}>
+            <p style={{ color: "black", fontSize: "20px" }}>
               Secretul succesului este echilibrul dintre a te bucura de ceea ce
               faci și a-ți asuma responsabilitatea de a o face în modul cel mai
               priceput. Dezvoltatorii noștri răspund adesea la e-mailurile de

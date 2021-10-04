@@ -1,19 +1,21 @@
 .button {
-  font-size: 25px !important;
+  font-size: 15px !important;
   width: fit-content !important;
   height: fit-content !important;
-  padding: 10px !important;
+  padding: 5px !important;
   background-color: white !important;
   border-color: white !important;
-  border-radius: 8px !important;
-  text-align: center !important;
+  border-radius: 0;
+  /* text-align: center !important; */
   line-height: 25px !important;
   font-size: 800 !important;
   color: black !important;
+  /* margin-left: 150px; */
 }
 
 .div {
   display: flex;
   color: white;
   margin-top: 50px;
+  justify-content:  right;
 }

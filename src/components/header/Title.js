@@ -1,13 +1,20 @@
+import styled from "styled-components";
 import style from "../../styles/header/title.module.css";
 import MoreButton from "./Button";
 export default function Title() {
   return (
     <div className={style.Title}>
       <h1 className={style.h}>
-        SOLUTII, REZULTATE, CALITATE! SERVICII SOFTARE TYRBUL.
+        Solutii, Rezultate, Calitate! 
       </h1>
-      <h3 className={style.h3}>PENTRU CA NE PASA!</h3>
+      <Paragraph>TYRBUL SOLUTION SRL este un proiect Start-UP Nation,<br></br> fondat de o echipă de profesioniști, scopul nostru fiind soluționarea problemelor.</Paragraph>
       <MoreButton></MoreButton>
     </div>
   );
 }
+
+const Paragraph = styled.p`
+color: white;
+font-size: 15px;
+margin-left: 40px;
+`

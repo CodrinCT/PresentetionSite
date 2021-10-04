@@ -16,15 +16,15 @@ function ContactPage() {
 
         <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
-                <h2>Locatie</h2>
+                <Title>Locatie</Title>
             <p style={{color:'white'}}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
-                <h2>Email de contact</h2>
+                <Title>Email de contact</Title>
             <p style={{color:'white'}}>contact@tyrbul.com</p>
             </div>
             <div className={style.extra_info_specific}>
-                <h2>Program</h2>
+                <Title>Program</Title>
             <p style={{color:'white'}}>Luni-Vineri   - 10 AM – 7 PM <br></br>Sambata-Duminica - Inchis</p>
             </div>
         </div>
@@ -42,4 +42,9 @@ export default ContactPage;
 const Page = styled.div`
 display: flex;
 flex-direction: column;
+`
+
+const Title = styled.h1`
+font-size: 25px;
+color: white;
 `

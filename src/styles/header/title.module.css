@@ -1,20 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 .Title {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-content: center;
-  align-self: center;
-  text-align: center;
+  text-align: right;
   height: 70vh;
-  margin-top: 50px;
+  margin-top: 10%;
+  justify-content: right;
+  margin-right: 100px;
+  font-family: 'Roboto';
 }
 
 .h {
-  font-size: 35px;
+  font-size: 65px;
   color: white;
   font-weight: 700;
-  font-family: "Poopins", sans-serif;
+  /* font-family: "Poopins", sans-serif; */
+  text-align: right;
+  margin-left: 15px;
+  text-shadow: black 15px 10px;
+}
+
+@media screen and (max-width:500px) {
+  .h{
+    font-size: 45px;
+  }
 }
 
 h3 {
@@ -23,4 +34,13 @@ h3 {
   font-weight: 700;
   font-family: "Ephesis", cursive;
   line-height: 45px;
+  margin-left: 15px;
+  font-family: 'Roboto';
+
 }
+
+/* @media screen and (min-width:1200px) {
+  .Title{
+    justify-content: center;
+  }
+} */

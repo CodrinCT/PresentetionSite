@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className={style.header}>
       <HeaderBackground>
-      <NavigationBar></NavigationBar>
+      <NavigationBar backgroundColor='transparent'></NavigationBar>
       <Title></Title>
       <div className={style.options}>
       <OverlayActivator text="Cunoaste Echipa" left="20%" comp={<Team></Team>}></OverlayActivator>

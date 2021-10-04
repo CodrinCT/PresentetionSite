@@ -9,6 +9,7 @@ import native from "../images/cloud-software.jpg";
 import hybrid from "../images/xps-TxXuh_hAFd8-unsplash.jpg";
 import automation from "../images/alex-knight-2EJCSULRwC8-unsplash.jpg";
 import optimisation from "../images/ffff-min.jpg";
+import styled from "styled-components";
 function Solutii() {
   return (
     <>
@@ -29,10 +30,10 @@ function Solutii() {
                     data-wow-duration="1s"
                     data-wow-delay="1s"
                   >
-                    <h6>Preia initiativa a oricărei provocari IT</h6>
+                    <h6 style={{color:'black'}}>Preia initiativa a oricărei provocari IT</h6>
                     <h2>
-                      Tu aduci problema, <em>noi venim cu solutia</em> &amp;{" "}
-                      <span>tot ce trebuie sa faci este sa ne contactezi</span>{" "}
+                      Tu aduci problema, noi venim cu<em> solutia</em> &amp;{" "}
+                      tot ce trebuie sa faci este sa ne  <span>contactezi</span>{" "}
                     </h2>
                   </div>
                 </div>
@@ -184,10 +185,7 @@ function Solutii() {
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            SARCINILE REPETITIVE OCUPĂ TIMPUL PE CARE ECHIPA DVS. L-AR PUTEA
-            PETRECE PENTRU MUNCA INOVATOARE. INSTRUMENTELE NOASTRE DE
-            AUTOMATIZARE ȘI GESTIONARE DESCHISE VĂ PERMIT SĂ VĂ REORIENTAȚI ȘI
-            SĂ RELUAȚI CONTROLUL.
+            Sarcinile repetitive ocupa timpul pe care echipa dvs. l-ar putea petrece pentru munca inovatoare. Instrumentele noastre de automatizare si gestionare deschise va permit sa va reorientati si sa reluati controlul.
           </p>
           <div class="w3-row"></div>
         </div>
@@ -204,8 +202,30 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
+      <Footer >
+        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
+          {"TYRBUL SOLUTIONS SRL "}
+        </p>
+        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
+          RO39758389
+        </p>
+        @2020 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
+      </Footer>
     </>
   );
 }
+
+const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: rgb(34, 30, 30);
+  color: white;
+  padding: 50px 0;
+  height: 250px;
+
+`
 
 export default Solutii;

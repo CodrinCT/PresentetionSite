@@ -101,6 +101,16 @@ text-align: justify;
     padding: 25px;
     animation: slide 4s line;
 }
+
+@media screen and (max-width:500px) {
+  .div{
+    width: 95%;
+  }
+  .solutionsText{
+    text-align: center;
+  }
+}
+
 @keyframes slide {
     0% {
       display: flex;

@@ -9,8 +9,8 @@ export default function Objective() {
     <>
       <div className={style.overlayDiv} style={{justifyContent:'center'}}>
         <div className={style.info}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h2 style={{ color: "black", marginBottom: "15px", textDecoration:'underline'}}>
+          <div style={{ display: "flex", flexDirection: "column", height:'90%' , width:'90%'}}>
+            <h2 style={{ color: "black", marginBottom: "15px", textDecoration:'underline', fontSize:'30px'}}>
               Obiectivul activitatii
             </h2>
             <p style={{ color: "black", fontSize: "20px" }}>

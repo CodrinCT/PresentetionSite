@@ -155,7 +155,7 @@ function Solutii() {
         </div>
       </div>
 
-      <div class="w3-card-4 w3-margin w3-white" className={style.div}>
+      <div class="w3-card-4 w3-margin w3-white" id='hybridCloud' className={style.div}>
         <img src={hybrid} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
@@ -168,7 +168,7 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" className={style.div}>
+      <div class="w3-card-4 w3-margin w3-white" id='cloud' className={style.div}>
         <img src={native} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
@@ -180,8 +180,8 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" className={style.div}>
-        <img src={optimisation} alt="Norway" className={style.solutionsImg} />
+      <div class="w3-card-4 w3-margin w3-white" id='automation' className={style.div}>
+        <img src={automation} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
           <p className={style.solutionsText}>
@@ -190,8 +190,8 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" className={style.div}>
-        <img src={automation} alt="Norway" className={style.solutionsImg} />
+      <div class="w3-card-4 w3-margin w3-white" id='IToptimization' className={style.div}>
+        <img src={optimisation} alt="Norway" className={style.solutionsImg} />
         <div class="w3-container">
           <p className={style.solutionsText}>
             Este posibil ca sistemele care susțin organizația dvs. să nu-i

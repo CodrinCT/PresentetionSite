@@ -1,16 +1,19 @@
 import axios from 'axios'
 import { useState } from 'react'
 import style from '../../styles/header/form.module.css'
+require('dotenv').config()
 export default function Form(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [mailSent, setMail] = useState(false)
     const [error, setError] = useState(null)
-  const API_PATH = 'http://localhost:5000/contact'
+
 
 function submitHandler(event){
 event.preventDefault()
+// const domain = env.DOMAIN
+const API_PATH = `${process.env.REACT_APP_BASE_DOMAIN}/contact`
 
 const formSent = {
     name,

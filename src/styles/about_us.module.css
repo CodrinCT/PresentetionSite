@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-/* @import "compass/css3"; */
 
 .footer {
   display: flex;
@@ -37,14 +36,6 @@ h2 {
 p {
   font-size: 30px;
   margin: 30px 30px;
-}
-.picture {
-  height: 500px;
-  background-image: url("../images/ian-schneider-TamMbr4okv4-unsplash.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0;
 }
 
 .title {
@@ -99,7 +90,7 @@ p {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .infoDiv {
     flex-wrap: nowrap;
     width: 90% !important;

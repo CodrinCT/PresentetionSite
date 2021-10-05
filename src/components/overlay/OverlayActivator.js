@@ -3,7 +3,6 @@ import { useState } from "react";
 
 function OverlayActivator(props) {
   const [show, setShow] = useState(false);
-  console.log(show);
   function clickHandler() {
     setShow(true);
   }

@@ -21,3 +21,9 @@
   margin: 10px;
   margin-left: 100px;
 }
+
+@media screen and (max-width:600px) {
+  .img{
+    margin-left: 50px;
+  }
+}

@@ -11,7 +11,7 @@
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .options{
     margin-bottom: 40px !important;
   }

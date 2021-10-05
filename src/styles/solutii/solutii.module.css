@@ -118,7 +118,7 @@ font-weight: 300;
     animation: slide 4s line;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .div{
     width: 95%;
   }

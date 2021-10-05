@@ -1,9 +1,9 @@
 import style from "../../styles/header/contact.module.css";
 import overlay from "../../styles/header/overlay_acivator.module.css";
 import styleForm from "../../styles/header/form.module.css";
-import Form from "./Form";
 import { useState } from "react";
 import axios from "axios";
+import env from "react-dotenv";
 export default function Contact() {
 
   const [name, setName] = useState('')
@@ -11,7 +11,7 @@ export default function Contact() {
   const [message, setMessage] = useState('')
   const [mailSent, setMail] = useState(false)
   const [error, setError] = useState(null)
-const API_PATH = 'http://localhost:5000/contact'
+const API_PATH = `http://localhost:5001/contact`
 
 function submitHandler(event){
 event.preventDefault()
@@ -47,7 +47,7 @@ console.log(formSent);
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
               <h2 className={style.infoTitle}>Locatie</h2>
-              <p style={{ color: "white" }}>Iasi, Vasile Conta 42, 700380 </p>
+              <p style={{ color: "white"}}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
               <h2 className={style.infoTitle}>Email de contact</h2>
@@ -56,7 +56,7 @@ console.log(formSent);
             <div className={style.extra_info_specific}>
               <h2 className={style.infoTitle}>Program</h2>
               <p style={{ color: "white" }}>
-                Luni-Vineri - 10 AM – 7 PM Sambata-Duminica - Inchis
+                Luni-Vineri - 10 AM – 7 PM <br></br> Sambata-Duminica - Inchis
               </p>
             </div>
           </div>
@@ -77,8 +77,6 @@ console.log(formSent);
           </form>
         </div>
       </div>
-
-      {/* The contact div */}
     </>
   );
 }

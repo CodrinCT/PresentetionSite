@@ -8,7 +8,8 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
+const port = process.env.MAIL_PORT || 5000;
+app.listen(port, () => console.log("Server Running on port: " + `${port}`));
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
@@ -31,8 +32,8 @@ const contactEmail = nodemailer.createTransport({
     const email = req.body.email;
     const message = req.body.message; 
     const mail = {
-      from: `${email}`,
-      to: `${GMAIL_USER}`,
+      from: `${name}`,
+      to: `${process.env.GMAIL_USER}`,
       subject: "Contact",
       html: `<p>Name: ${name}</p>
              <p>Email: ${email}</p>

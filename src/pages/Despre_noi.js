@@ -14,7 +14,7 @@ function Despre() {
         <div className={style.body}>
           {/* <div className={style.picture}></div> */}
           <div className={style.infoDiv}>
-            <h1 className={style.h}>Bine ai venit la TYRBUL SOLUTION</h1>
+            <h1 className={style.h}>Bine ai venit la TYRBUL SOLUTIONS</h1>
             <p className={style.misionText}>
               TYRBUL SOLUTION SRL este un proiect Start-UP Nation, fondat de o
               echipă de profesioniști, scopul nostru fiind soluționarea
@@ -63,7 +63,7 @@ function Despre() {
 }
 const ImgDiv = styled.div`
   width: 100%;
-  height: 700px;
+  height: 800px;
 `;
 const HeadImage = styled.img`
   /* object-fit: contain; */

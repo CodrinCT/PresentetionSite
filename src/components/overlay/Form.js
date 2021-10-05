@@ -27,7 +27,7 @@ axios({
     },
     data: formSent
 }).then((result)=>{
-    if(result.status==200){
+    if(result.status===200){
         setMail(true)
     }
 }).catch(error => setError({error: error.message}))

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
 .Background{
 display: flex;
 flex-direction: row;
@@ -7,6 +10,17 @@ justify-content: space-evenly;
 text-align: center;
 align-items: center;
 overflow: hidden;
+}
+
+h2{
+  font-family: 'Rubik';
+}
+
+
+
+h6{
+  font-family: 'Rubik';
+  font-weight: 300;
 }
 
 .solutionsBody{
@@ -33,6 +47,8 @@ line-height: 35px;
 margin: 25px;
 margin-top: 35px;
 text-align: justify;
+font-family: 'Rubik';
+font-weight: 300;
 }
 
 .solutionsTextReverse{

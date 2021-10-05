@@ -2,7 +2,6 @@ import NavigationBar from "../components/navigation/nav_bar";
 import style from '../styles/ContactPage.module.css'
 import Form from "../components/overlay/Form";
 import image1 from '../images/pexels-nick-demou-2473183.jpg'
-import arrowImg from '../images/img_257584.png'
 import styled from "styled-components";
 function ContactPage() {
   return (

@@ -14,13 +14,12 @@ export default function Header() {
       <NavigationBar backgroundColor='transparent'></NavigationBar>
       <Title></Title>
       <div className={style.options}>
-      <OverlayActivator text="Cunoaste Echipa" left="20%" comp={<Team></Team>}></OverlayActivator>
+      <OverlayActivator text="Cunoaste Echipa" comp={<Team></Team>}></OverlayActivator>
       <OverlayActivator
         text="Obiectivul activitatii"
-        left="45%"
        comp={<Objective></Objective>}
       ></OverlayActivator>
-      <OverlayActivator text="Contacteaza-ne" left="70%"  comp={<Contact></Contact>}></OverlayActivator>
+      <OverlayActivator text="Contacteaza-ne" comp={<Contact></Contact>}></OverlayActivator>
       </div>
      
       </HeaderBackground>

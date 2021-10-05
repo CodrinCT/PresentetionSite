@@ -62,9 +62,7 @@ function Solutii() {
                 data-wow-delay="0.2s"
               >
                 <h2>
-                  Unele dintre <em>SOLUTIILE</em> noastre &amp; ce{" "}
-                  {"Tyrbul Solutions "}
-                  <span>ofera</span>
+                  Unele dintre <em>SOLUTIILE</em> noastre
                 </h2>
               </div>
             </div>

@@ -9,7 +9,6 @@
 }
 
 .link:hover {
-  font-size: 35px;
   color: yellow;
   transition-duration: 0.2s;
 }
@@ -17,7 +16,7 @@
 .div {
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: fit-content;
   height: 180px;
   border-radius: 50%;
   justify-content: center;
@@ -44,11 +43,9 @@
 
 @keyframes movement {
   from {
-    width: 180px;
     height: 180px;
   }
   to {
-    width: 200px;
     height: 200px;
   }
 }

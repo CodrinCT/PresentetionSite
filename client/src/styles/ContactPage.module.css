@@ -2,7 +2,7 @@
   background-color: black;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 50vh;
   color: white;
   justify-content: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .img {
-  height: 700px;
+  height: 600px;
   object-fit: cover;
   object-position: top;
 }

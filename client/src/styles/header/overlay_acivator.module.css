@@ -6,6 +6,7 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .link:hover {

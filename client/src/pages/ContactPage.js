@@ -31,7 +31,6 @@ function ContactPage() {
         <Form></Form>
         </div>
       </Page>
-      
        </>
   );
 }

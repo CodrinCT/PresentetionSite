@@ -163,6 +163,9 @@ p {
     width: 100%;
     height: fit-content;
   }
+  .tilesWrap li p{
+    margin-top: 20px !important;
+  }
 }
 .tilesWrap li h2 {
 	font-size: 114px;
@@ -182,7 +185,7 @@ p {
 	font-size: 20px;
 	line-height: 25px;
 	color: white;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .tilesWrap li button {
 	background: transparent;

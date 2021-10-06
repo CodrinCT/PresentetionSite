@@ -25,13 +25,25 @@ if (process.env.NODE_ENV === "production") {
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log("Server Running on port: " + `${port}`));
 
+// const contactEmail = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: `${process.env.GMAIL_USER}`,
+//     pass: `${process.env.GMAIL_PASS}`,
+//   },
+// });
+
 const contactEmail = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: `${process.env.GMAIL_USER}`,
-    pass: `${process.env.GMAIL_PASS}`,
-  },
-});
+    service: "gmail",
+    auth: {
+      type:'OAuth2',
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+      clientId: process.env.OAUTH_CLIENTID,
+      clientSecret: process.env.OAUTH_CLIENT_SECRET,
+      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+    },
+  });
 
 contactEmail.verify((error) => {
   if (error) {

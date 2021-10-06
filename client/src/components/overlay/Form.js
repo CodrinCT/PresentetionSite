@@ -37,9 +37,10 @@ axios({
     }
 }).catch(error => setError({error: error.message}))
 
-console.log(formSent);
 
 }
+console.log(mailSent);
+
 
     return(
         <form className={style.form} onSubmit={submitHandler}>

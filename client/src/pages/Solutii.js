@@ -5,7 +5,7 @@ import "../styles/solutii/owl.css";
 import "../styles/solutii/templatemo-space-dynamic.css";
 import imageBannerRight from "../images/banner-right-image.png";
 import style from "../styles/solutii/solutii.module.css";
-import native from "../images/cloud-software.jpg";
+import native from "../images/pexels-negative-space-97077.jpg";
 import hybrid from "../images/xps-TxXuh_hAFd8-unsplash.jpg";
 import automation from "../images/alex-knight-2EJCSULRwC8-unsplash.jpg";
 import optimisation from "../images/ffff-min.jpg";

@@ -1,5 +1,5 @@
 
-import teamImg from '../../images/pexels-fauxels-3183150.jpg'
+import teamImg from '../../images/pexels-fauxels-3183150 (1).jpg'
 import style from "../../styles/header/overlay_acivator.module.css";
 import styled from 'styled-components'
 <style>

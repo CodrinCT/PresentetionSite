@@ -33,12 +33,10 @@ axios({
   if(result.status===200){
       setMail(true)
       setEmail('')
-        setMessage('')
-        setName('')
+      setMessage('')
+      setName('')
   }
 }).catch(error => setError({error: error.message}))
-
-console.log(formSent);
 
 }
   return (

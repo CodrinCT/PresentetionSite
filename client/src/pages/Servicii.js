@@ -1,8 +1,8 @@
 import NavigationBar from "../components/navigation/nav_bar";
-import linuxPhoto from "../images/gabriel-heinzer-4Mw7nkQDByk-unsplash.jpg";
+import linuxPhoto from "../images/gabriel-heinzer-4Mw7nkQDByk-unsplash (2).jpg";
 import cloudImg from "../images/cloud-software.jpg";
-import consultImg from "../images/lagos-techie-IgUR1iX0mqM-unsplash.jpg";
-import storage from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash.jpg";
+import consultImg from "../images/lagos-techie-IgUR1iX0mqM-unsplash (1).jpg";
+import storage from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash (1).jpg";
 import headerImage from "../images/services-left-image.png";
 import "../styles/cardfliping.scss";
 import styled from "styled-components";

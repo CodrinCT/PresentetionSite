@@ -1,6 +1,6 @@
 import NavigationBar from "../components/navigation/nav_bar";
 import style from "../styles/about_us.module.css";
-import headPhoto from "../images/pexels-mikhail-nilov-7988114.jpg";
+import headPhoto from "../images/pexels-pixabay-270366.jpg";
 import styled from "styled-components";
 function Despre() {
   return (
@@ -69,5 +69,6 @@ const HeadImage = styled.img`
   /* object-fit: contain; */
   height: 700px;
   object-fit: cover;
+  object-position: top;
 `;
 export default Despre;

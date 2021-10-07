@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
+import styled, { keyframes } from 'styled-components'
 import style from '../../styles/header/form.module.css'
 require('dotenv').config()
 export default function Form(){
@@ -51,11 +52,18 @@ console.log(mailSent);
             {/* <div className={style.textareaDiv}> */}
             <textarea placeholder='Mesajul dumneavostra' value={message} onChange={(e)=>{setMessage(e.target.value)}} rows='5' required></textarea>
             {/* </div> */}
-            <button>TRIMITE</button>
+     
+    
+            <button> 
+                TRIMITE
+             </button>
             <div>
                 {mailSent && <div style={{marginTop:'40px', fontSize:'30px', color:'green'}}>Thank you for contacting us !</div>}
                 {/* {!mailSent && <div>The email has not been sent, please try again!</div>} */}
             </div>
         </form>
+
+    
     )
 }
+

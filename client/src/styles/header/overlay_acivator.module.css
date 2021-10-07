@@ -152,22 +152,23 @@
   right: 5%;
   z-index: 3;
   opacity: 0.5;
+  left: 90%;
 }
 
 .exitBtn:hover{
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width:600px) {
   .exitBtn{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
 .exitBtn:after {
-  background-clip: padding-box;
-  background-color: #fc0f0f;
-  border: solid transparent;
+  background-clip: padding-box !important;
+  background-color: #fc0f0f !important;
+  border: solid transparent !important;
   border-radius: 16px;
   border-width: 0 0 4px;
   bottom: -4px;

@@ -10,6 +10,7 @@ import hybrid from "../images/xps-TxXuh_hAFd8-unsplash.jpg";
 import automation from "../images/alex-knight-2EJCSULRwC8-unsplash.jpg";
 import optimisation from "../images/ffff-min.jpg";
 import styled from "styled-components";
+import Footer from "../components/Footer";
 function Solutii() {
   return (
     <>
@@ -200,30 +201,11 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <Footer >
-        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
-          {"TYRBUL SOLUTIONS SRL "}
-        </p>
-        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
-          RO39758389
-        </p>
-        @2020 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
-      </Footer>
+     <Footer></Footer>
     </>
   );
 }
 
-const Footer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  background-color: rgb(34, 30, 30);
-  color: white;
-  padding: 50px 0;
-  height: 250px;
 
-`
 
 export default Solutii;

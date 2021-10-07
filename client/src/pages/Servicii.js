@@ -1,11 +1,21 @@
 import NavigationBar from "../components/navigation/nav_bar";
-import linuxPhoto from "../images/gabriel-heinzer-4Mw7nkQDByk-unsplash (2).jpg";
-import cloudImg from "../images/cloud-software.jpg";
-import consultImg from "../images/lagos-techie-IgUR1iX0mqM-unsplash (1).jpg";
-import storage from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash (1).jpg";
+import linuxPhoto1 from "../images/gabriel-heinzer-4Mw7nkQDByk-unsplash (2).jpg";
+import linuxPhoto2 from "../images/linuxImg2.jpg";
+import linuxPhoto3 from "../images/linuxImg3.jpg";
+import cloudImg1 from "../images/cloud-software.jpg";
+import cloudImg2 from "../images/R.jpg";
+import cloudImg3 from "../images/R221.jpg";
+import consultImg1 from "../images/lagos-techie-IgUR1iX0mqM-unsplash (1).jpg";
+import consultImg2 from "../images/pexels-michael-burrows-7129717 (2).jpg";
+import consultImg3 from "../images/pexels-shvets-production-7176319 (1).jpg";
+import storage1 from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash (1).jpg";
+import storage2 from "../images/pexels-pixabay-270410 (1).jpg";
+import storage3 from "../images/science-in-hd-iPrjQEDnNEY-unsplash (1).jpg";
+
 import headerImage from "../images/services-left-image.png";
 import "../styles/cardfliping.scss";
 import styled from "styled-components";
+import Footer from "../components/Footer";
 function Servicii() {
   return (
     <>
@@ -23,7 +33,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">PLATFORME LINUX</h2>
               <h1 class="title">Enterprise Linux</h1>
-              <img class="image" src={linuxPhoto} alt="" />
+              <img class="image" src={linuxPhoto1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
@@ -43,7 +53,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">PLATFORME LINUX</h2>
               <h1 class="title">OpenStack Platform</h1>
-              <img class="image" src={linuxPhoto} alt="" />
+              <img class="image" src={linuxPhoto2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
@@ -62,7 +72,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">PLATFORME LINUX</h2>
               <h1 class="title">Sattelite</h1>
-              <img class="image" src={linuxPhoto} alt="" />
+              <img class="image" src={linuxPhoto3} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -81,7 +91,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CLOUD COMPUTING</h2>
               <h1 class="title">OpenShift</h1>
-              <img class="image" src={cloudImg} alt="" />
+              <img class="image" src={cloudImg1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -98,7 +108,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CLOUD COMPUTING</h2>
               <h1 class="title">Directory Server</h1>
-              <img class="image" src={cloudImg} alt="" />
+              <img class="image" src={cloudImg2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -115,7 +125,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CLOUD COMPUTING</h2>
               <h1 class="title">Quay</h1>
-              <img class="image" src={cloudImg} alt="" />
+              <img class="image" src={cloudImg3} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -133,7 +143,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CONSULTANTA</h2>
               <h1 class="title">Schimbarea incepe cu tine</h1>
-              <img class="image" src={consultImg} alt="" />
+              <img class="image" src={consultImg1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -151,7 +161,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CONSULTANTA</h2>
               <h1 class="title">Schimba abordarea</h1>
-              <img class="image" src={consultImg} alt="" />
+              <img class="image" src={consultImg2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -169,7 +179,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">CONSULTANTA</h2>
               <h1 class="title">Profita</h1>
-              <img class="image" src={consultImg} alt="" />
+              <img class="image" src={consultImg3} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -187,7 +197,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">STORAGE</h2>
               <h1 class="title">Ceph Storage</h1>
-              <img class="image" src={storage} alt="" />
+              <img class="image" src={storage1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -205,7 +215,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">STORAGE</h2>
               <h1 class="title">OpenShift Container Storage</h1>
-              <img class="image" src={storage} alt="" />
+              <img class="image" src={storage2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -221,7 +231,7 @@ function Servicii() {
             <div class="front">
               <h2 class="sub-title">STORAGE</h2>
               <h1 class="title">Cluster Storage</h1>
-              <img class="image" src={storage} alt="" />
+              <img class="image" src={storage3} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">Description</h3>
@@ -236,31 +246,11 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <Footer >
-        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
-          {"TYRBUL SOLUTIONS SRL "}
-        </p>
-        <p style={{ color: "white", fontSize: "20px", margin: "0" }}>
-          RO39758389
-        </p>
-        @2020 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
-      </Footer>
+      <Footer></Footer>
     </>
   );
 }
 
-const Footer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  background-color: rgb(34, 30, 30);
-  color: white;
-  padding: 50px 0;
-  height: 250px;
-
-`
 
 const CardsDiv = styled.div`
   display: flex;
@@ -289,8 +279,9 @@ const HeaderParaph = styled.p`
 `;
 const HeaderH = styled.h1`
   color: #f2583d;
-  font-size: 55px;
+  font-size: 75px;
   font-weight: 800;
+  padding: 20px;
 `;
 
 const CardDescription = styled.p`

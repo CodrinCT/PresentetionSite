@@ -43,7 +43,10 @@ textarea {
 
 textarea::placeholder {
   color: black;
+  opacity: 0.5;
 }
+
+
 
 input::placeholder {
   color: #eee;
@@ -60,12 +63,30 @@ input:focus-visible {
   align-items: center;
 }
 button {
-  background-color: teal;
-  width: 50%;
+  position: relative;
+ width: fit-content;
+  padding: 10px 20px;
+  color: #03e9f4;
   font-size: 25px;
-  font-weight: 800;
-  color: #eee;
-  text-align: center;
-  margin-left: 50%;
-  transform: translate(-50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background-color: #0a1011;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+button:hover{
+   background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+

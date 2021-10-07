@@ -32,24 +32,6 @@ export default function Links() {
           </Link>
         </li>
       </ul>
-      {/* <DropDown>
-        <option>
-          <Link to="/home">Home</Link>
-        </option>
-        <option>
-          <Link to="/servicii">Servicii</Link>
-        </option>
-        <option>
-          <Link to="/solutii">Solutii</Link>
-        </option>
-        <option>
-          <Link to="/despre_noi">Despre Noi</Link>
-        </option>
-        <option>
-          <Link to="/contact">Contact</Link>
-        </option>
-      </DropDown> */}
-
       <Dropdown className={style.Dropdown}>
         <Dropdown.Toggle
           variant="success"

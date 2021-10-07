@@ -1,6 +1,5 @@
 import Links from "./Links";
 import style from "../../styles/navigation/nav_bar.module.css";
-import styled from "styled-components";
 import icon from "../../images/ligig.png";
 import { Link } from "react-router-dom";
 function NavigationBar(props) {

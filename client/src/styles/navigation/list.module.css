@@ -36,6 +36,9 @@
   .Dropdown {
     display: block !important;
   }
+  .btn{
+    margin-right: 5px !important;
+  }
 }
 
 .Dropdown {

@@ -1,5 +1,5 @@
 import NavigationBar from "../components/navigation/nav_bar";
-import style from "../styles/about_us.module.css";
+import style from "../styles/despre_noi/about_us.module.css";
 
 import styled from "styled-components";
 import Footer from "../components/Footer";

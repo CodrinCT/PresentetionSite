@@ -14,7 +14,7 @@ export default function Footer(){
         </p>
             </InfoDiv>    
         <LinksDiv>
-            <Link style={{ color:'white', padding:'20px'}} to='/GDRP'>privecy</Link>
+            <Link style={{ color:'white', padding:'20px'}} to='/privecy'>privecy</Link>
             <Link style={{ color:'white', padding:'20px'}} to='/termeni_si_conditii'>Termeni si Conditii</Link>
             <Link style={{ color:'white', padding:'20px'}} to='/cookies'>Cookies</Link>
         </LinksDiv>

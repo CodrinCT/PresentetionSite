@@ -15,7 +15,7 @@ export default function CookiesPage(){
         <NavigationBar ></NavigationBar>
         <PageDiv>
             <InfoDiv style={{marginTop:'25px', marginBottom:'25px'}}>
-            <h1 style={{fontSize:'40px',marginTop:'25px'}}>Politica Cookies</h1>
+            <h1 style={{fontSize:'40px',marginTop:'25px', textDecoration:'underline'}}>Politica Cookies</h1>
 
             <SubDivisions>
                 <SubDivisionTitle>Ce sunt cookie-urile?</SubDivisionTitle>
@@ -125,7 +125,7 @@ text-align: justify;
 width: 100%;
 margin-bottom: 35px;
 margin-top: 25px;
-padding: 25px;
+padding: 15px 25px;
 `
 
 const SubDivisionTitle = styled.h2`
@@ -137,14 +137,14 @@ font-size: 25px;
 
 const InfoDiv = styled.div`
 background-color: white;
-width: 70%;
+width: 65%;
 `
 
 const Text = styled.p`
 font-family: 'Roboto+Mono';
 font-weight: 300;
 font-size: 20px;
-padding: 15px;
+padding: 20px;
 margin-top: 10px;
 text-indent: 25px;
 text-align: justify;

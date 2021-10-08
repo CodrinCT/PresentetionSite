@@ -1,6 +1,6 @@
 
 import teamImg from '../../images/pexels-fauxels-3183150 (1).jpg'
-import style from "../../styles/header/overlay_acivator.module.css";
+import style from "../../styles/home/overlay_acivator.module.css";
 import styled from 'styled-components'
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import style from "../../styles/header/title.module.css";
+import style from "../../styles/home/title.module.css";
 import MoreButton from "./Button";
 export default function Title() {
   return (
@@ -17,4 +17,8 @@ const Paragraph = styled.p`
 color: white;
 font-size: 15px;
 margin-left: 40px;
+
+@media screen and (max-width:350px){
+  display: none;
+} 
 `

@@ -1,5 +1,5 @@
 import NavigationBar from "../components/navigation/nav_bar";
-import style from '../styles/ContactPage.module.css'
+import style from '../styles/contact/ContactPage.module.css'
 import Form from "../components/overlay/Form";
 import image1 from '../images/pexels-nick-demou-2473183.jpg'
 import styled from "styled-components";

@@ -1,4 +1,4 @@
-import style from "../../styles/header/exit_btn.module.scss";
+import style from "../../styles/home/exit_btn.module.scss";
 export default function ExitBtn(props) {
   function exitHandler(props) {
     props.exit();

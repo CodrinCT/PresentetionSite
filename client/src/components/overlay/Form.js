@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
-import style from '../../styles/header/form.module.css'
+import style from '../../styles/home/form.module.css'
 require('dotenv').config()
 export default function Form(){
     const [name, setName] = useState('')

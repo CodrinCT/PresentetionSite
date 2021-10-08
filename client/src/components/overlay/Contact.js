@@ -1,6 +1,6 @@
-import style from "../../styles/header/contact.module.css";
-import overlay from "../../styles/header/overlay_acivator.module.css";
-import styleForm from "../../styles/header/form.module.css";
+import style from "../../styles/home/contact.module.css";
+import overlay from "../../styles/home/overlay_acivator.module.css";
+import styleForm from "../../styles/home/form.module.css";
 import { useState } from "react";
 import axios from "axios";
 export default function Contact() {

@@ -10,7 +10,7 @@ export default function ConfidentialityPolicy(){
 <InfoDiv>
 
 <ParagraphDiv>
-<h1 style={{fontFamily:'Roboto+Mono', fontSize:'40px', fontWeight:'600'}}>Politica GDPR</h1>
+<h1 style={{fontFamily:'Roboto+Mono', fontSize:'40px', fontWeight:'600', textDecoration:'underline'}}>Politica GDPR</h1>
             <Text>
             Politica de confidențialitate GDPR
 Una dintre prioritățile noastre principale este confidențialitatea vizitatorilor noștri. Acest document privind politica de confidențialitate conține tipuri de informații care sunt colectate și înregistrate de site-ul dvs. web și modul în care le folosim.
@@ -70,12 +70,12 @@ flex-direction: column;
 font-family: 'Roboto+Mono';
 margin-top: 40px;
 margin-bottom: 40px;
-padding: 15px;
+padding: 15px 25px;
 `
 
 const InfoDiv = styled.div`
 background-color: white;
-width: 70%;
+width: 65%;
 margin-top: 20px;
 margin-bottom: 20px;
 `

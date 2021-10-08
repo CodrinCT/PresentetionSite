@@ -1,4 +1,4 @@
-import style from "../../styles/header/overlay_acivator.module.css";
+import style from "../../styles/home/overlay_acivator.module.css";
 import { useState } from "react";
 
 function OverlayActivator(props) {

@@ -13,7 +13,7 @@ import storage2 from "../images/pexels-pixabay-270410 (1).jpg";
 import storage3 from "../images/science-in-hd-iPrjQEDnNEY-unsplash (1).jpg";
 
 import headerImage from "../images/services-left-image.png";
-import "../styles/cardfliping.scss";
+import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 function Servicii() {

@@ -1,5 +1,5 @@
 import { Carousel } from "react-bootstrap";
-import style from "../../styles/header/overlay_acivator.module.css";
+import style from "../../styles/home/overlay_acivator.module.css";
 import imageBogdan from "../../images/mimi-thian-xplU-oxzuD0-unsplash.jpg";
 import imageGeorge from "../../images/natashia-shukla-Yu2ibXzNNs8-unsplash.jpg";
 import imageMonica from "../../images/christina-wocintechchat-com-kXfBDl0fR1E-unsplash.jpg";

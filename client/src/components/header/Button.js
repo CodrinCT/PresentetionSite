@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import style from "../../styles/ButtonMore.module.css";
+import style from "../../styles/home/ButtonMore.module.css";
 import { useHistory } from "react-router-dom";
 export default function MoreButton() {
   const history = useHistory();

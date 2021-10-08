@@ -14,7 +14,7 @@ export default function TermsAndConditions(){
 
 
             <InfoDiv>
-            <h1 style={{fontFamily:'Roboto+Mono', fontSize:'40px', fontWeight:'600', marginTop:'25px'}}>Termeni de utilizare</h1>
+            <h1 style={{fontFamily:'Roboto+Mono', fontSize:'40px', fontWeight:'600', marginTop:'25px', textDecoration:'underline'}}>Termeni de utilizare</h1>
             <h3 style={{fontFamily:'Roboto+Mono', fontSize:'20px', color:'black',fontWeight:'300', marginTop:'15px', textAlign:'center'}} >Ultima actualizare: 14 iulie 2020</h3>
             <ParagraphDiv>
                 <SubDivisionTitle>1. ACCEPTAREA TERMENILOR</SubDivisionTitle>
@@ -141,7 +141,7 @@ background-color: rgba(0,0,0,0.7);
 
 const InfoDiv = styled.div`
 background-color: white;
-width: 70%;
+width: 65%;
 margin-top: 20px;
 margin-bottom: 20px;
 `
@@ -161,7 +161,7 @@ text-align: justify;
 const Text = styled.p`
 font-weight: 300;
 font-size: 20px;
-padding: 10px;
+padding: 15px 25px;
 margin-top: 10px;
 text-indent: 25px;
 text-align: justify;

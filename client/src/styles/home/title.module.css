@@ -22,9 +22,15 @@
   text-shadow: black 15px 10px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .h{
     font-size: 45px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .Title{
+    margin-right: 20px;
   }
 }
 

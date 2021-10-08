@@ -11,6 +11,11 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
-
 }
 
+
+@media screen and (max-width:600) {
+  .background{
+    height: 100%;
+  }
+}

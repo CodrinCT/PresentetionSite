@@ -3,6 +3,10 @@ import style from '../styles/contact/ContactPage.module.css'
 import Form from "../components/overlay/Form";
 import image1 from '../images/pexels-nick-demou-2473183.jpg'
 import styled from "styled-components";
+import {useState} from "react"
+import CookiePopUp from "../components/CookiePopUp";
+import { Link } from "react-router-dom";
+
 function ContactPage() {
   return (
 <>
@@ -30,6 +34,8 @@ function ContactPage() {
         <div className={style.line}></div>
         <Form></Form>
         </div>
+        <CookiePopUp></CookiePopUp>
+
       </Page>
        </>
   );

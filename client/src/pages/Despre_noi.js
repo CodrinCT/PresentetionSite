@@ -1,10 +1,13 @@
 import NavigationBar from "../components/navigation/nav_bar";
 import style from "../styles/despre_noi/about_us.module.css";
-
+import { useState } from "react";
+import CookiePopUp from "../components/CookiePopUp";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 // import '../styles/about_us_card.css'
 function Despre() {
+ 
   return (
     <>
       <div className={style.page}>
@@ -74,6 +77,8 @@ function Despre() {
           </div>
         </div>
       </div>
+      <CookiePopUp></CookiePopUp>
+
        
       <Footer></Footer>
     </>

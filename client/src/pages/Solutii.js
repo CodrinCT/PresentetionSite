@@ -11,7 +11,12 @@ import automation from "../images/alex-knight-2EJCSULRwC8-unsplash.jpg";
 import optimisation from "../images/ffff-min.jpg";
 import styled from "styled-components";
 import Footer from "../components/Footer";
+import { useState } from "react";
+import CookiePopUp from "../components/CookiePopUp";
+import { Link } from "react-router-dom";
+
 function Solutii() {
+ 
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -201,6 +206,8 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
+      <CookiePopUp></CookiePopUp>
+
      <Footer></Footer>
     </>
   );

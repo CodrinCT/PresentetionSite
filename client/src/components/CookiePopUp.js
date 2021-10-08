@@ -1,5 +1,7 @@
 import { keyframes } from "styled-components";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
@@ -7,38 +9,28 @@ import styled from "styled-components";
   url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 </style>;
 export default function CookiePopUp(props) {
+  const [isOn, setOnOff] = useState(false);
+  function tooglePopup() {
+    setOnOff(false);
+  }
+  window.addEventListener("load", () => {
+    setOnOff(true);
+  });
   return (
     // <div>
- <PopUpDiv>
+    <>
+    {isOn && (<PopUpDiv>
       <ContentDiv>
-        <Content>{props.content}</Content>
+        <Content>
+        Acest website foloseste cookies pentru a asigura cea mai buna experienta pe website-ul nostru.<br></br>
+              <Link to='/cookies' style={{textDecorationLine:'underline !important', color:'black'}}>Learn More</Link>
+        </Content>
+        <AcceptBtn onClick={tooglePopup}>Accept</AcceptBtn>
       </ContentDiv>
-    </PopUpDiv>
-   
-   
+  </PopUpDiv>)}
+   </>
   );
 }
-
-// const fadeIn = keyframes`
-// 0%{
-//   opacity:0;
-// }
-// 100%{
-//   opacity:1;
-
-// }
-// `;
-/* 
-const movementUpDown = keyframes`
-from{
-    width:fit-content;
-    height:fit-content;
-}
-to{
-    width:30px;
-    height:30px;
-}
-`; */
 const bounceAnim = keyframes`
 
   0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -70,48 +62,37 @@ const bounceAnim = keyframes`
 
 `
 const PopUpDiv = styled.div`
-width: 100%;
-height: fit-content;
 display: flex;
-justify-content: center;
-border: none;
-  border-radius: 10px;
-  padding: 10px;
-  animation: ${bounceAnim} 1000ms linear both;
-  
+position: fixed;
+width: 35vh;
+height: fit-content;
 
-  @media screen and (max-width:600px){
-    
-  }
+border: none;
+border-radius: 10px;
+padding: 10px;
+animation: ${bounceAnim} 1000ms linear both;
+top: 45%;
+left: 45%;
+transform: translate(-50%, -50%);
   
 `;
 
 const ContentDiv = styled.div`
   display: flex;
+flex-direction: column;
   padding: 15px;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  background-color: rgba(4, 95, 129, 0.7);
+  background-color: rgba(4, 95, 129, 0.8);
   width: 65%;
 `;
 
-/* const Span = styled.span`
-  cursor: pointer;
-  font-size: 20px;
-  background-color: red;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 10px;
-  text-align: left;
-  font-weight: 700;
-  animation: ${movementUpDown} 5s ease-in;
-`; */
 const Content = styled.p`
   font-family: "Roboto+Mono";
   font-weight: 300;
   font-size: 20px;
   color: white !important;
-  width: 60%;
+  width: 90%;
   text-align: center;
 
   @media screen and (max-width:600px){
@@ -120,6 +101,24 @@ const Content = styled.p`
   }
 `;
 
+const AcceptBtn = styled.button`
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+  border: none;
+  border-radius: 5px;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-family: 'Roboto';
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 12px !important;
+  font-weight: 700;
+  margin-top: 5px;
+  padding: 5px 7px;
+  text-align: center;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+`
 
 
 // .animation-target {

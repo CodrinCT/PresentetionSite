@@ -11,21 +11,21 @@ import consultImg3 from "../images/pexels-shvets-production-7176319 (1).jpg";
 import storage1 from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash (1).jpg";
 import storage2 from "../images/pexels-pixabay-270410 (1).jpg";
 import storage3 from "../images/science-in-hd-iPrjQEDnNEY-unsplash (1).jpg";
-
+import { useState } from "react";
+import CookiePopUp from "../components/CookiePopUp";
 import headerImage from "../images/services-left-image.png";
 import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 function Servicii() {
+  
   return (
     <>
       <NavigationBar></NavigationBar>
       <Header>
         <HeaderH>Servicii</HeaderH>
-        {/* <HeaderParaph>
-          Oferim diverse servicii de consultanta si servicii software pentru
-          platforme Linux, Cloud Computing si Storage.
-        </HeaderParaph> */}
       </Header>
       <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
@@ -246,6 +246,8 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
+      <CookiePopUp></CookiePopUp>
+  
       <Footer></Footer>
     </>
   );

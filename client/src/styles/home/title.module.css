@@ -3,23 +3,21 @@
 .Title {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  text-align: right;
+  align-content:flex-start;
   height: 70vh;
   margin-top: 10%;
-  justify-content: right;
   margin-right: 100px;
   font-family: 'Roboto';
 }
 
 .h {
-  font-size: 65px;
+  font-size: 5rem;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Poopins", sans-serif;
-  text-align: right;
-  margin-left: 15px;
-  text-shadow: black 15px 10px;
+  text-align: left;
+  padding-left: 50px;
+ margin-top: 50px;
 }
 
 @media screen and (max-width:600px) {
@@ -34,19 +32,25 @@
   }
 }
 
-h3 {
-  font-size: 35px;
-  color: white;
-  font-weight: 700;
-  font-family: "Ephesis", cursive;
-  line-height: 45px;
-  margin-left: 15px;
-  font-family: 'Roboto';
 
+.button {
+  font-size: 1rem;
+  background: white;
+  color: black;
+  cursor: pointer;
+ padding: 10px 15px;
+  border: none;
+  font-weight: 400 ;
+  font-family: "Poopins", sans-serif;
+  word-spacing: 0.2px;
+  text-align: center;
+  width: fit-content;
+  
 }
 
-/* @media screen and (min-width:1200px) {
-  .Title{
-    justify-content: center;
-  }
-} */
+.button:hover{
+  color: black;
+  background-color: white;
+  border-color: transparent;
+  box-shadow: none;
+}

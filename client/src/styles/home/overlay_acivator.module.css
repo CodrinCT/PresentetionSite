@@ -1,17 +1,11 @@
 .link {
-  color: wheat;
-  font-weight: 800;
-  font-size: 35px;
-  font-family: "Ephesis", cursive;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   letter-spacing: 2px;
-}
-
-.link:hover {
-  color: yellow;
-  transition-duration: 0.2s;
 }
 
 .div {
@@ -41,7 +35,7 @@
     width: 90% !important;
   }
 }
-
+/* 
 @keyframes movement {
   from {
     height: 180px;
@@ -49,7 +43,7 @@
   to {
     height: 200px;
   }
-}
+} */
 
 @media screen and (max-width: 1400px) {
   .div {

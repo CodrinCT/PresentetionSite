@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 .layout {
   display: flex;
   flex-direction: row;
@@ -11,23 +11,21 @@
 .btn {
   width: fit-content !important;
   margin-right: 50px !important;
-  color: #fff !important;
-  background-color: #198754 !important;
+  color: black !important;
+  background-color: white !important;
   border-color: #198754 !important;
   text-align: center !important;
   position: unset !important;
   text-transform: capitalize !important;
   letter-spacing: 1px !important;
   margin-top: 0 !important;
-  transition: none;
+  transition: none !important;
+  font-weight: 400 !important;
+  padding-bottom: .625rem !important;
+  letter-spacing: .5px !important;
+  line-height: 1.33 ;
 }
 
-.btn:hover{
-    background: #198754;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px  #22af6d, 0 0 25px  #22af6d, 0 0 50px  #22af6d, 0 0 100px  #22af6d;
-}
 
 @media screen and (max-width: 700px) {
   .layout {
@@ -50,12 +48,15 @@
 
 .link {
   color: white;
-  text-decoration: none;
-  font-size: 23px;
-  text-align: center;
-  align-items: flex-end;
-  font-weight: 700;
-  font-family: 'Roboto';
+  transition: none !important;
+  font-weight: 700 !important;
+  padding-bottom: .625rem !important;
+  letter-spacing: .5px !important;
+  line-height: 1.33 ;
+}
+
+.link:hover{
+  color: rgb(206, 211, 211);
 }
 
 @media screen and (max-width: 1100px) {

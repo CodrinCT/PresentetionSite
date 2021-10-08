@@ -9,32 +9,17 @@ import Contact from "../overlay/Contact";
 import Objective from "../overlay/Obiectivul_activitatii";
 import { useState } from "react";
 import CookiePopUp from "../CookiePopUp";
+import { Link } from "react-router-dom";
 export default function Header() {
 
-  const [isOn, setOnOff] = useState(false);
-  function tooglePopup() {
-    setOnOff(false);
-  }
-  window.addEventListener("load", () => {
-    setOnOff(true);
-  });
+ 
 
   
   return (
     <div className={style.header}>
-      <HeaderBackground handleClose={tooglePopup}>
+      <HeaderBackground>
       <NavigationBar backgroundColor='transparent'></NavigationBar>
-      {isOn && (
-        <CookiePopUp
-          content={
-            <>
-                Buna, acest site foloseste cookies pentru: a functiona optim, sa va inbunatatim experienta si pentru a ne analiza traficul.
-                 Prin continuarea folosirii site-ului nostru acceptati termenii si conditiile oferite.
-            </>
-          }
-          handleClose={tooglePopup}
-        ></CookiePopUp>
-      )}
+     
       <Title></Title>
       <div className={style.options}>
       <OverlayActivator text="Cunoaste Echipa" comp={<Team></Team>}></OverlayActivator>
@@ -44,9 +29,9 @@ export default function Header() {
       ></OverlayActivator>
       <OverlayActivator text="Contacteaza-ne" comp={<Contact></Contact>}></OverlayActivator>
       </div>
-     
+      
       </HeaderBackground>
-     
+        <CookiePopUp></CookiePopUp>
     </div>
   );
 }

@@ -30,6 +30,6 @@
 @media screen and (max-width:400px) {
   .button{
     left: 80%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
   }
 }

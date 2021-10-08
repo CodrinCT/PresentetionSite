@@ -46,6 +46,13 @@
   }
 }
 
+@media screen and (max-width:350px) {
+  .infoTitle{
+    font-size: 15px;
+  }
+  
+}
+
 .extra_info {
   display: flex;
   flex-direction: column;

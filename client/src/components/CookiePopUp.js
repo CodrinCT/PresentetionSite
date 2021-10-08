@@ -113,6 +113,11 @@ const Content = styled.p`
   color: white !important;
   width: 60%;
   text-align: center;
+
+  @media screen and (max-width:600px){
+    width: 90%;
+    font-size: 10px;
+  }
 `;
 
 

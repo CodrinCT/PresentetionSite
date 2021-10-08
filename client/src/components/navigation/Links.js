@@ -38,7 +38,7 @@ export default function Links() {
           id="dropdown-basic"
           className={style.btn}
         >
-          Pages
+          Pagini
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item as={Link} to="/">

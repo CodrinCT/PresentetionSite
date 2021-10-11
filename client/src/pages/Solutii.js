@@ -7,16 +7,12 @@ import imageBannerRight from "../images/banner-right-image.png";
 import style from "../styles/solutii/solutii.module.css";
 import native from "../images/pexels-negative-space-97077.jpg";
 import hybrid from "../images/xps-TxXuh_hAFd8-unsplash.jpg";
-import automation from "../images/alex-knight-2EJCSULRwC8-unsplash.jpg";
+import automation from "../images/pexels-pixabay-373543.jpg";
 import optimisation from "../images/ffff-min.jpg";
-import styled from "styled-components";
 import Footer from "../components/Footer";
-import { useState } from "react";
 import CookiePopUp from "../components/CookiePopUp";
-import { Link } from "react-router-dom";
 
 function Solutii() {
- 
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -36,10 +32,13 @@ function Solutii() {
                     data-wow-duration="1s"
                     data-wow-delay="1s"
                   >
-                    <h6 style={{color:'black'}}>Preia initiativa a oricărei provocari IT</h6>
+                    <h6 style={{ color: "black" }}>
+                      Preia initiativa a oricărei provocari IT
+                    </h6>
                     <h2>
-                      Tu aduci problema, noi venim cu<em> solutia</em> &amp;{" "}
-                      tot ce trebuie sa faci este sa ne  <span>contactezi</span>{" "}
+                      Tu aduci problema, noi venim cu solutia
+                      {/* <em> */}
+                      {/* </em> &amp;{" "} */}
                     </h2>
                   </div>
                 </div>
@@ -159,7 +158,11 @@ function Solutii() {
         </div>
       </div>
 
-      <div class="w3-card-4 w3-margin w3-white" id='hybridCloud' className={style.div}>
+      <div
+        class="w3-card-4 w3-margin w3-white"
+        id="hybridCloud"
+        className={style.div}
+      >
         <img src={hybrid} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
@@ -172,7 +175,11 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" id='cloud' className={style.div}>
+      <div
+        class="w3-card-4 w3-margin w3-white"
+        id="cloud"
+        className={style.div}
+      >
         <img src={native} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
@@ -184,17 +191,28 @@ function Solutii() {
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" id='automation' className={style.div}>
+      <div
+        class="w3-card-4 w3-margin w3-white"
+        id="automation"
+        className={style.div}
+      >
         <img src={automation} alt="Norway" className={style.solutionsImg} />
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            Sarcinile repetitive ocupa timpul pe care echipa dvs. l-ar putea petrece pentru munca inovatoare. Instrumentele noastre de automatizare si gestionare deschise va permit sa va reorientati si sa reluati controlul.
+            Sarcinile repetitive ocupa timpul pe care echipa dvs. l-ar putea
+            petrece pentru munca inovatoare. Instrumentele noastre de
+            automatizare si gestionare deschise va permit sa va reorientati si
+            sa reluati controlul.
           </p>
           <div class="w3-row"></div>
         </div>
       </div>
-      <div class="w3-card-4 w3-margin w3-white" id='IToptimization' className={style.div}>
+      <div
+        class="w3-card-4 w3-margin w3-white"
+        id="IToptimization"
+        className={style.div}
+      >
         <img src={optimisation} alt="Norway" className={style.solutionsImg} />
         <div class="w3-container">
           <p className={style.solutionsText}>
@@ -208,11 +226,9 @@ function Solutii() {
       </div>
       <CookiePopUp></CookiePopUp>
 
-     <Footer></Footer>
+      <Footer></Footer>
     </>
   );
 }
-
-
 
 export default Solutii;

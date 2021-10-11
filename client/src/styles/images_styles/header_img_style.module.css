@@ -1,5 +1,4 @@
-
-.background{
+.background {
   display: flex;
   flex-direction: column;
   background-image: url("../../images/pexels-fauxels-3182782.jpg");
@@ -11,11 +10,12 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  background-repeat: no-repeat;
+  /* backdrop-filter:; */
 }
 
-
-@media screen and (max-width:600) {
-  .background{
+@media screen and (max-width: 600) {
+  .background {
     height: 100%;
   }
 }

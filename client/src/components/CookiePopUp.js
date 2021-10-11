@@ -19,16 +19,26 @@ export default function CookiePopUp(props) {
   return (
     // <div>
     <>
-    {isOn && (<PopUpDiv>
-      <ContentDiv>
-        <Content>
-        Acest website foloseste cookies pentru a asigura cea mai buna experienta pe website-ul nostru.<br></br>
-              <Link to='/cookies' style={{textDecorationLine:'underline !important', color:'black'}}>Learn More</Link>
-        </Content>
-        <AcceptBtn onClick={tooglePopup}>Accept</AcceptBtn>
-      </ContentDiv>
-  </PopUpDiv>)}
-   </>
+      {isOn && (
+        <PopUpDiv>
+          <ContentDiv>
+            <Content>
+              Acest website foloseste cookies pentru a asigura cea mai buna
+              experienta pe website-ul nostru.<br></br>
+              <Link
+                to="/cookies"
+                style={{
+                  color: "#afafaf",
+                }}
+              >
+                Learn More
+              </Link>
+            </Content>
+            <AcceptBtn onClick={tooglePopup}>Accept</AcceptBtn>
+          </ContentDiv>
+        </PopUpDiv>
+      )}
+    </>
   );
 }
 const bounceAnim = keyframes`
@@ -60,42 +70,39 @@ const bounceAnim = keyframes`
   90.69% { transform: matrix3d(1.999, 0, 0, 0, 0, 1.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 
-`
+`;
 const PopUpDiv = styled.div`
-display: flex;
-position: fixed;
-width: 35vh;
-height: fit-content;
-
-border: none;
-border-radius: 10px;
-padding: 10px;
-animation: ${bounceAnim} 1000ms linear both;
-top: 45%;
-left: 45%;
-transform: translate(-50%, -50%);
-  
+  display: flex;
+  position: fixed;
+  width: 40%;
+  height: fit-content;
+  border: none;
+  padding: 10px;
+  animation: ${bounceAnim} 1000ms linear both;
+  top: 40%;
+  left: 38%;
 `;
 
 const ContentDiv = styled.div`
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   padding: 15px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(4, 95, 129, 0.8);
-  width: 65%;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 75%;
 `;
 
 const Content = styled.p`
-  font-family: "Roboto+Mono";
+  font-family: "Roboto";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 12px;
   color: white !important;
   width: 90%;
   text-align: center;
+  line-height: 16px;
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width: 600px) {
     width: 90%;
     font-size: 10px;
   }
@@ -104,27 +111,24 @@ const Content = styled.p`
 const AcceptBtn = styled.button`
   width: fit-content;
   height: fit-content;
-  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+  background: transparent;
   border: none;
   border-radius: 5px;
   border-bottom: 4px solid #2b8bc6;
   color: #fbfbfb;
-  font-family: 'Roboto';
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-  font-size: 12px !important;
+  font-family: "Roboto";
+  text-shadow: none;
+  font-size: 8px !important;
   font-weight: 700;
   margin-top: 5px;
+  margin-right: 35px;
   padding: 5px 7px;
   text-align: center;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 1.5px 0px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-`
 
-
-// .animation-target {
-//   animation: animation 1000ms linear both;
-// }
-
-
-
-
+  :hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+`;

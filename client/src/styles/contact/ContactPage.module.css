@@ -2,9 +2,10 @@
   background-color: black;
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 75vh;
   color: white;
   justify-content: center;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -13,16 +14,16 @@
     height: 100% !important;
     align-items: center !important;
   }
-  .extra_info{
+  .extra_info {
     margin-bottom: 25px;
     margin-top: 25px;
   }
 }
 
 .img {
-  height: 600px;
+  height: 21rem;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 h2 {
@@ -49,14 +50,4 @@ h2 {
 .extra_info_specific {
   margin-bottom: 25px;
   color: white;
-}
-
-
-@keyframes movement {
-  from {
-    top: 75%;
-  }
-  to {
-    bottom: 80%;
-  }
 }

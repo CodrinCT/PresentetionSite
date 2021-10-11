@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
 }
-.options{
+.options {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly ;
-  margin-bottom: 80px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
   position: relative;
 }
 
-
-@media screen and (max-width:600px) {
-  .options{
+@media screen and (max-width: 600px) {
+  .options {
     margin-bottom: 40px !important;
   }
 }

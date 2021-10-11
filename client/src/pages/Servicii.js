@@ -149,7 +149,7 @@ function Servicii() {
             <div class="back">
               <h3 class="synopsis">Description</h3>
               <CardDescription>
-                Tyrbul Solutions continuă să sprijine clienții pe măsură ce se
+                Compania noastra continuă să sprijine clienții pe măsură ce se
                 adaptează la un peisaj global în schimbare. Vă putem ajuta
                 organizația să abordeze noi provocări în timp ce creăm o
                 strategie pe termen lung.

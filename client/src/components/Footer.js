@@ -1,20 +1,17 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import footerImg from "../images/top.jpg"
 
 export default function Footer(){
     return(
         <FooterParent >
             <InfoDiv>
-
             <p style={{ color: "white", margin: "0" , padding:'20px'}}>
           {"TYRBUL SOLUTIONS SRL "}
         </p>
-        <p style={{ color: "white", margin: "0" , padding:'20px' }}>
-          RO39758389
-        </p>
             </InfoDiv>    
         <LinksDiv>
-            <Link style={{ color:'white', padding:'20px'}} to='/privecy'>privecy</Link>
+            <Link style={{ color:'white', padding:'20px'}} to='/privecy'>GDPR</Link>
             <Link style={{ color:'white', padding:'20px'}} to='/termeni_si_conditii'>Termeni si Conditii</Link>
             <Link style={{ color:'white', padding:'20px'}} to='/cookies'>Cookies</Link>
         </LinksDiv>
@@ -32,7 +29,7 @@ const FooterParent = styled.footer`
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background-color: rgb(34, 30, 30);
+  background-image: ${footerImg};
   color: white;
   padding: 50px 0 25px 0;
   height: 220px;
@@ -43,7 +40,7 @@ flex-direction: row;
 justify-content: center;
 width: 100%;
 margin-top: 15px;
-font-size: 10px;
+font-size: 15px;
 `
 const InfoDiv = styled.div`
 display: flex;

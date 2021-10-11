@@ -4,14 +4,12 @@
   background-image: url("../../images/pexels-fauxels-3182782.jpg");
   padding: 0;
   justify-items: center;
-  /* align-items: center; */
   border: none;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 80vh;
+  width: 100%;
   background-repeat: no-repeat;
-  /* backdrop-filter:; */
 }
 
 @media screen and (max-width: 600) {
@@ -19,3 +17,15 @@
     height: 100%;
   }
 }
+
+/* .background:before {
+  height: 80vh;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient( to left, white, black);
+  opacity: 0.8;
+} */

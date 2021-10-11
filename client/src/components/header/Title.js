@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import style from "../../styles/home/title.module.css";
 import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 export default function Title() {
   const history = useHistory();
   function buttonHandler() {
     history.push("/despre_noi");
   }
+const {t, i18n} = useTranslation()
+
   return (
     <div className={style.Title}>
       <h1 className={style.h}>

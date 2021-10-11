@@ -13,11 +13,11 @@ import storage2 from "../images/pexels-pixabay-270410 (1).jpg";
 import storage3 from "../images/science-in-hd-iPrjQEDnNEY-unsplash (1).jpg";
 import { useState } from "react";
 import CookiePopUp from "../components/CookiePopUp";
-import headerImage from "../images/services-left-image.png";
 import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import headerImg from "../images/pexels-kindel-media-7688336.jpg"
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 </style>
@@ -27,7 +27,6 @@ function Servicii() {
     <>
       <NavigationBar></NavigationBar>
       <Header>
-        <HeaderH>Servicii</HeaderH>
       </Header>
       <CardsDiv style={{justifyContent:'center'}}>
         <div class="card-container">
@@ -263,11 +262,11 @@ const CardsDiv = styled.div`
 `;
 
 const Header = styled.div`
-  background-image: url(${headerImage});
+  background-image: url(${headerImg});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 500px;
+  background-size: cover;
+  height: 25rem;
   width: 100%;
   margin-bottom: 100px;
   display: flex;

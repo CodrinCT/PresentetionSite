@@ -95,7 +95,7 @@ body {
   max-height: 1200px;
   width: 65%;
   border-bottom: solid black 2px;
-  border-top: solid black 2px;
+ 
   border-radius: 20px;
   position: relative;
   left: 50%;
@@ -103,7 +103,6 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 25px;
-  animation: slide 4s line;
 }
 
 @media screen and (max-width: 600px) {

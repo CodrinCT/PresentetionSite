@@ -95,7 +95,6 @@ p {
   height: 100%;
   flex-direction: column;
   align-content: space-around;
-  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 

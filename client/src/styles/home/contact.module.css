@@ -1,7 +1,7 @@
 .contactDiv {
   display: flex;
   flex-direction: row;
-  background-color: #292d33;
+  background-color: #2e2e2e;
   width: 70%;
   height: 60%;
   position: absolute;
@@ -67,10 +67,13 @@
 .extra_info_specific {
   border: 1px turquoise solid;
   margin: 30px 0;
+
 }
 
 p {
   margin: 0;
+  font-family: "Roboto"
+
 }
 
 .line {

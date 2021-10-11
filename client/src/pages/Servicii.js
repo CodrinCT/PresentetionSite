@@ -18,7 +18,9 @@ import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+</style>
 function Servicii() {
   
   return (
@@ -247,7 +249,6 @@ function Servicii() {
         </div>
       </CardsDiv>
       <CookiePopUp></CookiePopUp>
-  
       <Footer></Footer>
     </>
   );
@@ -271,7 +272,6 @@ const Header = styled.div`
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   text-align: center;
 `;
 
@@ -282,12 +282,14 @@ const HeaderParaph = styled.p`
 const HeaderH = styled.h1`
   color: #f2583d;
   font-size: 75px;
-  font-weight: 800;
+  font-weight: 700;
   padding: 20px;
+  font-family: 'Roboto';
 `;
 
 const CardDescription = styled.p`
   color: white;
+  font-family: 'Roboto';
 `;
 
 export default Servicii;

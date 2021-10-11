@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 .cardDiv {
   display: flex;
   flex-direction: row;
@@ -11,7 +12,6 @@
   display: flex;
   flex-direction: row;
   background-color: rgba(27, 19, 19, 0.7);
-  /* align-items: center; */
   align-content: center;
   justify-content:space-evenly;
   height: 100vh;
@@ -19,47 +19,7 @@
 width: 80%;
 
 }
-/* .cardDiv2{
-  background-image: url('../images/cloud-software.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-items: center;
-height: 100vh;
-width: 80%;
 
-}
-.cardDiv3{
-  background-image: url('../images/lagos-techie-IgUR1iX0mqM-unsplash.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100vh;
-  width: 80%;
-
-}
-.cardDiv4{
-  background-image: url('../images/science-in-hd-iPrjQEDnNEY-unsplash.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-items: center;
-height: 100vh;
-width: 80%; */
-/* } */
 .cardBlock {
   background-image: url('../images/science-in-hd-iPrjQEDnNEY-unsplash.jpg');
   background-position:center;
@@ -81,13 +41,12 @@ width: 80%; */
   display: flex;
   text-align: justify;
   flex-direction: column;
-  /* width: fit-content;
-  height: fit-content; */
   width: 40%;
   font-size: 20px;
   margin: 10px;
   flex-wrap: wrap;
   box-shadow: inset 0 0px 25px black;
+  font-family: 'Roboto';
 }
 
 @media screen and (max-width: 1770px) {

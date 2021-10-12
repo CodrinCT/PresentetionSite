@@ -37,7 +37,7 @@
   cursor: pointer;
   padding: 10px 15px;
   border: none;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Roboto";
   word-spacing: 0.2px;
   text-align: center;
@@ -46,6 +46,7 @@
   position: unset;
 }
 
+
 @media screen and (max-width: 600px) {
   .button {
     margin-top: 25px;
@@ -53,8 +54,8 @@
 }
 
 .button:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   border-color: transparent;
   box-shadow: none;
 }

@@ -2,21 +2,49 @@
 import teamImg from '../../images/pexels-fauxels-3183150 (1).jpg'
 import style from "../../styles/home/overlay_acivator.module.css";
 import styled from 'styled-components'
+import { useEffect, useState } from 'react';
+import { Animated } from 'react-animated-css';
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 </style>
-export default function Objective() {
+
+// function useOnScreen(options) {
+//   const [ref, setRef] = useState(null);
+//   const [secondRef, setSecondRef] = useState(null)
+//   const [visible, setVisible] = useState(false);
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(([entry]) => {
+//       setVisible(entry.isIntersecting);
+//     }, options);
+//     if (ref) {
+//       observer.observe(ref);
+//     }
+//     return () => {
+//       if (ref) {
+//         observer.unobserve(ref);
+//       }
+//     };
+//   }, [ref, options]);
+//   return [setRef, visible];
+// }
+
+
+export default function Objective(props) {
+
+  // const [setRef, visible] = useOnScreen({ threshold: 0.5 });
+
   return (
     <>
-      <div className={style.overlayDiv} style={{justifyContent:'center'}}>
-        <div className={style.info}>
-          <ObjectieDiv>
-            {/* <h2 style={{ color: "black", marginBottom: "15px", textDecoration:'underline'}}>
-              Obiectivul activitatii
-            </h2> */}
+    
+        <div className={style.info} >
+          <ObjectieDiv ref={props.ref}>
             <Img src={teamImg}/>
             <DarkDiv>
+        
+            <h1 >Obiectivul Activitatii</h1>
             <P>
               Secretul succesului este echilibrul dintre a te bucura de ceea ce
               faci și a-ți asuma responsabilitatea de a o face în modul cel mai
@@ -28,22 +56,26 @@ export default function Objective() {
             </DarkDiv>
            
           </ObjectieDiv>
+          
+
+
+           
+          
           {/* <Img src={teamImg}></Img> */}
         </div>
-      </div>
+    
     </>
   );
 }
 
 const ObjectieDiv = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    /* z-index:'3'; */
    justify-content:center;
-   align-items: center;
-  
+   margin-top: 5rem;
+margin-bottom: 5rem;
     @media screen and (max-width:600px){
     background-blend-mode:8px
 }
@@ -54,11 +86,12 @@ color: white;
  font-size: 30px;
   line-height: 45px;
   font-family: 'Rubik';
-  text-shadow: 0px 3px 2px #000000;
   width: 65%; 
   z-index: 3;
   filter: brightness(250%);
-
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
   @media screen and (max-width:600px){
   width: 80%;
   font-size: 20px;
@@ -67,13 +100,12 @@ color: white;
 }
 `
 const Img = styled.img`
- height: 60%;
-  width: 80%;
+ height: 100%;
+  width: 100%;
 filter: blur(1px) ;
 z-index: 0;
 position: absolute;
 object-fit: cover;
-/* filter: blur(2px); */
 
 @media screen and (max-width:600px){
   height: 90% !important;

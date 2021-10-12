@@ -21,7 +21,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* background-attachment: fixed; */
+  height: 150vh;
+}
+
+@media screen and (max-width:1800px) {
+  .body{
+    height: 100%;
+  }
 }
 
 h1 {
@@ -37,6 +44,10 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  /* background: 
+  linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
+  linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
+  linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% ) */
 }
 
 p {
@@ -61,6 +72,7 @@ p {
   font-size: 50px;
   line-height: 1;
   margin-top: 40px;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: "Roboto";
   font-weight: 600;
@@ -90,11 +102,13 @@ p {
   height: 100%;
   flex-direction: column;
   align-content: space-around;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
 .tilesWrap {
   display: flex;
+  flex-direction: row;
   padding: 0;
   margin: 50px auto;
   list-style: none;
@@ -103,6 +117,7 @@ p {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+ 
 }
 .tilesWrap li {
   display: inline-block;
@@ -120,6 +135,7 @@ p {
   border: 1px solid #252727;
   text-align: center;
   margin-bottom: 40px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 @media screen and (max-width: 1100px) {

@@ -19,7 +19,7 @@ export default function Links() {
       <ul className={style.layout}>
         <li className={style.li}>
           <Link className={style.link} to="/">
-            Home
+            Acasa
           </Link>
         </li>
         <li className={style.li}>

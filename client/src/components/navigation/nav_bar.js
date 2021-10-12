@@ -1,6 +1,6 @@
 import Links from "./Links";
 import style from "../../styles/navigation/nav_bar.module.css";
-import icon from "../../images/ligig.png";
+import icon from "../../images/logto.png";
 import { Link } from "react-router-dom";
 function NavigationBar(props) {
   return (

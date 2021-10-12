@@ -31,7 +31,7 @@ export default function CookiePopUp(props) {
                   color: "#afafaf",
                 }}
               >
-                Learn More
+                Mai multe informatii
               </Link>
             </Content>
             <AcceptBtn onClick={tooglePopup}>Accept</AcceptBtn>
@@ -81,6 +81,7 @@ const PopUpDiv = styled.div`
   animation: ${bounceAnim} 1000ms linear both;
   top: 40%;
   left: 38%;
+  z-index: 3;
 `;
 
 const ContentDiv = styled.div`
@@ -89,7 +90,7 @@ const ContentDiv = styled.div`
   padding: 15px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0);
   width: 75%;
 `;
 

@@ -1,5 +1,4 @@
 import style from "../../styles/home/contact.module.css";
-import overlay from "../../styles/home/overlay_acivator.module.css";
 import styleForm from "../../styles/home/form.module.css";
 import { useState } from "react";
 import axios from "axios";
@@ -42,7 +41,7 @@ axios({
   return (
     <>
       {/* The background div */}
-      <div className={overlay.overlayDiv}>
+      <div className={style.overlayDiv}>
         <div className={style.contactDiv}>
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
@@ -60,7 +59,7 @@ axios({
               </p>
             </div>
           </div>
-          <div className={style.line}></div>
+          {/* <div className={style.line}></div> */}
           <form className={styleForm.form} onSubmit={submitHandler}>
             <div className={styleForm.input_div}>
               <input type="text" placeholder="Numele dumneavostra" required value={name} onChange={(e)=>{setName(e.target.value)}}></input>

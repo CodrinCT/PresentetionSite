@@ -1,26 +1,36 @@
-import { Link } from "react-router-dom"
-import styled from "styled-components"
-import footerImg from "../images/top.jpg"
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import footerImg from "../images/top.jpg";
 
-export default function Footer(){
-    return(
-        <FooterParent >
-            <InfoDiv>
-            <p style={{ color: "white", margin: "0" , padding:'20px'}}>
+export default function Footer() {
+  return (
+    <FooterParent>
+      <InfoDiv>
+        <p style={{ color: "white", margin: "0", padding: "20px" }}>
           {"TYRBUL SOLUTIONS SRL "}
         </p>
-            </InfoDiv>    
-        <LinksDiv>
-            <Link style={{ color:'white', padding:'20px'}} to='/privecy'>GDPR</Link>
-            <Link style={{ color:'white', padding:'20px'}} to='/termeni_si_conditii'>Termeni si Conditii</Link>
-            <Link style={{ color:'white', padding:'20px'}} to='/cookies'>Cookies</Link>
-        </LinksDiv>
-        <CopyRightDiv>
-        <p style={{color:'white', fontSize:'12px', marginLeft:'25px'}}>@2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS</p>
-        </CopyRightDiv>
-
-      </FooterParent>
-    )
+      </InfoDiv>
+      <LinksDiv>
+        <Link style={{ color: "white", padding: "20px" }} to="/privecy">
+          GDPR
+        </Link>
+        <Link
+          style={{ color: "white", padding: "20px" }}
+          to="/termeni_si_conditii"
+        >
+          Termeni si Conditii
+        </Link>
+        <Link style={{ color: "white", padding: "20px" }} to="/cookies">
+          Cookies
+        </Link>
+      </LinksDiv>
+      <CopyRightDiv>
+        <p style={{ color: "white", fontSize: "12px", marginLeft: "25px" }}>
+          @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
+        </p>
+      </CopyRightDiv>
+    </FooterParent>
+  );
 }
 
 const FooterParent = styled.footer`
@@ -29,32 +39,34 @@ const FooterParent = styled.footer`
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background-image: ${footerImg};
+  background-image: url(${footerImg});
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 50px 0 25px 0;
   height: 220px;
-  `
+`;
 const LinksDiv = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-width: 100%;
-margin-top: 15px;
-font-size: 15px;
-`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 15px;
+`;
 const InfoDiv = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-width: 100%;
-font-size: 15px;
-/* padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+  /* padding-left: 30px;
 padding-right: 30px; */
-`
+`;
 
 const CopyRightDiv = styled.div`
-display: flex;
-flex-direction:row;
-width: 100%;
-justify-content: flex-start;
-`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+`;

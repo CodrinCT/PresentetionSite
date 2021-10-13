@@ -41,10 +41,10 @@
 }
 .Dropdown {
   /* background-color: black; */
-  color: #da4e50;
+  color: white;
   display: none;
-  font-size: 3rem;
-  margin-right: 2rem;
+  font-size: 1.5rem;
+  margin-right: 6rem;
   cursor: pointer;
 }
 .menuLink {

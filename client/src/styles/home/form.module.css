@@ -94,6 +94,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Roboto";
+  border-radius: 10px;
 }
 
 button:hover {

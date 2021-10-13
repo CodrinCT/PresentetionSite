@@ -2,7 +2,8 @@ import { style } from "@mui/system";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import footerImg from "../images/top.jpg";
-
+import logo from '../images/loho.png'
+import Links from "./navigation/Links";
 export default function Footer() {
   return (
     <FooterParent>
@@ -40,9 +41,13 @@ export default function Footer() {
           </p>
         </InfoDiv>
         <CopyRightDiv>
+          <LogoImg src={logo}/>
+          <Links></Links>
           <p style={{ color: "white", fontSize: "0.5rem" }}>
             @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
           </p>
+      
+
         </CopyRightDiv>
       </MidleDiv>
 
@@ -103,15 +108,15 @@ const ParamContact = styled.p`
 const FooterParent = styled.footer`
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-evenly;
   text-align: center;
   background-image: url(${footerImg});
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 20px 0 20px 0;
-  height: fit-content;
+  padding: 40px 0 20px 0;
+  height: 20rem;
 
   /* bottom: -10%; */
   width: 100%;
@@ -139,7 +144,15 @@ padding-right: 30px; */
 
 const CopyRightDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items:center;
 `;
+
+const LogoImg = styled.img`
+width: 64px;
+height: 64px;
+margin-top: 10px;
+margin-bottom: 10px;
+`

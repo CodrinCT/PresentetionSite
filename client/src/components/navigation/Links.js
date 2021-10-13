@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "../../styles/navigation/list.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { faBars} from "@fortawesome/free-solid-svg-icons";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
@@ -45,7 +45,7 @@ export default function Links() {
       </ul>
 
       <FontAwesomeIcon
-        icon={faHamburger}
+        icon={faBars}
         className={style.Dropdown}
         id="basic-button"
         aria-controls="basic-menu"

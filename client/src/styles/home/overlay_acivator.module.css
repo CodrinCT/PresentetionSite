@@ -83,6 +83,7 @@
   font-family: 'Roboto';
   font-weight: 600;
   font-size: 4rem;
+  color: white;
 }
 
 .item {
@@ -124,10 +125,10 @@
 .backgroundDiv{
   height: 100vh;
   /* margin: 5rem 0; */
-  background:  
-   linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
-  linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
-  linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% );
+  background-image: url('../../images/pexels-miguel-á-padriñán-3785931.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }

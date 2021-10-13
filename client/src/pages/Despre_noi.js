@@ -13,183 +13,313 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamation } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
+import img1 from "../images/pexels-fauxels-3184312.jpg";
+import img2 from "../images/pexels-canva-studio-3194521.jpg";
+import { height } from "@mui/system";
+
+<style>
+  @import
+  url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+</style>;
 
 function Despre() {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.7,
   });
+
+  const [ teamref, teamView ] = useInView({
+    threshold: 0.4,
+  });
+
+  const [ objectiveRef, objectiveView ] = useInView({
+    threshold: 0.4,
+  });
+
+  const [ref3, inView3] = useInView({
+    rootMargin: "-350px",
+  });
+
+ 
 
   return (
     <>
-      <div className={style.page}>
-        <NavigationBar></NavigationBar>
+      <>
+        <div className={style.page}>
+          <NavigationBar></NavigationBar>
+          <div style={{ height: "100vh" }} ref={ref3}>
+            {!inView3 ? (
+              <Animated
+                animationOut="fadeOut"
+                animationOutDuration={400}
+                // animationInDelay={200}
+                isVisible={false}
+              >
+                <div className={style.body}>
+                  <h1 className={style.h}>Despre noi</h1>
+                </div>
+              </Animated>
+            ) : (
+              <Animated
+                animationIn="slideInDown"
+                animationOut="slideInDown"
+                animationOutDuration={200}
 
-      <Animated
-          animationIn="slideInDown"
-          animationOut="slideInDown"
-          animationInDuration="infinite"
-          animationOutDuration="8"
-          animationInDelay="5"
-        >
-          {/* <div ref={ref}> */}
-            <div className={style.body}>
-              <h1 className={style.h}>Despre noi</h1>
-            </div>
-      </Animated>
-            {!inView && (
-              <div className={style.infoDiv}>
-                <Animated animationInDelay="8" animationOut="fadeOut">
-                  <ul className={style.tilesWrap}>
-                    <li>
-                      <p>
-                        Firma noastra este un proiect Start-UP Nation, fondat de
-                        o echipă de profesioniști, scopul nostru fiind
-                        soluționarea problemelor. Suntem un vis devenit
-                        realitate, în momentul fondării știam ca pe piața
-                        Software din Romănia este un loc lipsă pe care am reușit
-                        să-l umplem.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Angajamentul față de profesionism, încredere,
-                        transparență, integritatea și dedicarea, sunt doar
-                        câteva din atributele care ne definesc ca oameni, echipă
-                        și business.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Pentru noi facerea de bine este prima pe lista urmata de
-                        calitate si promtitudine. Stim ca in situatia globala
-                        actuala lucrurile nu par atat de insorite insa trebuie
-                        sa speram ca intr-o buna zi lucrurile se vor indrepta.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Înțelegem clar că toate peisajele clienților nu sunt de
-                        același fel. De aceea, metodologia de aprovizionare
-                        cuprinde o soluție clară special concepută pentru a
-                        aborda problemele clienților.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Oferim o abordare pe etape față de factorii motori ai
-                        afacerii dvs. și ajutăm organizațiile IT să își alinieze
-                        obiectivele cu viziunea generală a afacerii
-                      </p>
-                    </li>
-                  </ul>
-              </div>
-            )}
-            {inView && (
-              <div className={style.infoDiv}>
-                <h1 className={style.h}>Despre noi si misiunea noastra</h1>
-                <Animated
-                  animationInDelay="8"
-                  animationOut="fadeOut"
-                  isVisible={false}
-                >
-                  <ul className={style.tilesWrap}>
-                    <li>
-                      <p>
-                        Firma noastra este un proiect Start-UP Nation, fondat de
-                        o echipă de profesioniști, scopul nostru fiind
-                        soluționarea problemelor. Suntem un vis devenit
-                        realitate, în momentul fondării știam ca pe piața
-                        Software din Romănia este un loc lipsă pe care am reușit
-                        să-l umplem.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Angajamentul față de profesionism, încredere,
-                        transparență, integritatea și dedicarea, sunt doar
-                        câteva din atributele care ne definesc ca oameni, echipă
-                        și business.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Pentru noi facerea de bine este prima pe lista urmata de
-                        calitate si promtitudine. Stim ca in situatia globala
-                        actuala lucrurile nu par atat de insorite insa trebuie
-                        sa speram ca intr-o buna zi lucrurile se vor indrepta.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Înțelegem clar că toate peisajele clienților nu sunt de
-                        același fel. De aceea, metodologia de aprovizionare
-                        cuprinde o soluție clară special concepută pentru a
-                        aborda problemele clienților.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Oferim o abordare pe etape față de factorii motori ai
-                        afacerii dvs. și ajutăm organizațiile IT să își alinieze
-                        obiectivele cu viziunea generală a afacerii
-                      </p>
-                    </li>
-                  </ul>
-                </Animated>
-              </div>
+              >
+                <div className={style.body}>
+                  <h1 className={style.h}>Despre noi</h1>
+                  <HeaderParan>
+                    Daca vrei sa stii mai multe despre noi, ai venit la locul
+                    potrivit!
+                  </HeaderParan>
+                  <HeaderParan>Afla cum putem sa te ajutam!</HeaderParan>
+                </div>
+              </Animated>
             )}
           </div>
-        </Animated>
-        <div ref={ref}>
-          {inView && (
-            <Animated
-              animationIn="fadeIn"
-              animationInDuration="5"
-              isVisible={true}
-            >
-              <Objective></Objective>
-            </Animated>
-          )}
-          {!inView && (
-            <Animated
-              animationOut="fadeOut"
-              animationOutDuration="5"
-              isVisible={false}
-            >
-              <Objective></Objective>
-            </Animated>
-          )}
-        </div>
-        <div ref={ref}>
-          {!inView && (
-            <Animated animationIn="fadeIn">
-              <Team></Team>
-            </Animated>
-          )}
-          {!inView && (
-            <Animated animationOut="fadeOut" isVisible={false}>
-              <Team></Team>
-            </Animated>
-          )}
-        </div>
 
-        <FontAwesomeIcon
-          style={{
-            position: "fixed",
-            bottom: "0",
-            right: "0",
-            margin: "25px",
-            fontSize: "40px",
-            color: "blueviolet",
-            zIndex: "6",
-          }}
-          icon={faExclamation}
-        >
-          <CookiePopUp></CookiePopUp>
-        </FontAwesomeIcon>
+          <InformationAboutUs ref={ref}>
+            <Overlay></Overlay>
+              {inView && (
+                <>
+                  <FirstInfoDiv>
+                    <Animated
+                  animationIn="slideInRight"
+                  isVisible={true}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param1>
+                    Firma noastra este un proiect Start-UP Nation, fondat de o
+                    echipă de profesioniști, scopul nostru fiind soluționarea
+                    problemelor. Suntem un vis devenit realitate, în momentul
+                    fondării știam ca pe piața Software din Romănia este un loc
+                    lipsă pe care am reușit să-l umplem.
+                  </Param1>
+                </Animated>
+                  </FirstInfoDiv>
+
+                  <SecondInfoDiv>
+                    <Animated
+                  animationIn="slideInLeft"
+                  isVisible={true}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param2>
+                    Înțelegem clar că toate peisajele clienților nu sunt de
+                    același fel. De aceea, metodologia de aprovizionare cuprinde
+                    o soluție clară special concepută pentru a aborda problemele
+                    clienților. Oferim o abordare pe etape față de factorii
+                    motori ai afacerii dvs. și ajutăm organizațiile IT să își
+                    alinieze obiectivele cu viziunea generală a afacerii
+                  </Param2>
+                </Animated>
+                  </SecondInfoDiv>
+
+                  <ThirdInfoDiv>
+                    <Animated
+                  animationIn="slideInRight"
+                  isVisible={true}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param3>
+                    Angajamentul față de profesionism, încredere, transparență,
+                    integritatea și dedicarea, sunt doar câteva din atributele
+                    care ne definesc ca oameni, echipă și business.
+                  </Param3>
+                </Animated>
+                  </ThirdInfoDiv>
+                  </>
+              )}
+              {!inView && (
+                <>
+                  <FirstInfoDiv>
+                    <Animated
+                  animationOutIn="slideOutLeft"
+                  isVisible={false}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param1>
+                    Firma noastra este un proiect Start-UP Nation, fondat de o
+                    echipă de profesioniști, scopul nostru fiind soluționarea
+                    problemelor. Suntem un vis devenit realitate, în momentul
+                    fondării știam ca pe piața Software din Romănia este un loc
+                    lipsă pe care am reușit să-l umplem.
+                  </Param1>
+                </Animated>
+                  </FirstInfoDiv>
+
+                  <SecondInfoDiv>
+                    <Animated
+                  animationOut="slideOutRight"
+                  isVisible={false}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param2>
+                    Înțelegem clar că toate peisajele clienților nu sunt de
+                    același fel. De aceea, metodologia de aprovizionare cuprinde
+                    o soluție clară special concepută pentru a aborda problemele
+                    clienților. Oferim o abordare pe etape față de factorii
+                    motori ai afacerii dvs. și ajutăm organizațiile IT să își
+                    alinieze obiectivele cu viziunea generală a afacerii
+                  </Param2>
+                </Animated>
+                  </SecondInfoDiv>
+
+                  <ThirdInfoDiv>
+                    <Animated
+                  animationOut="slideOutLeft"
+                  isVisible={false}
+                  animationInDuration={600}
+                  className={style.animatedParam}
+                >
+                  <Param3>
+                    Angajamentul față de profesionism, încredere, transparență,
+                    integritatea și dedicarea, sunt doar câteva din atributele
+                    care ne definesc ca oameni, echipă și business.
+                  </Param3>
+                </Animated>
+                  </ThirdInfoDiv>
+                  </>
+              )}
+          </InformationAboutUs>
+        </div>
+         <div ref={objectiveRef}>
+        {objectiveView && (
+          <Animated
+            animationIn="fadeIn"
+            animationInDuration={500}
+            isVisible={true}
+          >
+            <Objective></Objective>
+          </Animated>
+        )}
+        {!objectiveView && (
+          <Animated
+            animationOut="fadeOut"
+            animationOutDuration={500}
+            isVisible={false}
+          >
+            <Objective></Objective>
+          </Animated>
+        )}
       </div>
+      <div ref={teamref} style={{height:'fit-content'}}>
+        {teamView && (
+          <Animated animationIn="fadeIn"
+          animationInDuration={500}>
+            <Team></Team>
+          </Animated>
+        )}
+        {!teamView && (
+          <Animated animationOut="fadeOut" isVisible={false}
+          animationInDuration={500}>
+            <Team></Team>
+          </Animated>
+        )}
+      </div> 
+
+        {/* <FontAwesomeIcon
+        style={{
+          position: "fixed",
+          bottom: "0",
+          right: "0",
+          margin: "25px",
+          fontSize: "40px",
+          color: "blueviolet",
+          zIndex: "6",
+        }}
+        icon={faExclamation}
+      >
+        <CookiePopUp></CookiePopUp>
+      </FontAwesomeIcon> */}
+      </>
       <Footer></Footer>
     </>
   );
 }
 export default Despre;
+
+const InformationAboutUs = styled.div`
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(${img1});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+`;
+const FirstInfoDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* margin-bottom: 5rem; */
+margin-top: 5rem;
+  justify-content: left;
+  align-items: center;
+`;
+const SecondInfoDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  /* margin-bottom: 5rem;
+margin-top: 5rem; */
+  justify-content: right;
+  align-items: center;
+`;
+
+const ThirdInfoDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5rem;
+/* margin-top: 5rem;  */
+  justify-content: left;
+  align-items: center;
+`;
+
+const Param1 = styled.p`
+  width: 80%;
+  color: black;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  text-indent: 15px;
+`;
+const Param2 = styled.p`
+  width: 80%;
+  color: black;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  text-indent: 15px;
+`;
+const Param3 = styled.p`
+  width: 80%;
+  color: black;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  text-indent: 15px;
+`;
+
+const HeaderParan = styled.p`
+  font-family: "Roboto";
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+`;
+
+const Overlay = styled.div`
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+`;

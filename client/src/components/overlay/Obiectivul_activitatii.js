@@ -10,31 +10,11 @@ import { Animated } from 'react-animated-css';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 </style>
 
-// function useOnScreen(options) {
-//   const [ref, setRef] = useState(null);
-//   const [secondRef, setSecondRef] = useState(null)
-//   const [visible, setVisible] = useState(false);
 
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(([entry]) => {
-//       setVisible(entry.isIntersecting);
-//     }, options);
-//     if (ref) {
-//       observer.observe(ref);
-//     }
-//     return () => {
-//       if (ref) {
-//         observer.unobserve(ref);
-//       }
-//     };
-//   }, [ref, options]);
-//   return [setRef, visible];
-// }
 
 
 export default function Objective(props) {
 
-  // const [setRef, visible] = useOnScreen({ threshold: 0.5 });
 
   return (
     <>
@@ -44,7 +24,7 @@ export default function Objective(props) {
             <Img src={teamImg}/>
             <DarkDiv>
         
-            <h1 >Obiectivul Activitatii</h1>
+            <h1 style={{marginBottom:'2rem'}}>Obiectivul Activitatii</h1>
             <P>
               Secretul succesului este echilibrul dintre a te bucura de ceea ce
               faci și a-ți asuma responsabilitatea de a o face în modul cel mai
@@ -56,12 +36,6 @@ export default function Objective(props) {
             </DarkDiv>
            
           </ObjectieDiv>
-          
-
-
-           
-          
-          {/* <Img src={teamImg}></Img> */}
         </div>
     
     </>
@@ -88,7 +62,6 @@ color: white;
   font-family: 'Rubik';
   width: 65%; 
   z-index: 3;
-  filter: brightness(250%);
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -96,13 +69,11 @@ color: white;
   width: 80%;
   font-size: 20px;
   line-height: 25px;
-
 }
 `
 const Img = styled.img`
  height: 100%;
   width: 100%;
-filter: blur(1px) ;
 z-index: 0;
 position: absolute;
 object-fit: cover;
@@ -113,9 +84,10 @@ object-fit: cover;
 }
 `
 const DarkDiv = styled.div`
-background-color: rgba(0,0,0, 0.4);
+background-color: rgba(0,0,0, 0.3);
 z-index: 1;
 display: flex;
+flex-direction: column;
 justify-content: center;
 height: 100%;
 align-items: center;

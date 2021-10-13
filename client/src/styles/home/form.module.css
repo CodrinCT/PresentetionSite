@@ -25,6 +25,9 @@
     font-size: 12px !important;
     margin-bottom: 5px !important;
   }
+  .textarea{
+    font-size: 15px !important;
+  }
 }
 
 .input_div input {
@@ -41,11 +44,13 @@
   margin: 15px;
 }
 
+
+
 .textareaDiv {
   display: flex;
   justify-content: center;
   height: 40%;
-  width: 80%;
+  width: 90%;
 }
 textarea {
   font-size: 30px;
@@ -78,6 +83,24 @@ input:focus-visible {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:400px) {
+  .input_div{
+    flex-direction: column;
+
+  }
+  textarea{
+    width: 80%;
+    font-size: 15px !important;
+  }
+
+  button{
+    font-size: 15px !important;
+  }
+  .textarea::placeholder{
+    font-size: 15px;
+  }
 }
 button {
   position: relative;

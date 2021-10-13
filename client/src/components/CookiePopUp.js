@@ -77,11 +77,18 @@ const PopUpDiv = styled.div`
   width: 40%;
   height: fit-content;
   border: none;
-  padding: 10px;
+  /* padding: 10px; */
   animation: ${bounceAnim} 1000ms linear both;
   top: 40%;
   left: 38%;
+  transform: translate(-50% ,-50%);
   z-index: 3;
+  @media screen and (max-width: 600px) {
+    width: 50%;
+    font-size: 10px;
+    top: 40%;
+  left: 30%;
+  }
 `;
 
 const ContentDiv = styled.div`
@@ -92,6 +99,11 @@ const ContentDiv = styled.div`
   justify-content: center;
   background-color: rgb(0, 0, 0);
   width: 75%;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    font-size: 10px;
+  }
 `;
 
 const Content = styled.p`

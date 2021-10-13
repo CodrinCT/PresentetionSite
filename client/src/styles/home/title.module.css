@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 600px) {
   .h {
-    font-size: 45px;
+    font-size: 1.2rem;
   }
 }
 
@@ -47,9 +47,11 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
   .button {
-    margin-top: 25px;
+    margin-top: 5px !important;
+    font-size:15px !important;
+    padding: 3px !important;
   }
 }
 

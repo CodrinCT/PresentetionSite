@@ -9,6 +9,21 @@
   align-content: space-between;
   background-image: linear-gradient(to bottom, black, white);
 }
+
+@media screen and (max-width:400px) {
+  .contactDiv{
+    height: 100%;
+  }
+  .contactTitle{
+    font-size: 20px !important;
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+  .contactDiv{
+    padding-bottom: 5rem;
+  }
+}
+
 .overlayDiv {
   display: flex;
   background-image: url("../../images/christina-wocintechchat-com-rg1y72eKw6o-unsplash.jpg");
@@ -22,8 +37,12 @@
   align-items: center;
   justify-content: space-evenly;
   z-index: 3;
+  flex-direction: column;
 }
 @media screen and (max-width: 600px) {
+  .overlayDiv{
+    height: 100%;
+  }
   .contactDiv {
     flex-direction: column;
     width: 100%;
@@ -82,3 +101,13 @@ p {
   margin: 0;
   font-family: "Roboto";
 }
+
+.contactTitle{
+  color:white;
+  font-family: Roboto;
+  font-size: 35px;
+  text-align: left;
+  font-weight:700;
+  margin-left: 5%;
+}
+

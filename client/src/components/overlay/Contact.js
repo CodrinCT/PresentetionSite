@@ -47,16 +47,9 @@ export default function Contact() {
       {/* The background div */}
       <div className={style.overlayDiv}>
         <div className={style.contactDiv}>
-          <div style={{ width: "100%", display: "flex", justifyItems: "left" }}>
+          <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
             <h1
-              style={{
-                color: "white",
-                fontFamily: "Roboto",
-                fontSize: "35px",
-                textAlign: "left",
-                fontWeight: "700",
-                marginLeft: "5%",
-              }}
+              className={style.contactTitle}
             >
               Contacteaza-ne oricand!
             </h1>

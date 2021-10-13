@@ -2,51 +2,70 @@ import style from "../../styles/home/contact.module.css";
 import styleForm from "../../styles/home/form.module.css";
 import { useState } from "react";
 import axios from "axios";
+<style>
+  @import
+  url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+</style>;
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [mailSent, setMail] = useState(false);
+  const [error, setError] = useState(null);
+  const API_PATH = `/contact`;
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [mailSent, setMail] = useState(false)
-  const [error, setError] = useState(null)
-const API_PATH = `/contact`
+  function submitHandler(event) {
+    event.preventDefault();
 
-function submitHandler(event){
-event.preventDefault()
-
-const formSent = {
-  name,
-  email,
-  message,
-  mailSent,
-  error
-}
-axios({
-  method:'post',
-  url:`${API_PATH}`,
-  headers:{
-      'content-type':'application/json'
-  },
-  data: formSent
-}).then((result)=>{
-  if(result.status===200){
-      setMail(true)
-      setEmail('')
-      setMessage('')
-      setName('')
+    const formSent = {
+      name,
+      email,
+      message,
+      mailSent,
+      error,
+    };
+    axios({
+      method: "post",
+      url: `${API_PATH}`,
+      headers: {
+        "content-type": "application/json",
+      },
+      data: formSent,
+    })
+      .then((result) => {
+        if (result.status === 200) {
+          setMail(true);
+          setEmail("");
+          setMessage("");
+          setName("");
+        }
+      })
+      .catch((error) => setError({ error: error.message }));
   }
-}).catch(error => setError({error: error.message}))
-
-}
   return (
     <>
       {/* The background div */}
       <div className={style.overlayDiv}>
         <div className={style.contactDiv}>
+          <div style={{ width: "100%", display: "flex", justifyItems: "left" }}>
+            <h1
+              style={{
+                color: "white",
+                fontFamily: "Roboto",
+                fontSize: "35px",
+                textAlign: "left",
+                fontWeight: "700",
+                marginLeft: "5%",
+              }}
+            >
+              Contacteaza-ne oricand!
+            </h1>
+          </div>
+
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
               <h2 className={style.infoTitle}>Locatie</h2>
-              <p style={{ color: "white"}}>Iasi, Vasile Conta 42, 700380 </p>
+              <p style={{ color: "white" }}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
               <h2 className={style.infoTitle}>Email de contact</h2>
@@ -62,14 +81,48 @@ axios({
           {/* <div className={style.line}></div> */}
           <form className={styleForm.form} onSubmit={submitHandler}>
             <div className={styleForm.input_div}>
-              <input type="text" placeholder="Numele dumneavostra" required value={name} onChange={(e)=>{setName(e.target.value)}}></input>
-              <input type="email" placeholder="Email-ul dumneavostra" required value={email} onChange={(e)=>{setEmail(e.target.value)}}></input>
+              <input
+                type="text"
+                placeholder="Numele dumneavostra"
+                required
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              ></input>
+              <input
+                type="email"
+                placeholder="Email-ul dumneavostra"
+                required
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              ></input>
             </div>
-            <textarea placeholder="Mesajul dumneavostra" rows="5" required value={message} onChange={(e)=>{setMessage(e.target.value)}}></textarea>
+            <textarea
+              placeholder="Mesajul dumneavostra"
+              rows="5"
+              required
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            ></textarea>
             {/* </div> */}
             <button>TRIMITE</button>
             <div>
-                {mailSent && <div style={{marginTop:'40px', fontSize:'30px', color:'green'}}>Thank you for contacting us !</div>}
+              {mailSent && (
+                <div
+                  style={{
+                    marginTop: "40px",
+                    fontSize: "30px",
+                    color: "green",
+                  }}
+                >
+                  Thank you for contacting us !
+                </div>
+              )}
             </div>
           </form>
         </div>

@@ -64,11 +64,9 @@ textarea::placeholder {
   font-family: "Roboto";
 }
 
-
 input::placeholder {
   color: #eee;
   font-family: "Roboto";
-
 }
 
 input:focus-visible {
@@ -89,19 +87,17 @@ button {
   font-size: 25px;
   text-decoration: none;
   text-transform: uppercase;
-  overflow: hidden;
   transition: 0.5s;
   margin-top: 10px;
-  margin-bottom: 20px;
   letter-spacing: 4px;
   background-color: #0a1011;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Roboto"
-
+  font-family: "Roboto";
 }
 
-button:hover{
+button:hover {
   background-color: white;
   color: black;
+  font-weight: 600;
 }

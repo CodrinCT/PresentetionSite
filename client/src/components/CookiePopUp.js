@@ -131,5 +131,6 @@ const AcceptBtn = styled.button`
   :hover {
     background-color: transparent;
     box-shadow: none;
+    color: white;
   }
 `;

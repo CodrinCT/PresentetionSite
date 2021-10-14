@@ -141,7 +141,7 @@ const FooterParent = styled.footer`
   height: 25rem;
   width: 100%;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     flex-direction: column;
     height: 100%;
   }
@@ -189,7 +189,7 @@ const LogoImg = styled.img`
   margin-bottom: 10px;
   margin-bottom: 5rem;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     display: none;
   }
 `;
@@ -218,7 +218,7 @@ const FooterCompanyNameParam = styled.p`
   font-size: 25px;
   padding-bottom: 10px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 1rem;
     padding-top: 2rem;
   }

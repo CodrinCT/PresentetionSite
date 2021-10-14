@@ -47,7 +47,7 @@ function Home() {
         animationInDuration={800}
         animationInDelay={200}
       >
-        <Header></Header>
+        <Header iconColor='black'></Header>
       </Animated>
 
       <div className={style.row} ref={ref}>

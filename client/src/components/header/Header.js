@@ -10,11 +10,11 @@ import Objective from "../overlay/Obiectivul_activitatii";
 
 import CookiePopUp from "../CookiePopUp";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className={style.header}>
       <HeaderBackground>
-        <NavigationBar backgroundColor="transparent"></NavigationBar>
+        <NavigationBar iconColor={props.iconColor} backgroundColor="transparent"></NavigationBar>
 
         <Title></Title>
 

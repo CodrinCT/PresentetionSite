@@ -24,7 +24,7 @@ import { height } from "@mui/system";
 
 function Despre() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
   });
 
   const [ teamref, teamView ] = useInView({
@@ -32,7 +32,7 @@ function Despre() {
   });
 
   const [ objectiveRef, objectiveView ] = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
   });
 
   const [ref3, inView3] = useInView({
@@ -46,7 +46,7 @@ function Despre() {
       <>
         <div className={style.page}>
           <NavigationBar></NavigationBar>
-          <div style={{ height: "100vh" }} ref={ref3}>
+          <div style={{ height: "100%" }} ref={ref3}>
             {!inView3 ? (
               <Animated
                 animationOut="fadeOut"
@@ -136,7 +136,7 @@ function Despre() {
                 <>
                   <FirstInfoDiv>
                     <Animated
-                  animationOutIn="slideOutLeft"
+                  animationOut="slideOutLeft"
                   isVisible={false}
                   animationInDuration={600}
                   className={style.animatedParam}
@@ -191,9 +191,9 @@ function Despre() {
         {objectiveView && (
           <Animated
             animationIn="fadeIn"
-            animationInDuration={500}
+            animationInDuration={600}
             isVisible={true}
-            style={{height:'100vh'}}
+            style={{height:'100%'}}
           >
             <Objective></Objective>
           </Animated>
@@ -201,7 +201,7 @@ function Despre() {
         {!objectiveView && (
           <Animated
             animationOut="fadeOut"
-            animationOutDuration={500}
+            animationOutDuration={600}
             isVisible={false}
           >
             <Objective></Objective>
@@ -266,7 +266,9 @@ const FirstInfoDiv = styled.div`
   flex-direction: row;
   height: 100%;
   /* margin-bottom: 5rem; */
-margin-top: 5rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+
   justify-content: left;
   align-items: center;
 `;
@@ -275,6 +277,8 @@ const SecondInfoDiv = styled.div`
   flex-direction: row;
   height: 100%;
   width: 100%;
+margin-bottom: 2rem;
+
   /* margin-bottom: 5rem;
 margin-top: 5rem; */
   justify-content: right;
@@ -286,7 +290,7 @@ const ThirdInfoDiv = styled.div`
   flex-direction: row;
   height: 100%;
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 /* margin-top: 5rem;  */
   justify-content: left;
   align-items: center;
@@ -298,6 +302,11 @@ const Param1 = styled.p`
   font-family: "Roboto";
   font-size: 1.2rem;
   text-indent: 15px;
+  line-height: 1.5rem;
+
+  @media (max-width:600px){
+    font-size: 0.9rem;
+  }
 `;
 const Param2 = styled.p`
   width: 80%;
@@ -305,6 +314,11 @@ const Param2 = styled.p`
   font-family: "Roboto";
   font-size: 1.2rem;
   text-indent: 15px;
+  line-height: 1.5rem;
+
+  @media (max-width:600px){
+    font-size: 0.9rem;
+  }
 `;
 const Param3 = styled.p`
   width: 80%;
@@ -312,6 +326,10 @@ const Param3 = styled.p`
   font-family: "Roboto";
   font-size: 1.2rem;
   text-indent: 15px;
+  line-height: 1.5rem;
+  @media (max-width:600px){
+    font-size: 0.9rem;
+  }
 `;
 
 const HeaderParan = styled.p`
@@ -329,6 +347,6 @@ const Overlay = styled.div`
   width: 100%;
   height: 100vh;
   @media (max-width:600px){
-    height:200vh !important;
+    object-fit: cover;
   }
 `;

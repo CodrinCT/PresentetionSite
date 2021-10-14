@@ -7,6 +7,7 @@ import DropdownMenu from "@restart/ui/esm/DropdownMenu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import { MenuList, Popper } from "@mui/material";
+import { Animated } from "react-animated-css";
 export default function Links() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -54,14 +55,13 @@ export default function Links() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        // placement="left"
-        
       >
-        
-        Dashboard
       </FontAwesomeIcon>
+      <Animated animationIn='fadeIn'
+      animationInDuration={600}
+      animationOut="fadeOut"
+      animationOutDuration={300}>
       <Menu 
-      style={{width:'100%'}}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -105,6 +105,8 @@ export default function Links() {
           </Link>
         </MenuItem>
       </Menu>
+      </Animated>
+     
       {/* <FontAwesomeIcon
         icon={faHamburger}
         className={style.Dropdown}

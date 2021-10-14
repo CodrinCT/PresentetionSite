@@ -31,7 +31,7 @@ padding-left: 50px;
 
 
 
-@media screen and (max-width:350px){
+@media screen and (max-width:500px){
   display: none;
 } 
 `

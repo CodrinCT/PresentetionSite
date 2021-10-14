@@ -174,9 +174,9 @@ const LogoImg = styled.img`
   width: 5rem;
   height: 5rem;
 
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     display: none;
-  }
+  } */
 `;
 
 const CopyRightParam = styled.p`
@@ -185,19 +185,10 @@ const CopyRightParam = styled.p`
   text-align: right;
   margin-right: 1rem;
   @media (max-width: 500px) {
-    display: none;
+    text-align: center;
   }
 `;
 
-const CopyRightParamSmallWidth = styled.p`
-  display: none;
-  color: white;
-  font-size: 0.5rem;
-
-  @media (max-width: 500px) {
-    display: inline;
-  }
-`;
 const FooterCompanyNameParam = styled.p`
   color: white;
   margin: 0;
@@ -251,8 +242,8 @@ const ExtraInfoLinksDiv = styled.div`
   align-items: center;
   width: 100%;
   padding: 0.5rem;
+  flex-wrap: wrap;
   @media (max-width: 500px) {
-    flex-direction: row;
     padding-top: 1rem;
   }
 `;

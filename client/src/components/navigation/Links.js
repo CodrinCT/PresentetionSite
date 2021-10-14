@@ -3,8 +3,10 @@ import style from "../../styles/navigation/list.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars} from "@fortawesome/free-solid-svg-icons";
 import Menu from "@mui/material/Menu";
+import DropdownMenu from "@restart/ui/esm/DropdownMenu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
+import { MenuList, Popper } from "@mui/material";
 export default function Links() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -52,10 +54,14 @@ export default function Links() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
+        // placement="left"
+        
       >
+        
         Dashboard
       </FontAwesomeIcon>
-      <Menu
+      <Menu 
+      style={{width:'100%'}}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -63,7 +69,15 @@ export default function Links() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
-        tabIndex="3"
+        tabIndex={-1}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal:'right',
+        }}
       >
         <MenuItem>
           <Link to="/" className={style.menuLink}>

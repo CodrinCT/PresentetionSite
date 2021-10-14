@@ -8,8 +8,6 @@ import linksStyle from "../styles/navigation/list.module.css";
 export default function Footer() {
   return (
     <FooterParent>
-     
-
       <MidleDiv>
         <CopyRightDiv>
           <InfoDiv>
@@ -18,12 +16,10 @@ export default function Footer() {
             </FooterCompanyNameParam>
           </InfoDiv>
           <LogoImg src={logo} />
-         
         </CopyRightDiv>
-
       </MidleDiv>
 
-      <ContactDiv>
+      {/* <ContactDiv>
         <CategoryContactDiv>
           <ContactTitle>Locatie:</ContactTitle>
           <ParamContact style={{ color: "white" }}>
@@ -42,73 +38,56 @@ export default function Footer() {
             Luni-Vineri - 10 AM – 7 PM <br></br> Sambata-Duminica - Inchis
           </ParamContact>
         </CategoryContactDiv>
-      </ContactDiv>
+      </ContactDiv> */}
       <LinksDiv>
-      
-      <NavigationLinksDiv>
-      <ExtraInfoLinksDiv>
-    <Linkstext to="/privecy">GDPR</Linkstext>
-      <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
-      <Linkstext to="/cookies">Cookies</Linkstext>
-    </ExtraInfoLinksDiv>
-        <LinksList>
-          <li>
-            <Linkstext to="/">Acasa</Linkstext>
-          </li>
-          <li>
-            <Linkstext to="/servicii">Servicii</Linkstext>
-          </li>
-          <li>
-            <Linkstext to="/solutii">Solutii</Linkstext>
-          </li>
-          <li>
-            <Linkstext to="/despre_noi">Despre Noi</Linkstext>
-          </li>
-          <li>
-            <Linkstext to="/contact">Contact</Linkstext>
-          </li>
-        </LinksList>
-      </NavigationLinksDiv>
-    </LinksDiv>
-     
-    <CopyRightParam>
-            @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
-          </CopyRightParam>
+        <ExtraInfoLinksDiv>
+          <Linkstext to="/privecy">GDPR</Linkstext>
+          <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
+          <Linkstext to="/cookies">Cookies</Linkstext>
+          <Linkstext to="/">Acasa</Linkstext>
+          <Linkstext to="/servicii">Servicii</Linkstext>
+          <Linkstext to="/solutii">Solutii</Linkstext>
+          <Linkstext to="/despre_noi">Despre Noi</Linkstext>
+          <Linkstext to="/contact">Contact</Linkstext>
+        </ExtraInfoLinksDiv>
+        {/* <NavigationLinksDiv>
+          <LinksList>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </LinksList>
+        </NavigationLinksDiv> */}
+      </LinksDiv>
 
+      <CopyRightParam>
+        @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
+      </CopyRightParam>
     </FooterParent>
   );
 }
 
 const ContactDiv = styled.div`
-grid-row: 2;
-border: solid white 5px;
-
-grid-column-start: 1;
-grid-column-end: 4;
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
-  margin-right: 2rem;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
 
-@media(max-width:500px){
-  align-items: center;
-  margin: 0;
-  padding-top: 1rem;
-}
-
+  @media (max-width: 500px) {
+    align-items: center;
+    margin: 0;
+    padding-top: 1rem;
+  }
 `;
 
 const MidleDiv = styled.div`
-grid-column-start: 1;
-grid-column-end: 4;
-grid-row: 1;
-border: solid white 5px;
-
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-
+  padding-bottom: 2rem;
   /* @media (max-width: 500px) {
     order: -1;
   } */
@@ -126,25 +105,24 @@ const ContactTitle = styled.h2`
 const CategoryContactDiv = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
 `;
 const ParamContact = styled.p`
   padding-left: 5px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 
-  @media (max-width:500px){
+  @media (max-width: 500px) {
     font-size: 0.8rem;
   }
 `;
 
 const FooterParent = styled.footer`
-  display: grid;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   background-image: url(${footerImg});
   background-size: cover;
@@ -161,17 +139,11 @@ const FooterParent = styled.footer`
 `;
 const LinksDiv = styled.div`
   display: flex;
-  grid-row: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: flex-start;
-  width: fit-content;
-  font-size: 15px;
-  margin-left: 2rem;
-  border: solid white 5px;
-
+  width: 100%;
+  margin-bottom: 1rem;
   @media (max-width: 500px) {
     flex-direction: column;
     margin: 0;
@@ -181,10 +153,9 @@ const InfoDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: fit-content;
   font-size: 15px;
   text-align: center;
-  padding-bottom: 4rem;
 
   @media (max-width: 500px) {
     padding-bottom: 0;
@@ -192,22 +163,16 @@ const InfoDiv = styled.div`
 `;
 
 const CopyRightDiv = styled.div`
-grid-column: 1;
-grid-row-start: 1;
-grid-row-end: 4;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 `;
 
 const LogoImg = styled.img`
   width: 5rem;
   height: 5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-bottom: 5rem;
 
   @media (max-width: 500px) {
     display: none;
@@ -215,30 +180,28 @@ const LogoImg = styled.img`
 `;
 
 const CopyRightParam = styled.p`
-grid-column: 4;
-grid-row: 4;
   color: white;
   font-size: 0.7rem;
-
+  text-align: right;
+  margin-right: 1rem;
   @media (max-width: 500px) {
     display: none;
   }
 `;
 
-const CopyRightParamSmallWidth =  styled.p`
-display: none;
-color: white;
-font-size: 0.5rem;
+const CopyRightParamSmallWidth = styled.p`
+  display: none;
+  color: white;
+  font-size: 0.5rem;
 
-@media (max-width:500px){
-  display: inline;
-}
-`
+  @media (max-width: 500px) {
+    display: inline;
+  }
+`;
 const FooterCompanyNameParam = styled.p`
   color: white;
   margin: 0;
-  font-size: 25px;
-  padding-bottom: 10px;
+  font-size: 20px;
 
   @media (max-width: 500px) {
     font-size: 1rem;
@@ -249,8 +212,8 @@ const FooterCompanyNameParam = styled.p`
 const NavigationLinksDiv = styled.div`
   display: flex;
   flex-direction: row;
-  width: fit-content;
-  justify-content: left;
+  width: 100%;
+  justify-content: space-evenly;
 
   @media (max-width: 500px) {
     justify-content: center;
@@ -260,10 +223,8 @@ const NavigationLinksDiv = styled.div`
 const LinksList = styled.ul`
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  text-align: left;
-  justify-content: left;
-
+  justify-content: center;
+  width: 100%;
   @media (max-width: 500px) {
     flex-direction: row;
     font-size: 0.8rem !important;
@@ -272,28 +233,26 @@ const LinksList = styled.ul`
 `;
 const Linkstext = styled(Link)`
   color: white;
-  padding: 2px;
-  font-size: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
 
-  :hover{
-    color:#c9c9c4;
+  :hover {
+    color: #c9c9c4;
   }
-
 `;
 
 const ExtraInfoLinksDiv = styled.div`
-display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  
-@media (max-width:500px){
-flex-direction: row;
-padding-top: 1rem;
-}
-
-`
+  padding: 0.5rem;
+  @media (max-width: 500px) {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+`;

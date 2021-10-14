@@ -35,8 +35,9 @@ function ContactPage() {
               </p>
             </div>
           </div>
-          <div className={style.line}></div>
-          <Form></Form>
+          <div className={style.line}>
+            <Form></Form>
+          </div>
         </div>
         <CookiePopUp></CookiePopUp>
       </Page>

@@ -2,10 +2,18 @@
   background-color: black;
   display: flex;
   flex-direction: row;
-  height: 75vh;
+  height: 100%;
   color: white;
   justify-content: center;
   padding-top: 20px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -17,6 +25,12 @@
   .extra_info {
     margin-bottom: 25px;
     margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contactDiv {
+    flex-direction: column;
   }
 }
 
@@ -39,6 +53,7 @@ h2 {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  width: 50%;
 }
 
 h2 {

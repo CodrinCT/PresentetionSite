@@ -79,9 +79,11 @@ const PopUpDiv = styled.div`
   border: none;
   /* padding: 10px; */
   animation: ${bounceAnim} 1000ms linear both;
-  top: 40%;
+  /* top: 40%;
   left: 38%;
-  transform: translate(-50% ,-50%);
+  transform: translate(-50% ,-50%); */
+  bottom:  5%;
+  left: 19%;
   z-index: 3;
   @media screen and (max-width: 600px) {
     width: 50%;

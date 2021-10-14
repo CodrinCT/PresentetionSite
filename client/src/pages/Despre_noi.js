@@ -24,7 +24,7 @@ import { height } from "@mui/system";
 
 function Despre() {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.2,
   });
 
   const [ teamref, teamView ] = useInView({
@@ -36,7 +36,7 @@ function Despre() {
   });
 
   const [ref3, inView3] = useInView({
-    rootMargin: "-350px",
+    rootMargin: "20%",
   });
 
  
@@ -63,7 +63,7 @@ function Despre() {
                 animationIn="slideInDown"
                 animationOut="slideInDown"
                 animationOutDuration={200}
-
+                // animationInDelay={200}
               >
                 <div className={style.body}>
                   <h1 className={style.h}>Despre noi</h1>
@@ -193,6 +193,7 @@ function Despre() {
             animationIn="fadeIn"
             animationInDuration={500}
             isVisible={true}
+            style={{height:'100vh'}}
           >
             <Objective></Objective>
           </Animated>
@@ -255,6 +256,10 @@ const InformationAboutUs = styled.div`
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
+
+  @media (max-width:600px){
+    height: 100%;
+  }
 `;
 const FirstInfoDiv = styled.div`
   display: flex;
@@ -314,6 +319,7 @@ const HeaderParan = styled.p`
   font-size: 2rem;
   color: white;
   font-weight: 600;
+  text-align: center;
 `;
 
 const Overlay = styled.div`
@@ -322,4 +328,7 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
+  @media (max-width:600px){
+    height:200vh !important;
+  }
 `;

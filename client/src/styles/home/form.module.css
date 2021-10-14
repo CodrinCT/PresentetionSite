@@ -22,7 +22,7 @@
     margin-top: 0 !important;
   }
   input {
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin-bottom: 5px !important;
   }
   .textarea{
@@ -42,6 +42,8 @@
   padding-bottom: 5px;
   padding-top: 5px;
   margin: 15px;
+
+  
 }
 
 
@@ -85,16 +87,22 @@ input:focus-visible {
   justify-content: center;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
   .input_div{
     flex-direction: column;
-
+    margin-bottom: 1rem !important;
   }
-  textarea{
+  .textarea{
+    margin-bottom: 1rem !important;
     width: 80%;
     font-size: 15px !important;
   }
-
+  textarea{
+    margin-bottom: 1rem !important;
+    width: 70%;
+    font-size: 15px !important;
+  }
+  
   button{
     font-size: 15px !important;
   }

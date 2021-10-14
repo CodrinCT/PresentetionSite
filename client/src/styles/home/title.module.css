@@ -44,14 +44,17 @@
   width: fit-content;
   margin-left: 175px;
   position: unset;
+  border-radius: 5px;
 }
 
 
 @media screen and (max-width:600px) {
   .button {
     margin-top: 5px !important;
-    font-size:15px !important;
+    font-size:0.7rem !important;
     padding: 3px !important;
+  font-weight: 600;
+
   }
 }
 

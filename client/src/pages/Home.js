@@ -11,6 +11,7 @@ import { useHistory } from "react-router";
 import { red } from "@mui/material/colors";
 import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import CookiePopUp from "../components/CookiePopUp";
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
@@ -40,6 +41,7 @@ function Home() {
 
   return (
     <>
+      <CookiePopUp></CookiePopUp>
       <Animated
         animationIn="slideInDown"
         animationInDuration={800}

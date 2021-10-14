@@ -1,5 +1,5 @@
 
-import teamImg from '../../images/pexels-fauxels-3183150 (1).jpg'
+import teamImg from '../../images/austin-distel-wD1LRb9OeEo-unsplash.jpg'
 import style from "../../styles/home/overlay_acivator.module.css";
 import styled from 'styled-components'
 import { useEffect, useState } from 'react';
@@ -51,7 +51,8 @@ const ObjectieDiv = styled.div`
    margin-top: 5rem;
 margin-bottom: 5rem;
     @media screen and (max-width:600px){
-    background-blend-mode:8px
+    background-blend-mode:8px;
+    height: 100%;
 }
 
 `
@@ -78,10 +79,6 @@ z-index: 0;
 position: absolute;
 object-fit: cover;
 
-@media screen and (max-width:600px){
-  height: 90% !important;
-  width: 90% !important;
-}
 `
 const DarkDiv = styled.div`
 background-color: rgba(0,0,0, 0.3);
@@ -90,5 +87,5 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 height: 100%;
-align-items: center;
+align-items: right;
 `

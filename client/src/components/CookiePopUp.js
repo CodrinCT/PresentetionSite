@@ -29,6 +29,7 @@ export default function CookiePopUp(props) {
                 to="/cookies"
                 style={{
                   color: "#afafaf",
+                  fontSize:'0.5rem'
                 }}
               >
                 Mai multe informatii
@@ -100,7 +101,7 @@ const ContentDiv = styled.div`
   align-items: center;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  width: 75%;
+  width: 40%;
 
   @media screen and (max-width: 600px) {
     width: 90%;
@@ -111,7 +112,7 @@ const ContentDiv = styled.div`
 const Content = styled.p`
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   color: white !important;
   width: 90%;
   text-align: center;
@@ -119,7 +120,7 @@ const Content = styled.p`
 
   @media screen and (max-width: 600px) {
     width: 90%;
-    font-size: 10px;
+    font-size: 8px;
   }
 `;
 
@@ -146,5 +147,9 @@ const AcceptBtn = styled.button`
     background-color: transparent;
     box-shadow: none;
     color: white;
+  }
+
+  @media (max-width:500px){
+    font-size: 0.3rem !important;
   }
 `;

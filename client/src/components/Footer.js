@@ -8,32 +8,7 @@ import linksStyle from "../styles/navigation/list.module.css";
 export default function Footer() {
   return (
     <FooterParent>
-      <LinksDiv>
-      <ExtraInfoLinksDiv>
-      <Linkstext to="/privecy">GDPR</Linkstext>
-        <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
-        <Linkstext to="/cookies">Cookies</Linkstext>
-      </ExtraInfoLinksDiv>
-        <NavigationLinksDiv>
-          <LinksList>
-            <li>
-              <Linkstext to="/">Acasa</Linkstext>
-            </li>
-            <li>
-              <Linkstext to="/servicii">Servicii</Linkstext>
-            </li>
-            <li>
-              <Linkstext to="/solutii">Solutii</Linkstext>
-            </li>
-            <li>
-              <Linkstext to="/despre_noi">Despre Noi</Linkstext>
-            </li>
-            <li>
-              <Linkstext to="/contact">Contact</Linkstext>
-            </li>
-          </LinksList>
-        </NavigationLinksDiv>
-      </LinksDiv>
+     
 
       <MidleDiv>
         <CopyRightDiv>
@@ -43,9 +18,7 @@ export default function Footer() {
             </FooterCompanyNameParam>
           </InfoDiv>
           <LogoImg src={logo} />
-          <CopyRightParam>
-            @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
-          </CopyRightParam>
+         
         </CopyRightDiv>
 
       </MidleDiv>
@@ -70,15 +43,50 @@ export default function Footer() {
           </ParamContact>
         </CategoryContactDiv>
       </ContactDiv>
-      <CopyRightParamSmallWidth>@2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS</CopyRightParamSmallWidth>
+      <LinksDiv>
+      
+      <NavigationLinksDiv>
+      <ExtraInfoLinksDiv>
+    <Linkstext to="/privecy">GDPR</Linkstext>
+      <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
+      <Linkstext to="/cookies">Cookies</Linkstext>
+    </ExtraInfoLinksDiv>
+        <LinksList>
+          <li>
+            <Linkstext to="/">Acasa</Linkstext>
+          </li>
+          <li>
+            <Linkstext to="/servicii">Servicii</Linkstext>
+          </li>
+          <li>
+            <Linkstext to="/solutii">Solutii</Linkstext>
+          </li>
+          <li>
+            <Linkstext to="/despre_noi">Despre Noi</Linkstext>
+          </li>
+          <li>
+            <Linkstext to="/contact">Contact</Linkstext>
+          </li>
+        </LinksList>
+      </NavigationLinksDiv>
+    </LinksDiv>
+     
+    <CopyRightParam>
+            @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
+          </CopyRightParam>
 
     </FooterParent>
   );
 }
 
 const ContactDiv = styled.div`
+grid-row: 2;
+border: solid white 5px;
+
+grid-column-start: 1;
+grid-column-end: 4;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   margin-right: 2rem;
@@ -92,13 +100,18 @@ const ContactDiv = styled.div`
 `;
 
 const MidleDiv = styled.div`
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row: 1;
+border: solid white 5px;
+
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
 
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     order: -1;
-  }
+  } */
 `;
 
 const ContactTitle = styled.h2`
@@ -112,7 +125,7 @@ const ContactTitle = styled.h2`
 
 const CategoryContactDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: right;
   align-items: center;
   padding-top: 0.7rem;
@@ -128,8 +141,8 @@ const ParamContact = styled.p`
 `;
 
 const FooterParent = styled.footer`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
@@ -138,7 +151,7 @@ const FooterParent = styled.footer`
   background-position: center;
   color: white;
   padding: 40px 0 20px 0;
-  height: 25rem;
+  height: fit-content;
   width: 100%;
 
   @media (max-width: 500px) {
@@ -148,12 +161,16 @@ const FooterParent = styled.footer`
 `;
 const LinksDiv = styled.div`
   display: flex;
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: fit-content;
   font-size: 15px;
   margin-left: 2rem;
+  border: solid white 5px;
 
   @media (max-width: 500px) {
     flex-direction: column;
@@ -175,6 +192,9 @@ const InfoDiv = styled.div`
 `;
 
 const CopyRightDiv = styled.div`
+grid-column: 1;
+grid-row-start: 1;
+grid-row-end: 4;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -195,6 +215,8 @@ const LogoImg = styled.img`
 `;
 
 const CopyRightParam = styled.p`
+grid-column: 4;
+grid-row: 4;
   color: white;
   font-size: 0.7rem;
 
@@ -227,7 +249,7 @@ const FooterCompanyNameParam = styled.p`
 const NavigationLinksDiv = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: fit-content;
   justify-content: left;
 
   @media (max-width: 500px) {
@@ -237,7 +259,7 @@ const NavigationLinksDiv = styled.div`
 `;
 const LinksList = styled.ul`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   text-align: left;
   justify-content: left;
@@ -252,15 +274,19 @@ const Linkstext = styled(Link)`
   color: white;
   padding: 2px;
   font-size: 1rem;
-
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
+
+  :hover{
+    color:#c9c9c4;
+  }
+
 `;
 
 const ExtraInfoLinksDiv = styled.div`
 display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   width: 100%;

@@ -3,12 +3,7 @@ import Title from "./Title";
 import React from "react";
 import style from "../../styles/home/header.module.css";
 import NavigationBar from "../navigation/nav_bar";
-import OverlayActivator from "../overlay/OverlayActivator";
-import Team from "../overlay/Meet_Team";
-import Contact from "../overlay/Contact";
-import Objective from "../overlay/Obiectivul_activitatii";
 
-import CookiePopUp from "../CookiePopUp";
 
 export default function Header(props) {
   return (

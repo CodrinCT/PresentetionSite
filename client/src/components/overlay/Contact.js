@@ -114,7 +114,7 @@ export default function Contact() {
                     color: "green",
                   }}
                 >
-                  Thank you for contacting us !
+                  Mesajul a fost trimis, va multumim!
                 </div>
               )}
             </div>

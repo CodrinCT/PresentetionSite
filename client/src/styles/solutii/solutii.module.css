@@ -37,7 +37,7 @@ body {
 }
 
 .solutionsText {
-  font-size: 25px;
+  font-size: 1.2rem;
   color: black;
   line-height: 35px;
   margin: 25px;
@@ -45,6 +45,14 @@ body {
   text-align: justify;
   font-family: "Roboto";
   font-weight: 300;
+}
+
+@media screen and (max-width:500px) {
+  .solutionsText{
+    font-size: 0.8rem;
+  line-height: 1rem;
+
+  }
 }
 
 .solutionsTextReverse {

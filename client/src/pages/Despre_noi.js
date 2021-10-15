@@ -1,21 +1,13 @@
 import NavigationBar from "../components/navigation/nav_bar";
 import style from "../styles/despre_noi/about_us.module.css";
-import { useState } from "react";
-import CookiePopUp from "../components/CookiePopUp";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Team from "../components/overlay/Meet_Team";
 import Objective from "../components/overlay/Obiectivul_activitatii";
-import Contact from "../components/overlay/Contact";
 import { Animated } from "react-animated-css";
-import { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExclamation } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import img1 from "../images/pexels-fauxels-3184312.jpg";
-import img2 from "../images/pexels-canva-studio-3194521.jpg";
-import { height } from "@mui/system";
+
 
 <style>
   @import

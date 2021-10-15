@@ -1,15 +1,9 @@
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import { Animated } from "react-animated-css";
-import { useEffect, useState } from "react";
 import style from "../styles/home/header.module.css";
-import img1 from "../images/featured-1.jpg";
-import img2 from "../images/featured-2.jpg";
-import img3 from "../images/featured-3.jpg";
 import Contact from "../components/overlay/Contact";
 import { useHistory } from "react-router";
-import { red } from "@mui/material/colors";
-import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import CookiePopUp from "../components/CookiePopUp";
 <style>

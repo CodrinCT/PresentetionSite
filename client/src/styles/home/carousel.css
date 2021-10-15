@@ -1,0 +1,12 @@
+
+@media screen and (max-width:600px) {
+    
+}
+#root > div > div:nth-child(3) > div > div > div > div > div.carousel-indicators{
+    margin-left: 0 !important;
+    justify-content: left !important;
+    /* right: 50%; */
+    left: 50%;
+    transform: translateX(-75%);
+    width: 10rem;
+  }

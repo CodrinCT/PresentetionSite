@@ -11,12 +11,10 @@ import consultImg3 from "../images/pexels-shvets-production-7176319 (1).jpg";
 import storage1 from "../images/carlos-gonzalez-MmYtZoZ8ET4-unsplash (1).jpg";
 import storage2 from "../images/pexels-pixabay-270410 (1).jpg";
 import storage3 from "../images/science-in-hd-iPrjQEDnNEY-unsplash (1).jpg";
-import { useState } from "react";
 import CookiePopUp from "../components/CookiePopUp";
 import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import headerImg from "../images/pexels-kindel-media-7688336.jpg"
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");

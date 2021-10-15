@@ -1,9 +1,7 @@
 
-import teamImg from '../../images/austin-distel-wD1LRb9OeEo-unsplash.jpg'
+import teamImg from '../../images/aboutUs-objective.jpg'
 import style from "../../styles/home/overlay_acivator.module.css";
 import styled from 'styled-components'
-import { useEffect, useState } from 'react';
-import { Animated } from 'react-animated-css';
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
@@ -66,6 +64,7 @@ color: white;
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
+ 
   @media screen and (max-width:600px){
   width: 80%;
   font-size: 20px;
@@ -88,4 +87,5 @@ flex-direction: column;
 justify-content: center;
 height: 100%;
 align-items: right;
+padding: 10px;
 `

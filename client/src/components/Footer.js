@@ -1,10 +1,9 @@
-import { style } from "@mui/system";
+
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import footerImg from "../images/top.jpg";
 import logo from "../images/loho.png";
-import Links from "./navigation/Links";
-import linksStyle from "../styles/navigation/list.module.css";
+
 export default function Footer() {
   return (
     <FooterParent>
@@ -228,7 +227,7 @@ const Linkstext = styled(Link)`
   padding: 0.5rem;
   font-size: 0.8rem;
   @media (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   :hover {

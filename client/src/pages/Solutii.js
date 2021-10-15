@@ -32,10 +32,10 @@ function Solutii() {
                     data-wow-duration="1s"
                     data-wow-delay="1s"
                   >
-                    <h6 style={{ color: "black" }}>
+                    <h6 style={{ color: "black" , fontSize:'1rem'}}>
                       Preia initiativa a oricărei provocari IT
                     </h6>
-                    <h2>
+                    <h2 style={{fontSize:'2rem', lineHeight:"3rem"}}>
                       Tu aduci problema, noi venim cu solutia
                       {/* <em> */}
                       {/* </em> &amp;{" "} */}

@@ -108,8 +108,9 @@ export default function Contact() {
               {mailSent && (
                 <div
                   style={{
-                    marginTop: "40px",
-                    fontSize: "30px",
+                    textAlign:'center',
+                    marginTop: "20px",
+                    fontSize: "20px",
                     color: "green",
                   }}
                 >

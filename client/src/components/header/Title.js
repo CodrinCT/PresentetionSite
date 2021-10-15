@@ -28,7 +28,7 @@ color: white;
 font-size: 1.2rem;
 text-align: left;
 padding-left: 50px;
-
+filter: drop-shadow(2px 4px 6px black);
 
 
 @media screen and (max-width:500px){

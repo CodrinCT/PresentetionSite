@@ -45,7 +45,6 @@ function Home() {
       <Animated
         animationIn="slideInDown"
         animationInDuration={800}
-        animationInDelay={200}
       >
         <Header iconColor='black'></Header>
       </Animated>

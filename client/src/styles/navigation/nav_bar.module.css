@@ -18,13 +18,15 @@
 }
 
 .img {
-  width: 60px;
+  width: 4rem;
   margin: 10px;
-  margin-left: 100px;
+  margin-left: 5rem;
 }
 
 @media screen and (max-width:600px) {
   .img{
-    margin-left: 50px;
+    margin-left: 1.5rem;
+    width: 3rem;
+
   }
 }

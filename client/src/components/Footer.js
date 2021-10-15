@@ -10,12 +10,13 @@ export default function Footer() {
     <FooterParent>
       <MidleDiv>
         <CopyRightDiv>
+        <LogoImg src={logo} />
           <InfoDiv>
             <FooterCompanyNameParam>
               TYRBUL SOLUTIONS SRL
             </FooterCompanyNameParam>
           </InfoDiv>
-          <LogoImg src={logo} />
+         
         </CopyRightDiv>
       </MidleDiv>
 
@@ -41,14 +42,14 @@ export default function Footer() {
       </ContactDiv> */}
       <LinksDiv>
         <ExtraInfoLinksDiv>
-          <Linkstext to="/privecy">GDPR</Linkstext>
-          <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
-          <Linkstext to="/cookies">Cookies</Linkstext>
           <Linkstext to="/">Acasa</Linkstext>
           <Linkstext to="/servicii">Servicii</Linkstext>
           <Linkstext to="/solutii">Solutii</Linkstext>
           <Linkstext to="/despre_noi">Despre Noi</Linkstext>
           <Linkstext to="/contact">Contact</Linkstext>
+          <Linkstext to="/privecy">GDPR</Linkstext>
+          <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
+          <Linkstext to="/cookies">Cookies</Linkstext>
         </ExtraInfoLinksDiv>
         {/* <NavigationLinksDiv>
           <LinksList>

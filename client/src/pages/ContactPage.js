@@ -50,7 +50,13 @@ export default ContactPage;
 const Page = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
+
+  @media (max-width:600px){
+    height: 100%;
+  }
 `;
+
 
 const Title = styled.h1`
   font-size: 25px;

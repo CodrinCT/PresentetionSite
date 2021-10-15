@@ -286,6 +286,8 @@ const Param1 = styled.p`
 
   @media (max-width:600px){
     font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 `;
 const Param2 = styled.p`
@@ -298,6 +300,8 @@ const Param2 = styled.p`
 
   @media (max-width:600px){
     font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 `;
 const Param3 = styled.p`
@@ -309,6 +313,8 @@ const Param3 = styled.p`
   line-height: 1.5rem;
   @media (max-width:600px){
     font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 `;
 

@@ -53,6 +53,9 @@ body {
   line-height: 1rem;
 
   }
+  .solutionsImg{
+    height: 12rem;
+  }
 }
 
 .solutionsTextReverse {

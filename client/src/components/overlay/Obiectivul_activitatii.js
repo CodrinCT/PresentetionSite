@@ -19,7 +19,7 @@ export default function Objective(props) {
     
         <div className={style.info} >
           <ObjectieDiv ref={props.ref}>
-            <Img src={teamImg}/>
+            {/* <Img src={teamImg}/> */}
             <DarkDiv>
         
             <h1 style={{marginBottom:'2rem'}}>Obiectivul Activitatii</h1>

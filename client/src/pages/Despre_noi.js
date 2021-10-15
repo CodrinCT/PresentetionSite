@@ -44,6 +44,8 @@ function Despre() {
                 animationOut="fadeOut"
                 animationOutDuration={400}
                 // animationInDelay={200}
+                animationInDuration={600}
+
                 isVisible={false}
               >
                 <div className={style.body}>
@@ -54,6 +56,7 @@ function Despre() {
               <Animated
                 animationIn="slideInDown"
                 animationOut="slideInDown"
+                animationInDuration={800}
                 animationOutDuration={200}
                 // animationInDelay={200}
               >
@@ -214,21 +217,6 @@ function Despre() {
           </Animated>
         )}
       </div> 
-
-        {/* <FontAwesomeIcon
-        style={{
-          position: "fixed",
-          bottom: "0",
-          right: "0",
-          margin: "25px",
-          fontSize: "40px",
-          color: "blueviolet",
-          zIndex: "6",
-        }}
-        icon={faExclamation}
-      >
-        <CookiePopUp></CookiePopUp>
-      </FontAwesomeIcon> */}
       </>
       <Footer></Footer>
     </>

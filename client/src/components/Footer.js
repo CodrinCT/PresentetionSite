@@ -15,52 +15,24 @@ export default function Footer() {
               TYRBUL SOLUTIONS SRL
             </FooterCompanyNameParam>
           </InfoDiv>
-         
         </CopyRightDiv>
       </MidleDiv>
-
-      {/* <ContactDiv>
-        <CategoryContactDiv>
-          <ContactTitle>Locatie:</ContactTitle>
-          <ParamContact style={{ color: "white" }}>
-            Iasi, Vasile Conta 42, 700380{" "}
-          </ParamContact>
-        </CategoryContactDiv>
-        <CategoryContactDiv>
-          <ContactTitle>Email de contact:</ContactTitle>
-          <ParamContact style={{ color: "white" }}>
-            contact@tyrbul.com
-          </ParamContact>
-        </CategoryContactDiv>
-        <CategoryContactDiv>
-          <ContactTitle>Program:</ContactTitle>
-          <ParamContact style={{ color: "white" }}>
-            Luni-Vineri - 10 AM – 7 PM <br></br> Sambata-Duminica - Inchis
-          </ParamContact>
-        </CategoryContactDiv>
-      </ContactDiv> */}
       <LinksDiv>
-        <ExtraInfoLinksDiv>
+      <NavigationLinksDiv>
+          <LinksList>
           <Linkstext to="/">Acasa</Linkstext>
           <Linkstext to="/servicii">Servicii</Linkstext>
           <Linkstext to="/solutii">Solutii</Linkstext>
           <Linkstext to="/despre_noi">Despre Noi</Linkstext>
           <Linkstext to="/contact">Contact</Linkstext>
+          </LinksList>
+        </NavigationLinksDiv>
+        <ExtraInfoLinksDiv>
           <Linkstext to="/privecy">GDPR</Linkstext>
           <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
           <Linkstext to="/cookies">Cookies</Linkstext>
         </ExtraInfoLinksDiv>
-        {/* <NavigationLinksDiv>
-          <LinksList>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </LinksList>
-        </NavigationLinksDiv> */}
       </LinksDiv>
-
       <CopyRightParam>
         @2021 ALL RIGHTS RESERVED TO TYRBUL SOLUTIONS
       </CopyRightParam>
@@ -174,9 +146,10 @@ const LogoImg = styled.img`
   width: 5rem;
   height: 5rem;
 
-  /* @media (max-width: 500px) {
-    display: none;
-  } */
+  @media (max-width: 500px) {
+    width: 3rem;
+  height: 3rem;
+  }
 `;
 
 const CopyRightParam = styled.p`
@@ -196,7 +169,6 @@ const FooterCompanyNameParam = styled.p`
 
   @media (max-width: 500px) {
     font-size: 1rem;
-    padding-top: 2rem;
   }
 `;
 
@@ -245,5 +217,8 @@ const ExtraInfoLinksDiv = styled.div`
   flex-wrap: wrap;
   @media (max-width: 500px) {
     padding-top: 1rem;
+  padding-left:1rem;
+  padding-right:1rem;
+
   }
 `;

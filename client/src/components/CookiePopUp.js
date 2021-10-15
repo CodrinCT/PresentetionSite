@@ -2,26 +2,36 @@ import { keyframes } from "styled-components";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import avatar from "../images/user-g72d7d39e4_1280.png"
+import { Animated } from "react-animated-css";
+
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
   @import
   url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 </style>;
-export default function CookiePopUp(props) {
-  const [isOn, setOnOff] = useState(false);
-  function tooglePopup() {
-    setOnOff(false);
-  }
-  window.addEventListener("load", () => {
-    setOnOff(true);
-  });
+
+
+export default function CookiePopUp() {
+  
+const [isOn, setOnOff] = useState(false);
+
+function tooglePopup() {
+  setOnOff(false);
+}
+window.addEventListener("load", () => {
+  setOnOff(true)
+});
+
+
   return (
-    // <div>
     <>
-      {isOn && (
-        <PopUpDiv>
+      {isOn ? (
+          <PopUpDiv>
           <ContentDiv>
+            <AvatarDiv> <AvatarImg src={avatar} alt="Avatar Image"/></AvatarDiv>
+            <InfoContent>
             <Content>
               Acest website foloseste cookies pentru a asigura cea mai buna
               experienta pe website-ul nostru.<br></br>
@@ -34,11 +44,15 @@ export default function CookiePopUp(props) {
               >
                 Mai multe informatii
               </Link>
+             
             </Content>
             <AcceptBtn onClick={tooglePopup}>Accept</AcceptBtn>
+            </InfoContent>
+            
           </ContentDiv>
         </PopUpDiv>
-      )}
+      
+      ) : null}
     </>
   );
 }
@@ -75,33 +89,29 @@ const bounceAnim = keyframes`
 const PopUpDiv = styled.div`
   display: flex;
   position: fixed;
-  width: 40%;
-  height: fit-content;
+  width: 27rem;
+    height: 10rem;
+    animation: 1000ms linear 0s 1 normal both running ${bounceAnim};
   border: none;
-  /* padding: 10px; */
-  animation: ${bounceAnim} 1000ms linear both;
-  /* top: 40%;
-  left: 38%;
-  transform: translate(-50% ,-50%); */
-  bottom:  5%;
-  left: 19%;
-  z-index: 3;
+  padding: 10px;
+  bottom:  0;
+  left: 10rem;
+  z-index: 4;
   @media screen and (max-width: 600px) {
     width: 50%;
     font-size: 10px;
     top: 40%;
-  left: 30%;
+    left: 30%;
   }
 `;
 
 const ContentDiv = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 15px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
-  width: 40%;
+  width: 100%;
 
   @media screen and (max-width: 600px) {
     width: 90%;
@@ -136,6 +146,7 @@ const AcceptBtn = styled.button`
   text-shadow: none;
   font-size: 8px !important;
   font-weight: 700;
+  margin-bottom: 1rem;
   margin-top: 5px;
   margin-right: 35px;
   padding: 5px 7px;
@@ -153,3 +164,23 @@ const AcceptBtn = styled.button`
     font-size: 0.3rem !important;
   }
 `;
+const AvatarDiv = styled.div`
+margin-right: 1rem;
+
+@media screen and (max-width: 600px) {
+    display: none;
+  }
+`
+
+const AvatarImg = styled.img`
+width: 3rem;
+height: 3rem;
+`
+const InfoContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0,0.7);
+
+`

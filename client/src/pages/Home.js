@@ -6,12 +6,14 @@ import Contact from "../components/overlay/Contact";
 import { useHistory } from "react-router";
 import { useInView } from "react-intersection-observer";
 import CookiePopUp from "../components/CookiePopUp";
+import { useState } from "react";
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 </style>;
 
 function Home() {
+
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
@@ -35,7 +37,12 @@ function Home() {
 
   return (
     <>
-      <CookiePopUp></CookiePopUp>
+
+   
+    <CookiePopUp></CookiePopUp>
+
+   
+
       <Animated
         animationIn="slideInDown"
         animationInDuration={800}

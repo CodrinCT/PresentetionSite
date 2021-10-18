@@ -15,18 +15,17 @@ import CookiePopUp from "../components/CookiePopUp";
 import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import headerImg from "../images/pexels-kindel-media-7688336.jpg"
+import headerImg from "../images/pexels-kindel-media-7688336.jpg";
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-</style>
+  @import
+  url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+</style>;
 function Servicii() {
-  
   return (
     <>
       <NavigationBar></NavigationBar>
-      <Header>
-      </Header>
-      <CardsDiv style={{justifyContent:'center'}}>
+      <Header></Header>
+      <CardsDiv style={{ justifyContent: "center" }}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -37,7 +36,7 @@ function Servicii() {
             <div class="back">
               <h3 class="synopsis">
                 {" "}
-                <h3 class="synopsis">Description</h3>
+                <h3 class="synopsis">Descriere</h3>
               </h3>
               <CardDescription>
                 O fundație stabilă, dovedită, suficient de versatilă pentru
@@ -84,7 +83,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv style={{justifyContent:'center'}}>
+      <CardsDiv style={{ justifyContent: "center" }}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -136,7 +135,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv style={{justifyContent:'center'}}>
+      <CardsDiv style={{ justifyContent: "center" }}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -190,7 +189,7 @@ function Servicii() {
           </div>
         </div>
       </CardsDiv>
-      <CardsDiv style={{justifyContent:'center'}}>
+      <CardsDiv style={{ justifyContent: "center" }}>
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -251,7 +250,6 @@ function Servicii() {
   );
 }
 
-
 const CardsDiv = styled.div`
   display: flex;
   flex-direction: row;
@@ -281,12 +279,12 @@ const HeaderH = styled.h1`
   font-size: 75px;
   font-weight: 700;
   padding: 20px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 `;
 
 const CardDescription = styled.p`
   color: white;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 `;
 
 export default Servicii;

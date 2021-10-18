@@ -2,7 +2,7 @@
 .Title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   height: 30vh;
   margin-top: 12%;
   font-family: "Roboto";
@@ -10,18 +10,20 @@
 }
 
 .h {
-  font-size: 4rem;
+  font-size: 5rem;
   color: white;
   font-weight: 600;
   font-family: "Roboto";
   text-align: left;
-  /* padding-left: 50px; */
+  margin-left: 50px;
   filter: drop-shadow(2px 4px 6px black);
 }
 
 @media screen and (max-width: 600px) {
   .h {
     font-size: 1.2rem;
+  margin-left: 0;
+
   }
 }
 
@@ -32,21 +34,22 @@
 }
 
 .button {
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: white;
   color: black;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 15px 15px;
   border: none;
   font-weight: 500;
   font-family: "Roboto";
-  word-spacing: 0.2px;
   text-align: center;
   width: fit-content;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-left: 9rem;
+  margin-top: 5rem;
   position: unset;
-  border-radius: 5px;
+  border-radius: 35px;
+  text-transform: none;
+letter-spacing: 1.5px;
 }
 
 
@@ -56,13 +59,16 @@
     font-size:0.5rem !important;
     padding: 8px !important;
   font-weight: 600;
+  margin-left: 6rem;
 
   }
-}
 
+.Title {
+align-items: center;
+}
+}
 .button:hover {
-  color: white;
-  background-color: black;
-  border-color: transparent;
-  box-shadow: none;
+  color: black;
+  background-color: white;
+ 
 }

@@ -4,9 +4,9 @@ import style from "../../styles/home/overlay_acivator.module.css";
 import styled from 'styled-components'
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
-</style>
+  @import
+  url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+</style>;
 
 
 
@@ -22,7 +22,7 @@ export default function Objective(props) {
             {/* <Img src={teamImg}/> */}
             <DarkDiv>
         
-            <h1 style={{marginBottom:'2rem'}}>Obiectivul Activitatii</h1>
+            <h1 style={{marginBottom:'2rem',marginTop: '5rem'}}>Obiectivul Activitatii</h1>
             <P>
               Secretul succesului este echilibrul dintre a te bucura de ceea ce
               faci și a-ți asuma responsabilitatea de a o face în modul cel mai
@@ -59,7 +59,7 @@ const P = styled.p`
 color: white;
  font-size: 30px;
   line-height: 45px;
-  font-family: 'Rubik';
+  font-family: 'Roboto';
   width: 65%; 
   z-index: 3;
   text-align: center;
@@ -94,7 +94,7 @@ background-color: rgba(0,0,0, 0.3);
 
 @media (max-width:600px){
   height: 100%;
-  margin-top: 5rem;
+  
 
 }
 `

@@ -7,6 +7,8 @@ import { useHistory } from "react-router";
 import { useInView } from "react-intersection-observer";
 import CookiePopUp from "../components/CookiePopUp";
 import { useState } from "react";
+import {useTranslation} from "react-i18next"
+
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
@@ -34,6 +36,8 @@ function Home() {
   function redirectSolutii() {
     history.push("/solutii");
   }
+
+const {t, i18n} = useTranslation()
 
   return (
     <>
@@ -66,7 +70,7 @@ function Home() {
                   style={{
                     textAlign: "left",
                     color: "white",
-                    fontSize: "2rem",
+                    fontSize: "1.5rem",
                     margin: "1rem",
                     fontFamily: "Roboto",
                   }}
@@ -83,7 +87,7 @@ function Home() {
                     style={{
                       textAlign: "right",
                       color: "white",
-                      fontSize: "2rem",
+                      fontSize: "1.5rem",
                       margin: "1rem",
                       fontFamily: "Roboto",
                     }}
@@ -96,7 +100,7 @@ function Home() {
                     style={{
                       textAlign: "right",
                       color: "white",
-                      fontSize: "2rem",
+                      fontSize: "1.5rem",
                       margin: "1rem",
                       fontFamily: "Roboto",
                     }}

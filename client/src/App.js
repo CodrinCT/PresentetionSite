@@ -8,6 +8,10 @@ import Solutii from "./pages/Solutii";
 import CookiesPage from "./pages/Cookies";
 import TermsAndConditions from "./pages/Termeni_si_Conditii";
 import ConfidentialityPolicy from "./pages/Politica_de_Confidentialitate";
+import i18next from "i18next";
+import { initReactI18next } from "react-i18next";
+
+
 
 
 function App() {

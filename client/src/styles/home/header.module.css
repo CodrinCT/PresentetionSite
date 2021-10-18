@@ -59,8 +59,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 48%;
-  margin-top: 2%;
+  height: 49%;
+  margin-top: 1%;
   text-align: end;
   cursor: pointer;
   overflow: hidden;
@@ -86,22 +86,48 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 48%;
+  height: 49%;
   cursor: pointer;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .row {
   display: flex;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   justify-content: center;
   align-items: center;
+  /* background-image:linear-gradient(to bottom ,#797979, black); */
   background-color: black;
 }
 
 .animationContainer {
   width: 90%;
   height: 60%;
+}
+
+@media screen and (max-width:600px) {
+  .imagesDiv{
+    flex-direction: column;
+  }
+  .manyImgDiv{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .singleImgDiv{
+    height: 60%;
+  }
+  .manyImgDiv{
+    height: 50%;
+    width: 100%;
+  }
+  .multipleImgOne{
+    height: 100%;
+    width: 100%;
+  }
+  .multipleImgTwo{
+    height: 100%;
+    width: 100%;
+  }
 }
 

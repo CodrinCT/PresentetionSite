@@ -1,7 +1,9 @@
 .background {
   display: flex;
   flex-direction: column;
-  background-image: url("../../images/home-header-photo.jpg");
+  background-image: 
+  linear-gradient(to bottom, transparent 80%,black ),
+  url("../../images/home-header-photo.jpg");
   padding: 0;
   justify-items: center;
   border: none;

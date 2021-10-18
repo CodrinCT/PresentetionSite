@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
       {isOn ? (
           <PopUpDiv>
           <ContentDiv>
-            <AvatarDiv> <AvatarImg src={avatar} alt="Avatar Image"/></AvatarDiv>
+            {/* <AvatarDiv> <AvatarImg src={avatar} alt="Avatar Image"/></AvatarDiv> */}
             <InfoContent>
             <Content>
               Acest website foloseste cookies pentru a asigura cea mai buna
@@ -38,8 +38,10 @@ window.addEventListener("load", () => {
               <Link
                 to="/cookies"
                 style={{
-                  color: "#afafaf",
-                  fontSize:'0.5rem'
+                  color: 'white',
+                  fontSize:'0.5rem',
+                  textDecorationLine:'underline !important',
+                  textUnderlineOffset:'3px'
                 }}
               >
                 Mai multe informatii
@@ -127,7 +129,7 @@ const Content = styled.p`
   width: 90%;
   text-align: center;
   line-height: 16px;
-
+padding: 10px 0 0 0;
   @media screen and (max-width: 600px) {
     width: 90%;
     font-size: 8px;

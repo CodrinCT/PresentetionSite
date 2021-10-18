@@ -1,23 +1,37 @@
 import NavigationBar from "../components/navigation/nav_bar";
 import style from "../styles/contact/ContactPage.module.css";
 import Form from "../components/overlay/Form";
-import image1 from "../images/pexels-maksim-goncharenok-5605061.jpg";
+import image1 from "../images/pexels-peter-olexa-4012966.jpg";
 import styled from "styled-components";
 import { useState } from "react";
 import CookiePopUp from "../components/CookiePopUp";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+
+
 
 function ContactPage() {
+  const {t, i18n} = useTranslation()
+
+// const changeLanguage= (language)=>{
+// i18n.changeLanguage(language)
+// }
   return (
     <>
+
+
+
       <NavigationBar></NavigationBar>
+      
       <Page className={style.page}>
         <img
           src={image1}
           className={style.img}
-          alt="a laptop in the dark"
+          alt="contact page photo"
         ></img>
-
+          {/* <button onClick={()=>changeLanguage("en")}>EN</button>
+          <button onClick={()=>changeLanguage("ro")}>RO</button> */}
         <div id="contact" className={style.contactDiv}>
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>

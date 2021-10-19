@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import avatar from "../images/user-g72d7d39e4_1280.png"
 import { Animated } from "react-animated-css";
+import { useTranslation } from "react-i18next";
 
 <style>
   @import
@@ -24,6 +25,7 @@ window.addEventListener("load", () => {
   setOnOff(true)
 });
 
+const {t} = useTranslation()
 
   return (
     <>
@@ -33,8 +35,7 @@ window.addEventListener("load", () => {
             {/* <AvatarDiv> <AvatarImg src={avatar} alt="Avatar Image"/></AvatarDiv> */}
             <InfoContent>
             <Content>
-              Acest website foloseste cookies pentru a asigura cea mai buna
-              experienta pe website-ul nostru.<br></br>
+              {t('acasa.coockie_pupUp_text')}<br></br>
               <Link
                 to="/cookies"
                 style={{

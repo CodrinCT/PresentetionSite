@@ -35,17 +35,18 @@ function ContactPage() {
         <div id="contact" className={style.contactDiv}>
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
-              <Title>Locatie</Title>
+              <Title>{t('contact.contact_info.loactie')}</Title>
               <p style={{ color: "white" }}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
-              <Title>Email de contact</Title>
+              <Title>{t('contact.contact_info.contact_email')}</Title>
               <p style={{ color: "white" }}>contact@tyrbul.com</p>
             </div>
             <div className={style.extra_info_specific}>
-              <Title>Program</Title>
+              <Title>{t('contact.contact_info.program.title')}</Title>
               <p style={{ color: "white" }}>
-                Luni-Vineri - 10 AM – 7 PM <br></br>Sambata-Duminica - Inchis
+                {t('contact.contact_info.program.week_time')}<br></br>
+                {t('contact.contact_info.program.Weekend')}
               </p>
             </div>
           </div>

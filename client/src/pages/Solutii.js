@@ -11,8 +11,11 @@ import automation from "../images/pexels-pixabay-373543.jpg";
 import optimisation from "../images/ffff-min.jpg";
 import Footer from "../components/Footer";
 import CookiePopUp from "../components/CookiePopUp";
+import { useTranslation } from "react-i18next";
 
 function Solutii() {
+
+  const {t} = useTranslation()
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -33,10 +36,10 @@ function Solutii() {
                     data-wow-delay="1s"
                   >
                     <h6 style={{ color: "black" , fontSize:'1rem'}}>
-                      Preia initiativa a oricărei provocari IT
+                      {t('solutii.solutii_subtitle')}
                     </h6>
                     <h2 style={{fontSize:'2rem', lineHeight:"3rem"}}>
-                      Tu aduci problema, noi venim cu solutia
+                    {t('solutii.solutii_title')}
                       {/* <em> */}
                       {/* </em> &amp;{" "} */}
                     </h2>
@@ -67,7 +70,7 @@ function Solutii() {
                 data-wow-delay="0.2s"
               >
                 <h2>
-                  Unele dintre <em>SOLUTIILE</em> noastre
+                {t('solutii.solutions_page_subtitle.1')} <em>{t('solutii.solutions_page_subtitle.2')}</em> {t('solutii.solutions_page_subtitle.3')}
                 </h2>
               </div>
             </div>
@@ -81,11 +84,9 @@ function Solutii() {
                   data-wow-delay="0.3s"
                 >
                   <div class="hidden-content">
-                    <h4>TREBUIE SA LUCREZ IN CLOUD</h4>
+                    <h4>{t('solutii.work_in_cloud_title')}</h4>
                     <p>
-                      În cloud-ul nostru hibrid, aplicațiile și datele se
-                      deplasează fluid între medii: cloud public, cloud privat,
-                      la nivel local și virtualizat.
+                    {t('solutii.work_in_cloud_description')}
                     </p>
                   </div>
                   <div class="showed-content">
@@ -104,8 +105,7 @@ function Solutii() {
                   <div class="hidden-content">
                     <h4>CLOUD-NATIVE DEVELOPMENT</h4>
                     <p>
-                      Tehnologia potrivită este doar un pas într-o călătorie
-                      nativă în cloud.
+                      {t('solutii.cloud_native_description')}
                     </p>
                   </div>
                   <div class="showed-content">
@@ -124,8 +124,7 @@ function Solutii() {
                   <div class="hidden-content">
                     <h4>AUTOMATION</h4>
                     <p>
-                      Sarcinile repetitive ocupa timpul pe care echipa dvs l-ar
-                      putea petrce pentru munca inovatoare.
+                    {t('solutii.automation_short_description')}.
                     </p>
                   </div>
                   <div class="showed-content">
@@ -144,8 +143,7 @@ function Solutii() {
                   <div class="hidden-content">
                     <h4>I.T. OPTIMIZATION</h4>
                     <p>
-                      Este posibil ca sistemele care susțin organizația dvs. să
-                      nu-i susțină viitorul.
+                    {t('solutii.optimisation_short_description')}
                     </p>
                   </div>
                   <div class="showed-content">
@@ -167,10 +165,7 @@ function Solutii() {
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            Tehnologia potrivită este doar un pas într-o călătorie nativă în
-            cloud. Cu instrumentele și abordările noastre deschise, vă puteți
-            aranja procesele, platformele și echipele pentru a prospera în
-            cloud.
+            {t('solutii.cloud_native_long_description')}
           </p>
           <div class="w3-row"></div>
         </div>
@@ -184,9 +179,8 @@ function Solutii() {
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            În cloud-ul nostru hibrid, aplicațiile și datele se deplasează fluid
-            între medii: cloud public, cloud privat, la nivel local și
-            virtualizat.
+          {t('solutii.work_in_cloud_description')}
+
           </p>
           <div class="w3-row"></div>
         </div>
@@ -200,10 +194,7 @@ function Solutii() {
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            Sarcinile repetitive ocupa timpul pe care echipa dvs. l-ar putea
-            petrece pentru munca inovatoare. Instrumentele noastre de
-            automatizare si gestionare deschise va permit sa va reorientati si
-            sa reluati controlul.
+          {t('solutii.automation_long_description')}
           </p>
           <div class="w3-row"></div>
         </div>
@@ -216,10 +207,8 @@ function Solutii() {
         <img src={optimisation} alt="Norway" className={style.solutionsImg} />
         <div class="w3-container">
           <p className={style.solutionsText}>
-            Este posibil ca sistemele care susțin organizația dvs. să nu-i
-            susțină viitorul. Portofoliul nostru de instrumente de
-            infrastructură deschisă vă va ajuta să profitați mai mult de ceea ce
-            aveți în timp ce construiți ceea ce veți avea nevoie.
+          {t('solutii.optimisation_long_description')}
+
           </p>
           <div class="w3-row"></div>
         </div>

@@ -35,9 +35,15 @@ padding: 4px 6px;
 border:none;
 text-align: center;
 margin-top: 0;
+background-color: transparent;
+
+:hover{
+background-color: transparent;
+transition: none;
+}
 `
 
 const StyledDropdownMenu = styled(Dropdown.Menu)`
-width: fit-content !important;
+width: 2rem !important;
 transform: translate(0px, 29px) !important;
 `

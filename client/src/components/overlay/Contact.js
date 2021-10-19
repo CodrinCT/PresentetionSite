@@ -2,6 +2,7 @@ import style from "../../styles/home/contact.module.css";
 import styleForm from "../../styles/home/form.module.css";
 import { useState } from "react";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
@@ -42,6 +43,8 @@ export default function Contact() {
       })
       .catch((error) => setError({ error: error.message }));
   }
+
+  const {t} = useTranslation()
   return (
     <>
       {/* The background div */}
@@ -51,23 +54,23 @@ export default function Contact() {
             <h1
               className={style.contactTitle}
             >
-              Contacteaza-ne oricand!
+              {t('contact.title')}
             </h1>
           </div>
 
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
-              <h2 className={style.infoTitle}>Locatie</h2>
+              <h2 className={style.infoTitle}>{t('contact.contact_info.loactie')}</h2>
               <p style={{ color: "white" }}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
-              <h2 className={style.infoTitle}>Email de contact</h2>
+              <h2 className={style.infoTitle}>{t('contact.contact_info.contact_email')}</h2>
               <p style={{ color: "white" }}>contact@tyrbul.com</p>
             </div>
             <div className={style.extra_info_specific}>
-              <h2 className={style.infoTitle}>Program</h2>
+              <h2 className={style.infoTitle}>{t('contact.contact_info.program.title')}</h2>
               <p style={{ color: "white" }}>
-                Luni-Vineri - 10 AM – 7 PM <br></br> Sambata-Duminica - Inchis
+              {t('contact.contact_info.program.week_time')}<br></br> {t('contact.contact_info.program.Weekend')}
               </p>
             </div>
           </div>
@@ -76,7 +79,7 @@ export default function Contact() {
             <div className={styleForm.input_div}>
               <input
                 type="text"
-                placeholder="Numele dumneavostra"
+                placeholder={t('contact.form.name')}
                 required
                 value={name}
                 onChange={(e) => {
@@ -85,7 +88,7 @@ export default function Contact() {
               ></input>
               <input
                 type="email"
-                placeholder="Email-ul dumneavostra"
+                placeholder={t('contact.form.email')}
                 required
                 value={email}
                 onChange={(e) => {
@@ -94,7 +97,7 @@ export default function Contact() {
               ></input>
             </div>
             <textarea
-              placeholder="Mesajul dumneavostra"
+              placeholder={t('contact.form.textarea')}
               rows="5"
               required
               value={message}
@@ -103,7 +106,7 @@ export default function Contact() {
               }}
             ></textarea>
             {/* </div> */}
-            <button>TRIMITE</button>
+            <button>{t('contact.form.button')}</button>
             <div>
               {mailSent && (
                 <div
@@ -114,7 +117,7 @@ export default function Contact() {
                     color: "green",
                   }}
                 >
-                  Mesajul a fost trimis, va multumim!
+                  {t('contact.form.email_message')}
                 </div>
               )}
             </div>

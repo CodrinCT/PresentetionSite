@@ -16,11 +16,13 @@ import "../styles/servicii/cardfliping.scss";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import headerImg from "../images/pexels-kindel-media-7688336.jpg";
+import { useTranslation } from "react-i18next";
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 </style>;
 function Servicii() {
+  const {t} = useTranslation()
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -29,19 +31,17 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">PLATFORME LINUX</h2>
-              <h1 class="title">Enterprise Linux</h1>
+              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
+              <h1 class="title">{t('servicii.enterprise_linux_title1')}</h1>
               <img class="image" src={linuxPhoto1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
                 {" "}
-                <h3 class="synopsis">Descriere</h3>
+                <h3 class="synopsis">{t('servicii.description_title')}</h3>
               </h3>
               <CardDescription>
-                O fundație stabilă, dovedită, suficient de versatilă pentru
-                lansarea de noi aplicații, virtualizarea mediilor și crearea
-                unui cloud hibrid mai sigur.
+              {t('servicii.enterprise_linux_description')}
               </CardDescription>
             </div>
           </div>
@@ -49,18 +49,17 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">PLATFORME LINUX</h2>
+              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
               <h1 class="title">OpenStack Platform</h1>
               <img class="image" src={linuxPhoto2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
                 {" "}
-                <h3 class="synopsis">Description</h3>
+                <h3 class="synopsis">{t('servicii.description_title')}</h3>
               </h3>
               <CardDescription>
-                O platformă sigură, scalabilă, pentru construirea cloud-urilor
-                publice și private.
+              {t('servicii.enterprise_linux_description2')}
               </CardDescription>
             </div>
           </div>
@@ -68,16 +67,15 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">PLATFORME LINUX</h2>
+              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
               <h1 class="title">Sattelite</h1>
               <img class="image" src={linuxPhoto3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Cel mai simplu mod de a gestiona Enterprise Linux, menținând
-                sistemele dvs. funcționând eficient, securizate corespunzător și
-                conforme cu diferite standarde.
+              {t('servicii.enterprise_linux_description3')}
+
               </CardDescription>
             </div>
           </div>
@@ -87,16 +85,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CLOUD COMPUTING</h2>
+              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
               <h1 class="title">OpenShift</h1>
               <img class="image" src={cloudImg1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                O platformă de aplicații pentru containere care permite
-                dezvoltatorilor să dezvolte rapid, să găzduiască, să scaleze și
-                să livreze aplicații în cloud.
+              {t('servicii.cloud_computing_description')}
               </CardDescription>
             </div>
           </div>
@@ -104,16 +100,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CLOUD COMPUTING</h2>
+              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
               <h1 class="title">Directory Server</h1>
               <img class="image" src={cloudImg2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title2')}</h3>
               <CardDescription>
-                Un registru independent de sistemul de operare, bazat pe rețea,
-                care permite administratorilor să stocheze central identitatea
-                utilizatorului și informațiile despre aplicație.
+              {t('servicii.cloud_computing_description2')}
               </CardDescription>
             </div>
           </div>
@@ -121,15 +115,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CLOUD COMPUTING</h2>
+              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
               <h1 class="title">Quay</h1>
               <img class="image" src={cloudImg3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title3')}</h3>
               <CardDescription>
-                Asigurați-vă că aplicațiile dvs. sunt stocate in privat,
-                controland accesul. Quay este optimizat pentru munca în echipă.
+              {t('servicii.cloud_computing_description3')}
               </CardDescription>
             </div>
           </div>
@@ -139,17 +132,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CONSULTANTA</h2>
-              <h1 class="title">Schimbarea incepe cu tine</h1>
+              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
+              <h1 class="title">{t('servicii.consultare_title')}</h1>
               <img class="image" src={consultImg1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Compania noastra continuă să sprijine clienții pe măsură ce se
-                adaptează la un peisaj global în schimbare. Vă putem ajuta
-                organizația să abordeze noi provocări în timp ce creăm o
-                strategie pe termen lung.
+              {t('servicii.consultare_description1')}
               </CardDescription>
             </div>
           </div>
@@ -157,17 +147,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CONSULTANTA</h2>
-              <h1 class="title">Schimba abordarea</h1>
+              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
+              <h1 class="title">{t('servicii.consultare_title2')}</h1>
               <img class="image" src={consultImg2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Lucrând printr-un model colaborativ de furnizare a serviciilor
-                folosind instrumente deschise și metodologii dovedite, acționăm
-                ca o extensie a echipei dvs. pentru a vă ajuta să adoptați noi
-                tehnologii și să transformați procesele.
+              {t('servicii.consultare_description12')}
               </CardDescription>
             </div>
           </div>
@@ -175,15 +162,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">CONSULTANTA</h2>
-              <h1 class="title">Profita</h1>
+              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
+              <h1 class="title">{t('servicii.consultare_title3')}</h1>
               <img class="image" src={consultImg3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Experții noștri vă vor ajută să vă rafinați procesul și să
-                valorificați potențialul tehnologiilor noi și existente.
+              {t('servicii.consultare_description3')}
               </CardDescription>
             </div>
           </div>
@@ -193,17 +179,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">STORAGE</h2>
-              <h1 class="title">Ceph Storage</h1>
+              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
+              <h1 class="title">{t('servicii.storage_subtitle')}</h1>
               <img class="image" src={storage1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Stocare de fișiere deschisă, definită de software, care combină
-                software-ul de încredere cu hardware de marfă x86, eliminând
-                necesitatea sistemelor de stocare proprietare cu costuri
-                ridicate.
+              {t('servicii.storage_description')}
               </CardDescription>
             </div>
           </div>
@@ -211,15 +194,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">STORAGE</h2>
-              <h1 class="title">OpenShift Container Storage</h1>
+              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
+              <h1 class="title">{t('servicii.storage_subtitle2')}</h1>
               <img class="image" src={storage2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                Stocare definită de software special concepută pentru medii de
-                containere.
+              {t('servicii.storage_description2')}
               </CardDescription>
             </div>
           </div>
@@ -227,18 +209,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">STORAGE</h2>
-              <h1 class="title">Cluster Storage</h1>
+              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
+              <h1 class="title">{t('servicii.storage_subtitle3')}</h1>
               <img class="image" src={storage3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">Description</h3>
+              <h3 class="synopsis">{t('servicii.description_title')}</h3>
               <CardDescription>
-                O platformă de stocare a blocurilor și obiectelor robustă,
-                foarte scalabilă, pentru întreprinderile care implementează
-                cloud public sau privat - bazată pe cea mai populară opțiune de
-                stocare a blocurilor comunitare pentru cloud-uri bazate pe
-                OpenStack.
+              {t('servicii.storage_description3')}
               </CardDescription>
             </div>
           </div>

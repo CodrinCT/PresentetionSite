@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import styled, { keyframes } from "styled-components";
 import style from "../../styles/home/form.module.css";
 require("dotenv").config();
@@ -41,6 +42,8 @@ export default function Form() {
   }
   console.log(mailSent);
 
+  const{t} = useTranslation()
+
   return (
     <form className={style.form} onSubmit={submitHandler}>
       <div className={style.input_div}>
@@ -50,7 +53,7 @@ export default function Form() {
           onChange={(e) => {
             setName(e.target.value);
           }}
-          placeholder="Numele dumneavostra"
+          placeholder={t('contact.form.name')}
           required
         ></input>
         <input
@@ -59,12 +62,12 @@ export default function Form() {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          placeholder="Email-ul dumneavostra"
+          placeholder={t('contact.form.email')}
           required
         ></input>
       </div>
       <textarea
-        placeholder="Mesajul dumneavostra"
+        placeholder={t('contact.form.textarea')}
         value={message}
         onChange={(e) => {
           setMessage(e.target.value);
@@ -72,11 +75,11 @@ export default function Form() {
         rows="5"
         required
       ></textarea>
-      <button>TRIMITE</button>
+      <button>{t('contact.form.button')}</button>
       <div>
         {mailSent && (
           <div style={{ marginTop: "40px", fontSize: "30px", color: "green" }}>
-            Thank you for contacting us !
+            {t('contact.form.email_message')}
           </div>
         )}
       </div>

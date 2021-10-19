@@ -9,6 +9,7 @@ import { useState } from "react";
 import { MenuList, Popper } from "@mui/material";
 import { Animated } from "react-animated-css";
 import LanguageChanger from "./Languagechanger";
+import { useTranslation } from "react-i18next";
 export default function Links() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -18,32 +19,34 @@ export default function Links() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const {t} = useTranslation()
   return (
     <>
       <ul className={style.layout}>
         <li className={style.li}>
           <Link className={style.link} to="/">
-            Acasa
+          {t('acasa.acasa_link')}
           </Link>
         </li>
         <li className={style.li}>
           <Link className={style.link} to="/servicii">
-            Servicii
+          {t('acasa.servicii_link')}
           </Link>
         </li>
         <li className={style.li}>
           <Link className={style.link} to="/solutii">
-            Solutii
+          {t('acasa.solutii_link')}
           </Link>
         </li>
         <li className={style.li}>
           <Link className={style.link} to="/despre_noi">
-            Despre Noi
+          {t('acasa.despre_noi_link')}
           </Link>
         </li>
         <li className={style.li}>
           <Link className={style.link} to="/contact">
-            Contact
+          {t('acasa.contact_link')}
           </Link>
         </li>
         <li>
@@ -86,65 +89,36 @@ export default function Links() {
       >
         <MenuItem>
           <Link to="/" className={style.menuLink}>
-            Home
+          {t('acasa.acasa_link')}
+
           </Link>
         </MenuItem>
         <MenuItem>
           <Link to="/servicii" className={style.menuLink}>
-            Servicii
+          {t('acasa.servicii_link')}
+
           </Link>
         </MenuItem>
         <MenuItem>
           <Link to="/solutii" className={style.menuLink}>
-            Solutii
+          {t('acasa.solutii_link')}
+
           </Link>
         </MenuItem>
         <MenuItem>
           <Link to="/despre_noi" className={style.menuLink}>
-            Despre Noi
+          {t('acasa.despre_noi_link')}
+
           </Link>
         </MenuItem>
         <MenuItem>
           <Link to="/contact" className={style.menuLink}>
-            Contact
+          {t('acasa.contact_link')}
+
           </Link>
         </MenuItem>
       </Menu>
       </Animated>
-      {/* <FontAwesomeIcon
-        icon={faHamburger}
-        className={style.Dropdown}
-        onClick={burgerHandler}
-      ></FontAwesomeIcon> */}
-      {/* <Dropdown>
-        <Dropdown.Menu className={style.DropMenu}>
-          <Dropdown.Item as={Link} to="/">
-            Home
-          </Dropdown.Item>
-          <Dropdown.Item as={Link} to="/servicii">
-            Servicii
-          </Dropdown.Item>
-          <Dropdown.Item as={Link} to="/solutii">
-            Solutii
-          </Dropdown.Item>
-          <Dropdown.Item as={Link} to="/despre_noi">
-            Despre Noi
-          </Dropdown.Item>
-          <Dropdown.Item as={Link} to="/contact">
-            Contact
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown> */}
-
-      {/* <button className={style.Dropdown}>
-        <span>
-          <FontAwesomeIcon icon={faHamburger} className={style.btn}>
-            Pagini
-          </FontAwesomeIcon>
-        </span>
-
-       
-      </button> */}
     </>
   );
 }

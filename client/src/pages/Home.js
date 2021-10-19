@@ -75,7 +75,7 @@ const {t, i18n} = useTranslation()
                     fontFamily: "Roboto",
                   }}
                 >
-                  Despre Noi
+                  {t('acasa.despre_noi_link')}
                 </p>
               </div>
               <div className={style.manyImgDiv}>
@@ -92,7 +92,8 @@ const {t, i18n} = useTranslation()
                       fontFamily: "Roboto",
                     }}
                   >
-                    Servicii
+                  {t('acasa.servicii_link')}
+
                   </p>
                 </div>
                 <div className={style.multipleImgTwo} onClick={redirectSolutii}>
@@ -105,7 +106,7 @@ const {t, i18n} = useTranslation()
                       fontFamily: "Roboto",
                     }}
                   >
-                    Solutii
+                    {t('acasa.solutii_link')}
                   </p>
                 </div>
               </div>

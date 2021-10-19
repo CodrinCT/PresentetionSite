@@ -10,17 +10,7 @@ export default function Header(props) {
     <div className={style.header}>
       <HeaderBackground>
         <NavigationBar iconColor={props.iconColor} backgroundColor="transparent"></NavigationBar>
-
         <Title></Title>
-
-        {/* <div className={style.options}>
-      <OverlayActivator text="Cunoaste Echipa" comp={<Team></Team>}></OverlayActivator>
-      <OverlayActivator
-        text="Obiectivul activitatii"
-       comp={<Objective></Objective>}
-      ></OverlayActivator>
-      <OverlayActivator text="Contacteaza-ne" comp={<Contact></Contact>}></OverlayActivator>
-      </div> */}
       </HeaderBackground>
 
     </div>

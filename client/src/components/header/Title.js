@@ -17,9 +17,9 @@ const {t, i18n} = useTranslation()
         {/* Solutii, Rezultate, Calitate!  */}
         {t('acasa.home_title')}
       </h1>
-      <Paragraph>TYRBUL SOLUTION SRL este un proiect Start-UP Nation,<br></br> fondat de o echipă de profesioniști, scopul nostru fiind soluționarea problemelor.</Paragraph>
+      <Paragraph>{t('acasa.home_subtitle')}</Paragraph>
       <button variant="info" className={style.button} onClick={buttonHandler}>
-        CITESTE MAI MULT
+      {t('acasa.home_more_button')}
       </button>
     </div>
   );

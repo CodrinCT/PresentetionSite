@@ -7,10 +7,10 @@ const languages = ['en', 'ro']
 
 
 i18next.use(Backend)
-.use(LanguageDetector)
 .use(initReactI18next)
 .init({
 
+    lng:'ro',
     fallbackLng:'ro',
     debug:true,
     interpolation:{

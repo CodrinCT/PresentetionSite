@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import footerImg from "../images/top.jpg";
 import logo from "../images/loho.png";
-
+import { useTranslation } from "react-i18next";
+import LanguageChanger from "./navigation/Languagechanger";
 export default function Footer() {
+  const {t} = useTranslation()
+
   return (
     <FooterParent>
       <MidleDiv>
@@ -20,16 +23,16 @@ export default function Footer() {
       <LinksDiv>
       <NavigationLinksDiv>
           <LinksList>
-          <Linkstext to="/">Acasa</Linkstext>
-          <Linkstext to="/servicii">Servicii</Linkstext>
-          <Linkstext to="/solutii">Solutii</Linkstext>
-          <Linkstext to="/despre_noi">Despre Noi</Linkstext>
-          <Linkstext to="/contact">Contact</Linkstext>
+          <Linkstext to="/">{t('acasa.acasa_link')}</Linkstext>
+          <Linkstext to="/servicii">{t('acasa.servicii_link')}</Linkstext>
+          <Linkstext to="/solutii">{t('acasa.solutii_link')}</Linkstext>
+          <Linkstext to="/despre_noi">{t('acasa.despre_noi_link')}</Linkstext>
+          <Linkstext to="/contact">{t('acasa.contact_link')}</Linkstext>
           </LinksList>
         </NavigationLinksDiv>
         <ExtraInfoLinksDiv>
-          <Linkstext to="/privecy">GDPR</Linkstext>
-          <Linkstext to="/termeni_si_conditii">Termeni si Conditii</Linkstext>
+          <Linkstext to="/privecy">{t('legal_stuff_links.GDPR')}</Linkstext>
+          <Linkstext to="/termeni_si_conditii">{t('legal_stuff_links.termeni_codnitii')}</Linkstext>
           <Linkstext to="/cookies">Cookies</Linkstext>
         </ExtraInfoLinksDiv>
       </LinksDiv>
@@ -60,9 +63,6 @@ const MidleDiv = styled.div`
   justify-content: center;
   width: 100%;
   padding-bottom: 2rem;
-  /* @media (max-width: 500px) {
-    order: -1;
-  } */
 `;
 
 const ContactTitle = styled.h2`

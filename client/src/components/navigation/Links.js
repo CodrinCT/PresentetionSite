@@ -8,6 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import { MenuList, Popper } from "@mui/material";
 import { Animated } from "react-animated-css";
+import LanguageChanger from "./Languagechanger";
 export default function Links() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -44,6 +45,10 @@ export default function Links() {
           <Link className={style.link} to="/contact">
             Contact
           </Link>
+        </li>
+        <li>
+      <LanguageChanger></LanguageChanger>
+
         </li>
       </ul>
 
@@ -106,7 +111,6 @@ export default function Links() {
         </MenuItem>
       </Menu>
       </Animated>
-     
       {/* <FontAwesomeIcon
         icon={faHamburger}
         className={style.Dropdown}

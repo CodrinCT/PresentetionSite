@@ -15,7 +15,7 @@ const {t, i18n} = useTranslation()
     <div className={style.Title}>
       <h1 className={style.h}>
         {/* Solutii, Rezultate, Calitate!  */}
-        {t('home_title')}
+        {t('acasa.home_title')}
       </h1>
       <Paragraph>TYRBUL SOLUTION SRL este un proiect Start-UP Nation,<br></br> fondat de o echipă de profesioniști, scopul nostru fiind soluționarea problemelor.</Paragraph>
       <button variant="info" className={style.button} onClick={buttonHandler}>

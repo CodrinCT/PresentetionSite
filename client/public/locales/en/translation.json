@@ -68,14 +68,21 @@
     "storage_description3": "A storage platform for blocks and objects that is robust scalable for organizations that implement public or private cloud based the most popular option of storing comunity blocks for public cloud based on OpenStack."
   },
 
-  "about_us": {
+  "despre_noi": {
     "title": "About Us",
     "header_param": {
       "1": "If you eant to know about us, you came to the right place!",
       "2": "Find out how we can help you!"
     },
-    "our_objective_param1": "Our company is a start-up project, founded by a team a professionals, with the objective of solving problems. We are a dream come true, when we founded the company we new that there was a gap in the Romanian on the software market that we filled.",
-    "our_objective_param2": "We understand that our clients have different needs. That is why our strategy is very client focused. We take several stages in helping companies to align their objectives.",
-    "our_objective_param3": ""
+    "despre_noi_param1": "Our company is a start-up project, founded by a team a professionals, with the objective of solving problems. We are a dream come true, when we founded the company we new that there was a gap in the Romanian on the software market that we filled.",
+    "despre_noi_param2": "We understand that our clients have different needs. That is why our strategy is very client focused. We take several stages in helping companies to align their objectives.",
+    "despre_noi_param3": "The commitement to profesionalism, trust, transparency, integrity and dedication are just a few of the qualities that define us as people, team and business",
+    "objective_descripiton":"The secret to success is the balance between the pleasure of what you are doing and taking responsability of doing it the best you can. Our team members respond to emails even after normal working hours to assure as that your software platform is as best as it can be. They do that from passion and we are proud of their will and dedication.",
+    "our_team_title":"Our Team"
+  },
+  "legal_stuff_links":{
+    "GDPR":"privecy policy",
+    "termeni_codnitii":"Terms and Conditions"
   }
+
 }

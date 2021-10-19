@@ -11,7 +11,7 @@ i18next.use(Backend)
 .use(initReactI18next)
 .init({
 
-    lng:'en',
+    fallbackLng:'ro',
     debug:true,
     interpolation:{
         escapeValue:false

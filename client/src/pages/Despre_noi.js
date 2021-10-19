@@ -7,7 +7,7 @@ import Objective from "../components/overlay/Obiectivul_activitatii";
 import { Animated } from "react-animated-css";
 import { useInView } from "react-intersection-observer";
 import img1 from "../images/pexels-fauxels-3184312.jpg";
-
+import { useTranslation } from "react-i18next";
 
 <style>
   @import
@@ -19,11 +19,11 @@ function Despre() {
     threshold: 0.5,
   });
 
-  const [ teamref, teamView ] = useInView({
+  const [teamref, teamView] = useInView({
     threshold: 0.4,
   });
 
-  const [ objectiveRef, objectiveView ] = useInView({
+  const [objectiveRef, objectiveView] = useInView({
     threshold: 0.3,
   });
 
@@ -31,7 +31,7 @@ function Despre() {
     rootMargin: "20%",
   });
 
- 
+  const { t } = useTranslation();
 
   return (
     <>
@@ -45,11 +45,10 @@ function Despre() {
                 animationOutDuration={400}
                 // animationInDelay={200}
                 animationInDuration={600}
-
                 isVisible={false}
               >
                 <div className={style.body}>
-                  <h1 className={style.h}>Despre noi</h1>
+                  <h1 className={style.h}>{t("despre_noi.title")}</h1>
                 </div>
               </Animated>
             ) : (
@@ -61,12 +60,9 @@ function Despre() {
                 // animationInDelay={200}
               >
                 <div className={style.body}>
-                  <h1 className={style.h}>Despre noi</h1>
-                  <HeaderParan>
-                    Daca vrei sa stii mai multe despre noi, ai venit la locul
-                    potrivit!
-                  </HeaderParan>
-                  <HeaderParan>Afla cum putem sa te ajutam!</HeaderParan>
+                  <h1 className={style.h}>{t("despre_noi.title")}</h1>
+                  <HeaderParan>{t("despre_noi.header_param.1")}</HeaderParan>
+                  <HeaderParan>{t("despre_noi.header_param.2")}</HeaderParan>
                 </div>
               </Animated>
             )}
@@ -74,149 +70,117 @@ function Despre() {
 
           <InformationAboutUs ref={ref}>
             <Overlay></Overlay>
-              {inView && (
-                <>
-                  <FirstInfoDiv>
-                    <Animated
-                  animationIn="slideInRight"
-                  isVisible={true}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param1>
-                    Firma noastra este un proiect Start-UP Nation, fondat de o
-                    echipă de profesioniști, scopul nostru fiind soluționarea
-                    problemelor. Suntem un vis devenit realitate, în momentul
-                    fondării știam ca pe piața Software din Romănia este un loc
-                    lipsă pe care am reușit să-l umplem.
-                  </Param1>
-                </Animated>
-                  </FirstInfoDiv>
+            {inView && (
+              <>
+                <FirstInfoDiv>
+                  <Animated
+                    animationIn="slideInRight"
+                    isVisible={true}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param1>{t("despre_noi.despre_noi_param1")}</Param1>
+                  </Animated>
+                </FirstInfoDiv>
 
-                  <SecondInfoDiv>
-                    <Animated
-                  animationIn="slideInLeft"
-                  isVisible={true}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param2>
-                    Înțelegem clar că toate peisajele clienților nu sunt de
-                    același fel. De aceea, metodologia de aprovizionare cuprinde
-                    o soluție clară special concepută pentru a aborda problemele
-                    clienților. Oferim o abordare pe etape față de factorii
-                    motori ai afacerii dvs. și ajutăm organizațiile IT să își
-                    alinieze obiectivele cu viziunea generală a afacerii
-                  </Param2>
-                </Animated>
-                  </SecondInfoDiv>
+                <SecondInfoDiv>
+                  <Animated
+                    animationIn="slideInLeft"
+                    isVisible={true}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param2>{t("despre_noi.despre_noi_param2")}</Param2>
+                  </Animated>
+                </SecondInfoDiv>
 
-                  <ThirdInfoDiv>
-                    <Animated
-                  animationIn="slideInRight"
-                  isVisible={true}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param3>
-                    Angajamentul față de profesionism, încredere, transparență,
-                    integritatea și dedicarea, sunt doar câteva din atributele
-                    care ne definesc ca oameni, echipă și business.
-                  </Param3>
-                </Animated>
-                  </ThirdInfoDiv>
-                  </>
-              )}
-              {!inView && (
-                <>
-                  <FirstInfoDiv>
-                    <Animated
-                  animationOut="slideOutLeft"
-                  isVisible={false}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param1>
-                    Firma noastra este un proiect Start-UP Nation, fondat de o
-                    echipă de profesioniști, scopul nostru fiind soluționarea
-                    problemelor. Suntem un vis devenit realitate, în momentul
-                    fondării știam ca pe piața Software din Romănia este un loc
-                    lipsă pe care am reușit să-l umplem.
-                  </Param1>
-                </Animated>
-                  </FirstInfoDiv>
+                <ThirdInfoDiv>
+                  <Animated
+                    animationIn="slideInRight"
+                    isVisible={true}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param3>{t("despre_noi.despre_noi_param3")}</Param3>
+                  </Animated>
+                </ThirdInfoDiv>
+              </>
+            )}
+            {!inView && (
+              <>
+                <FirstInfoDiv>
+                  <Animated
+                    animationOut="slideOutLeft"
+                    isVisible={false}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param1>{t("despre_noi.despre_noi_param1")}</Param1>
+                  </Animated>
+                </FirstInfoDiv>
 
-                  <SecondInfoDiv>
-                    <Animated
-                  animationOut="slideOutRight"
-                  isVisible={false}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param2>
-                    Înțelegem clar că toate peisajele clienților nu sunt de
-                    același fel. De aceea, metodologia de aprovizionare cuprinde
-                    o soluție clară special concepută pentru a aborda problemele
-                    clienților. Oferim o abordare pe etape față de factorii
-                    motori ai afacerii dvs. și ajutăm organizațiile IT să își
-                    alinieze obiectivele cu viziunea generală a afacerii
-                  </Param2>
-                </Animated>
-                  </SecondInfoDiv>
+                <SecondInfoDiv>
+                  <Animated
+                    animationOut="slideOutRight"
+                    isVisible={false}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param2>{t("despre_noi.despre_noi_param2")}</Param2>
+                  </Animated>
+                </SecondInfoDiv>
 
-                  <ThirdInfoDiv>
-                    <Animated
-                  animationOut="slideOutLeft"
-                  isVisible={false}
-                  animationInDuration={600}
-                  className={style.animatedParam}
-                >
-                  <Param3>
-                    Angajamentul față de profesionism, încredere, transparență,
-                    integritatea și dedicarea, sunt doar câteva din atributele
-                    care ne definesc ca oameni, echipă și business.
-                  </Param3>
-                </Animated>
-                  </ThirdInfoDiv>
-                  </>
-              )}
+                <ThirdInfoDiv>
+                  <Animated
+                    animationOut="slideOutLeft"
+                    isVisible={false}
+                    animationInDuration={600}
+                    className={style.animatedParam}
+                  >
+                    <Param3>{t("despre_noi.despre_noi_param3")}</Param3>
+                  </Animated>
+                </ThirdInfoDiv>
+              </>
+            )}
           </InformationAboutUs>
         </div>
-         <div ref={objectiveRef}>
-        {objectiveView && (
-          <Animated
-            animationIn="fadeIn"
-            animationInDuration={600}
-            isVisible={true}
-            style={{height:'100%'}}
-          >
-            <Objective></Objective>
-          </Animated>
-        )}
-        {!objectiveView && (
-          <Animated
-            animationOut="fadeOut"
-            animationOutDuration={600}
-            isVisible={false}
-          >
-            <Objective></Objective>
-          </Animated>
-        )}
-      </div>
-      <div ref={teamref} style={{height:'fit-content'}}>
-        {teamView && (
-          <Animated animationIn="fadeIn"
-          animationInDuration={500}>
-            <Team></Team>
-          </Animated>
-        )}
-        {!teamView && (
-          <Animated animationOut="fadeOut" isVisible={false}
-          animationInDuration={500}>
-            <Team></Team>
-          </Animated>
-        )}
-      </div> 
+        <div ref={objectiveRef}>
+          {objectiveView && (
+            <Animated
+              animationIn="fadeIn"
+              animationInDuration={600}
+              isVisible={true}
+              style={{ height: "100%" }}
+            >
+              <Objective></Objective>
+            </Animated>
+          )}
+          {!objectiveView && (
+            <Animated
+              animationOut="fadeOut"
+              animationOutDuration={600}
+              isVisible={false}
+            >
+              <Objective></Objective>
+            </Animated>
+          )}
+        </div>
+        <div ref={teamref} style={{ height: "fit-content" }}>
+          {teamView && (
+            <Animated animationIn="fadeIn" animationInDuration={500}>
+              <Team></Team>
+            </Animated>
+          )}
+          {!teamView && (
+            <Animated
+              animationOut="fadeOut"
+              isVisible={false}
+              animationInDuration={500}
+            >
+              <Team></Team>
+            </Animated>
+          )}
+        </div>
       </>
       <Footer></Footer>
     </>
@@ -237,7 +201,7 @@ const InformationAboutUs = styled.div`
   background-size: cover;
   overflow: hidden;
 
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     height: 100%;
   }
 `;
@@ -246,8 +210,8 @@ const FirstInfoDiv = styled.div`
   flex-direction: row;
   height: 100%;
   /* margin-bottom: 5rem; */
-margin-top: 2rem;
-margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   justify-content: left;
   align-items: center;
@@ -257,7 +221,7 @@ const SecondInfoDiv = styled.div`
   flex-direction: row;
   height: 100%;
   width: 100%;
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
   /* margin-bottom: 5rem;
 margin-top: 5rem; */
@@ -271,7 +235,7 @@ const ThirdInfoDiv = styled.div`
   height: 100%;
   width: 100%;
   margin-bottom: 2rem;
-/* margin-top: 5rem;  */
+  /* margin-top: 5rem;  */
   justify-content: left;
   align-items: center;
 `;
@@ -284,7 +248,7 @@ const Param1 = styled.p`
   text-indent: 15px;
   line-height: 1.5rem;
 
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -298,7 +262,7 @@ const Param2 = styled.p`
   text-indent: 15px;
   line-height: 1.5rem;
 
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -311,7 +275,7 @@ const Param3 = styled.p`
   font-size: 1.2rem;
   text-indent: 15px;
   line-height: 1.5rem;
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -332,7 +296,7 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     object-fit: cover;
   }
 `;

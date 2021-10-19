@@ -84,6 +84,7 @@
     "despre_noi_param1": "Our company is a start-up project, founded by a team of professionals, with the objective of solving problems. We are a dream come true, when we founded the company we knew that there was a gap in the Romanian on the software market that we filled.",
     "despre_noi_param2": "We understand that our clients have different needs. That is why our strategy is very client-focused. We take several stages in helping companies to align their objectives.",
     "despre_noi_param3": "The commitment to professionalism, trust, transparency, integrity, and dedication are just a few of the qualities that define us as people, team, and business",
+    "objective_title": "Our objective",
     "objective_descripiton": "The secret to success is the balance between the pleasure of what you are doing and taking responsibility of doing it the best you can. Our team members respond to emails even after normal working hours to assure us that your software platform is as best as it can be. They do that from passion and we are proud of their will and dedication.",
     "our_team_title": "Our Team"
   },
@@ -114,7 +115,7 @@
 
   "terms_and_conditions": {
     "title": "Terms and coditions",
-    "actualizare":"Last changes on: 14 iulie 2020",
+    "actualizare": "Last changes on: 14 iulie 2020",
     "subtitle": {
       "1": "1. ACCEPTANCE OF TERMS",
       "2": "2. YOUR OBLIGATIONS",
@@ -139,7 +140,7 @@
       },
       "2": "Given your use of the european parliament. of the website and/or services, you agree to be solely responsible for: (a) providing true, accurate, current and complete information about yourself as required by the Registration Form of the Service (the “Registration Data”) and (b) maintaining and promptly updating the registration data to keep them true, accurate,  current and complete. You are solely responsible for the security of your password. Our company  is not responsible for any unauthorized use of the website or services. You acknowledge and agree that certain Services may provide password-restricted access to customer information, such as your name and certain terms of your contracts. existing, to assist you in purchasing, maintaining and supporting your products.  our company. By using this website and registering for such services, you agree with  our company to display this information through the Services and accept all risks of unauthorized access to such information. If you provide false, inaccurate, outdated or incomplete information or our firm has reasonable grounds to suspect that this information is false, inaccurate, not current or incomplete,  our firm may suspend or terminate your account. and refuse any current or future use of the Services (or any part thereof).",
       "3": {
-        "extra":"In order to have access to the Services, you agree to these privacy provisions:",
+        "extra": "In order to have access to the Services, you agree to these privacy provisions:",
         "3_1": "You acknowledge that you may obtain direct access through the Website to certain confidential information of our company(“Information”). You must keep the information in strict confidence and can provide information to employees in your organization. only on the basis of the need to know. You may only use the information on the website for the purpose of purchasing, maintaining and supporting your products.  our company. The title to the information remains with our company and its suppliers. You agree, either as an individual or on behalf of your employer, to be bound by the provisions of this section 3. In addition, if you act on behalf of your employer, your employer will be acting on behalf of your employer. agrees to indemnify  our company for violations of this section.",
         "3_2": "You do not obtain any right to the information except for the limited right to use the information described above.",
         "3_3": "Any breach of the Terms will result in irreparable harm to our firm for which damages would be an inappropriate remedy and therefore, in addition to its rights and remedies otherwise available in the legislation,  our firm will be entitled to fair compensation, including both a preliminary and permanent decision, if such a violation occurs. Waive any requirement for the registration of a bond or other guarantee if our firm requests such a measure.",
@@ -161,7 +162,6 @@
           "4_5_6": "6. intentionally or unintentionally violates any applicable local, state, national or international law or any regulations with the force of law; or",
           "4_5_7": "7. collects or stores personal data about other users."
         }
-        
       },
       "5": {
         "5_1": "Our company does not claim ownership of the Content you place on the Site. By sending content to  our company for inclusion on the site, you also grant to all other users of our company  a worldwide, royalty-free and non-exclusive license to reproduce, modify, distribute, transmit, display, perform, adapt and publish the content (including in digital format).",
@@ -218,23 +218,23 @@
     }
   },
 
-  "politica_de_confidentialitate":{
-    "title":"Privecy Policy",
-    "first_part":{
-      "1":"GDPR Privacy Policy One of our top priorities is the privacy of our visitors. This privacy policy document contains the types of information that is collected and recorded by your website and how we use it. If you have additional questions or need more information about our privacy policy, they are not included in the contract. General Data Protection Regulation (GDPR) I am a data controller for your information. The legal basis of our company for the collection and use of personal information described in this privacy policy depends on the personal information it collects and the specific context in which it collects information. :",
-      "2":"Our company must enter into a contract with you.",
-      "3":"The processing of your personal information is in the legitimate interest of our company.",
-      "4":"Our company must abide by the law."
+  "politica_de_confidentialitate": {
+    "title": "Privecy Policy",
+    "first_part": {
+      "1": "GDPR Privacy Policy One of our top priorities is the privacy of our visitors. This privacy policy document contains the types of information that is collected and recorded by your website and how we use it. If you have additional questions or need more information about our privacy policy, they are not included in the contract. General Data Protection Regulation (GDPR) I am a data controller for your information. The legal basis of our company for the collection and use of personal information described in this privacy policy depends on the personal information it collects and the specific context in which it collects information. :",
+      "2": "Our company must enter into a contract with you.",
+      "3": "The processing of your personal information is in the legitimate interest of our company.",
+      "4": "Our company must abide by the law."
     },
-    "second_part":{
-      "1":"Our company will retain your personal information only for as long as is necessary for the purposes set out in this privacy policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes and enforce our policies. If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you would like to be informed of what personal information we hold about you and would like it removed from our systems, please contact us. In certain circumstances, you have the following data protection rights:",
-      "2":"The right to access, update or delete the information we have about you",
-      "3":"The right of rectification.",
-      "4":"The right to object.",
-      "5":"The right of restriction.",
-      "6":"The right to data portability.",
-      "7":"The right to withdraw consent."
+    "second_part": {
+      "1": "Our company will retain your personal information only for as long as is necessary for the purposes set out in this privacy policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes and enforce our policies. If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you would like to be informed of what personal information we hold about you and would like it removed from our systems, please contact us. In certain circumstances, you have the following data protection rights:",
+      "2": "The right to access, update or delete the information we have about you",
+      "3": "The right of rectification.",
+      "4": "The right to object.",
+      "5": "The right of restriction.",
+      "6": "The right to data portability.",
+      "7": "The right to withdraw consent."
     },
-    "third_part":"Log Files Our website follows a standard procedure for using log files. These files record visitors when they visit websites. All hosting companies do this and are part of the analysis of hosting services. The information collected by the log files includes Internet Protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referral/exit pages, and possibly number of clicks. They are not related to any personally identifiable information. The purpose of the information is to analyze trends, manage the site, track the movement of users on the site and gather demographic information. Privacy Policies Third-party ad servers or ad networks use technologies such as cookies, JavaScript or Web Beacons that are used in those advertisements and links that appear on our website, which are sent directly to users' browsers. They automatically receive your IP address when this happens. These technologies are used to measure the effectiveness of their advertising campaigns and / or to personalize the advertising content you see on the websites you visit. Please note that our site does not have access to or control over these cookies that are used by third-party advertisers."
+    "third_part": "Log Files Our website follows a standard procedure for using log files. These files record visitors when they visit websites. All hosting companies do this and are part of the analysis of hosting services. The information collected by the log files includes Internet Protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referral/exit pages, and possibly number of clicks. They are not related to any personally identifiable information. The purpose of the information is to analyze trends, manage the site, track the movement of users on the site and gather demographic information. Privacy Policies Third-party ad servers or ad networks use technologies such as cookies, JavaScript or Web Beacons that are used in those advertisements and links that appear on our website, which are sent directly to users' browsers. They automatically receive your IP address when this happens. These technologies are used to measure the effectiveness of their advertising campaigns and / or to personalize the advertising content you see on the websites you visit. Please note that our site does not have access to or control over these cookies that are used by third-party advertisers."
   }
 }

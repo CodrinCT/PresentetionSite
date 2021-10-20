@@ -8,45 +8,34 @@ import CookiePopUp from "../components/CookiePopUp";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-
-
-
 function ContactPage() {
-  const {t, i18n} = useTranslation()
+  const { t, i18n } = useTranslation();
 
-// const changeLanguage= (language)=>{
-// i18n.changeLanguage(language)
-// }
+  // const changeLanguage= (language)=>{
+  // i18n.changeLanguage(language)
+  // }
   return (
     <>
-
-
-
       <NavigationBar></NavigationBar>
-      
+
       <Page className={style.page}>
-        <img
-          src={image1}
-          className={style.img}
-          alt="contact page photo"
-        ></img>
-          {/* <button onClick={()=>changeLanguage("en")}>EN</button>
-          <button onClick={()=>changeLanguage("ro")}>RO</button> */}
+        <img src={image1} className={style.img} alt="contact page"></img>
         <div id="contact" className={style.contactDiv}>
           <div className={style.extra_info}>
             <div className={style.extra_info_specific}>
-              <Title>{t('contact.contact_info.loactie')}</Title>
+              <Title>{t("contact.contact_info.loactie")}</Title>
               <p style={{ color: "white" }}>Iasi, Vasile Conta 42, 700380 </p>
             </div>
             <div className={style.extra_info_specific}>
-              <Title>{t('contact.contact_info.contact_email')}</Title>
+              <Title>{t("contact.contact_info.contact_email")}</Title>
               <p style={{ color: "white" }}>contact@tyrbul.com</p>
             </div>
             <div className={style.extra_info_specific}>
-              <Title>{t('contact.contact_info.program.title')}</Title>
+              <Title>{t("contact.contact_info.program.title")}</Title>
               <p style={{ color: "white" }}>
-                {t('contact.contact_info.program.week_time')}<br></br>
-                {t('contact.contact_info.program.Weekend')}
+                {t("contact.contact_info.program.week_time")}
+                <br></br>
+                {t("contact.contact_info.program.Weekend")}
               </p>
             </div>
           </div>
@@ -67,11 +56,10 @@ const Page = styled.div`
   flex-direction: column;
   height: 100vh;
 
-  @media (max-width:600px){
+  @media (max-width: 1200px) {
     height: 100%;
   }
 `;
-
 
 const Title = styled.h1`
   font-size: 25px;

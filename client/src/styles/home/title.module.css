@@ -10,7 +10,7 @@
 }
 
 .h {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   font-weight: 600;
   font-family: "Roboto";
@@ -22,8 +22,7 @@
 @media screen and (max-width: 600px) {
   .h {
     font-size: 1.2rem;
-  margin-left: 0;
-
+    margin-left: 0;
   }
 }
 
@@ -44,31 +43,28 @@
   font-family: "Roboto";
   text-align: center;
   width: fit-content;
-  margin-left: 9rem;
-  margin-top: 5rem;
+  margin-left: 7rem;
+  margin-top: 4rem;
   position: unset;
   border-radius: 35px;
   text-transform: none;
-letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .button {
-    margin-top: 1rem !important;
-    font-size:0.5rem !important;
+    margin-top: 1.5rem !important;
+    font-size: 0.5rem !important;
     padding: 8px !important;
-  font-weight: 600;
-  margin-left: 6rem;
-
+    font-weight: 600;
+    margin-left: 6rem;
   }
 
-.Title {
-align-items: center;
-}
+  .Title {
+    align-items: center;
+  }
 }
 .button:hover {
   color: black;
   background-color: white;
- 
 }

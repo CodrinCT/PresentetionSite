@@ -29,12 +29,6 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .contactDiv {
-    flex-direction: column;
-  }
-}
-
 .img {
   height: 21rem;
   object-fit: cover;

@@ -22,7 +22,7 @@ import { useTranslation } from "react-i18next";
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 </style>;
 function Servicii() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -31,17 +31,19 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
-              <h1 class="title">{t('servicii.enterprise_linux_title1')}</h1>
+              <h2 class="sub-title">
+                {t("servicii.platforme_linux_subtitle")}
+              </h2>
+              <h1 class="title">{t("servicii.enterprise_linux_title1")}</h1>
               <img class="image" src={linuxPhoto1} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
                 {" "}
-                <h3 class="synopsis">{t('servicii.description_title')}</h3>
+                <h3 class="synopsis">{t("servicii.description_title")}</h3>
               </h3>
               <CardDescription>
-              {t('servicii.enterprise_linux_description')}
+                {t("servicii.enterprise_linux_description")}
               </CardDescription>
             </div>
           </div>
@@ -49,17 +51,19 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
+              <h2 class="sub-title">
+                {t("servicii.platforme_linux_subtitle")}
+              </h2>
               <h1 class="title">OpenStack Platform</h1>
               <img class="image" src={linuxPhoto2} alt="" />
             </div>
             <div class="back">
               <h3 class="synopsis">
                 {" "}
-                <h3 class="synopsis">{t('servicii.description_title')}</h3>
+                <h3 class="synopsis">{t("servicii.description_title")}</h3>
               </h3>
               <CardDescription>
-              {t('servicii.enterprise_linux_description2')}
+                {t("servicii.enterprise_linux_description2")}
               </CardDescription>
             </div>
           </div>
@@ -67,15 +71,16 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.platforme_linux_subtitle')}</h2>
+              <h2 class="sub-title">
+                {t("servicii.platforme_linux_subtitle")}
+              </h2>
               <h1 class="title">Sattelite</h1>
               <img class="image" src={linuxPhoto3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.enterprise_linux_description3')}
-
+                {t("servicii.enterprise_linux_description3")}
               </CardDescription>
             </div>
           </div>
@@ -85,14 +90,16 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
+              <h2 class="sub-title">
+                {t("servicii.cloud_computing_subtitle")}
+              </h2>
               <h1 class="title">OpenShift</h1>
               <img class="image" src={cloudImg1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.cloud_computing_description')}
+                {t("servicii.cloud_computing_description")}
               </CardDescription>
             </div>
           </div>
@@ -100,14 +107,16 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
+              <h2 class="sub-title">
+                {t("servicii.cloud_computing_subtitle")}
+              </h2>
               <h1 class="title">Directory Server</h1>
               <img class="image" src={cloudImg2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title2')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.cloud_computing_description2')}
+                {t("servicii.cloud_computing_description2")}
               </CardDescription>
             </div>
           </div>
@@ -115,14 +124,16 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.cloud_computing_subtitle')}</h2>
+              <h2 class="sub-title">
+                {t("servicii.cloud_computing_subtitle")}
+              </h2>
               <h1 class="title">Quay</h1>
               <img class="image" src={cloudImg3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title3')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.cloud_computing_description3')}
+                {t("servicii.cloud_computing_description3")}
               </CardDescription>
             </div>
           </div>
@@ -132,14 +143,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
-              <h1 class="title">{t('servicii.consultare_title')}</h1>
+              <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
+              <h1 class="title">{t("servicii.consultare_title")}</h1>
               <img class="image" src={consultImg1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.consultare_description1')}
+                {t("servicii.consultare_description1")}
               </CardDescription>
             </div>
           </div>
@@ -147,14 +158,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
-              <h1 class="title">{t('servicii.consultare_title2')}</h1>
+              <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
+              <h1 class="title">{t("servicii.consultare_title2")}</h1>
               <img class="image" src={consultImg2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.consultare_description12')}
+                {t("servicii.consultare_description2")}
               </CardDescription>
             </div>
           </div>
@@ -162,14 +173,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.consultare_subtitle')}</h2>
-              <h1 class="title">{t('servicii.consultare_title3')}</h1>
+              <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
+              <h1 class="title">{t("servicii.consultare_title3")}</h1>
               <img class="image" src={consultImg3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.consultare_description3')}
+                {t("servicii.consultare_description3")}
               </CardDescription>
             </div>
           </div>
@@ -179,14 +190,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
-              <h1 class="title">{t('servicii.storage_subtitle')}</h1>
+              <h2 class="sub-title">{t("servicii.storage_title")}</h2>
+              <h1 class="title">{t("servicii.storage_subtitle")}</h1>
               <img class="image" src={storage1} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.storage_description')}
+                {t("servicii.storage_description")}
               </CardDescription>
             </div>
           </div>
@@ -194,14 +205,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
-              <h1 class="title">{t('servicii.storage_subtitle2')}</h1>
+              <h2 class="sub-title">{t("servicii.storage_title")}</h2>
+              <h1 class="title">{t("servicii.storage_subtitle2")}</h1>
               <img class="image" src={storage2} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.storage_description2')}
+                {t("servicii.storage_description2")}
               </CardDescription>
             </div>
           </div>
@@ -209,14 +220,14 @@ function Servicii() {
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <h2 class="sub-title">{t('servicii.storage_title')}</h2>
-              <h1 class="title">{t('servicii.storage_subtitle3')}</h1>
+              <h2 class="sub-title">{t("servicii.storage_title")}</h2>
+              <h1 class="title">{t("servicii.storage_subtitle3")}</h1>
               <img class="image" src={storage3} alt="" />
             </div>
             <div class="back">
-              <h3 class="synopsis">{t('servicii.description_title')}</h3>
+              <h3 class="synopsis">{t("servicii.description_title")}</h3>
               <CardDescription>
-              {t('servicii.storage_description3')}
+                {t("servicii.storage_description3")}
               </CardDescription>
             </div>
           </div>

@@ -10,7 +10,7 @@
   background-color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .contactDiv {
     height: 100%;
   }
@@ -39,7 +39,7 @@
   z-index: 3;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .overlayDiv {
     height: 100%;
   }

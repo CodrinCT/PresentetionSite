@@ -46,13 +46,15 @@ const {t, i18n} = useTranslation()
     <CookiePopUp></CookiePopUp>
 
    
-
-      <Animated
+    <div style={{backgroundColor:'black', zIndex:'-1', height:'100%'}}>
+    <Animated
         animationIn="slideInDown"
         animationInDuration={800}
       >
         <Header iconColor='black'></Header>
       </Animated>
+    </div>
+      
 
       <div className={style.row} ref={ref}>
         {inView && (
@@ -115,7 +117,6 @@ const {t, i18n} = useTranslation()
         )}
         {!inView && (
           <Animated
-            // animationIn="fadeIn"
             animationOut="fadeOut"
             isVisible={false}
             animationInDuration={800}
@@ -170,8 +171,10 @@ const {t, i18n} = useTranslation()
             </div>
           </Animated>
         )}
+        
+        
       </div>
-      <section ref={ref2}>
+      <section style={{backgroundColor:'black'}} ref={ref2}>
         {inView2 ? (
           <Animated animationIn="fadeIn" animationInDuration={400}>
             <Contact></Contact>

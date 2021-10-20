@@ -10,11 +10,9 @@ import { Suspense } from "react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Suspense>
   </React.StrictMode>,
   document.getElementById("root")
 );

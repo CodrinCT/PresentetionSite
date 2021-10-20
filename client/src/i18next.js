@@ -14,6 +14,9 @@ i18next.use(Backend)
     fallbackLng:'ro',
     debug:true,
     interpolation:{
-        escapeValue:false
+        escapeValue:false,
+    },
+    react:{
+        useSuspense:false
     }
 })

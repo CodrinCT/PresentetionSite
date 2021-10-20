@@ -116,6 +116,7 @@
   }
   .singleImgDiv{
     height: 60%;
+    margin-bottom: 0.5rem;
   }
   .manyImgDiv{
     height: 50%;
@@ -124,10 +125,12 @@
   .multipleImgOne{
     height: 100%;
     width: 100%;
+    margin-right: 0.2rem;
   }
   .multipleImgTwo{
     height: 100%;
     width: 100%;
+    margin-left: 0.2rem;
   }
 }
 

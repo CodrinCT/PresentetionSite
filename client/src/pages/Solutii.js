@@ -165,7 +165,7 @@ function Solutii() {
 
         <div class="w3-container">
           <p className={style.solutionsText}>
-            {t('solutii.cloud_native_long_description')}
+            {t('solutii.cloud_native_description')}
           </p>
           <div class="w3-row"></div>
         </div>

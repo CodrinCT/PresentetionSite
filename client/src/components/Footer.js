@@ -34,6 +34,7 @@ export default function Footer() {
           <Linkstext to="/privecy">{t('legal_stuff_links.GDPR')}</Linkstext>
           <Linkstext to="/termeni_si_conditii">{t('legal_stuff_links.termeni_codnitii')}</Linkstext>
           <Linkstext to="/cookies">Cookies</Linkstext>
+          <LanguageChanger></LanguageChanger>
         </ExtraInfoLinksDiv>
       </LinksDiv>
       <CopyRightParam>

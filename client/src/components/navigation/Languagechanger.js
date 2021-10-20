@@ -2,6 +2,7 @@
 import {Dropdown} from "react-bootstrap";
 import i18next from "i18next";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 <style>
   @import
   url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
@@ -9,11 +10,11 @@ import styled from "styled-components";
 
 function LanguageChanger() {
 
-
+const {t} = useTranslation()
 
     return (<Dropdown>
   <StyledDropdownToogle variant="success" id="dropdown-basic">
-    LNG
+    {t('language_btn')}
   </StyledDropdownToogle>
 
   <StyledDropdownMenu>

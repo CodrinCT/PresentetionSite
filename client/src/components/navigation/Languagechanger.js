@@ -42,6 +42,11 @@ background-color: transparent;
 background-color: transparent;
 transition: none;
 }
+
+@media (max-width:600px){
+  font-size: 0.5rem;
+}
+
 `
 
 const StyledDropdownMenu = styled(Dropdown.Menu)`

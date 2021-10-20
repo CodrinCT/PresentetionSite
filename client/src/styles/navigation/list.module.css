@@ -42,13 +42,15 @@
   transform: translateX(-200%);
 }
 .Dropdown {
-  /* background-color: black; */
   color: white;
   display: none;
   font-size: 1.5rem;
   margin-right: 7%;
   cursor: pointer;
 }
+
+
+
 .menuLink {
   color: black;
 }

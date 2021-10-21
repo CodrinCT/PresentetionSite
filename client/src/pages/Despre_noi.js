@@ -288,6 +288,10 @@ const HeaderParan = styled.p`
   color: white;
   font-weight: 600;
   text-align: center;
+
+  @media (max-width:600px){
+    font-size: 1.2rem;
+  }
 `;
 
 const Overlay = styled.div`

@@ -16,9 +16,9 @@ export default function Objective(props) {
         <ObjectieDiv ref={props.ref}>
           {/* <Img src={teamImg}/> */}
           <DarkDiv>
-            <h1 style={{ marginBottom: "2rem", marginTop: "5rem" }}>
+            <H1 style={{ marginBottom: "2rem", marginTop: "5rem" }}>
               {t("despre_noi.objective_title")}
-            </h1>
+            </H1>
             <P>{t("despre_noi.objective_descripiton")}</P>
           </DarkDiv>
         </ObjectieDiv>
@@ -26,7 +26,15 @@ export default function Objective(props) {
     </>
   );
 }
+const H1 = styled.h1`
+margin-bottom: 2rem;
+margin-top: 5rem;
 
+@media (max-width:500px){
+margin-bottom: 0.5rem !important;
+margin-top: 2rem !important;
+}
+`
 const ObjectieDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -51,12 +59,20 @@ const P = styled.p`
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
+  
   @media screen and (max-width: 600px) {
     width: 80%;
     height: 100%;
     font-size: 20px;
     line-height: 25px;
     transform: translate(-50%, 20%);
+  }
+  @media screen and (max-width: 350px) {
+    width: 80%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    transform: translate(-50%, 8%);
   }
 `;
 const Img = styled.img`

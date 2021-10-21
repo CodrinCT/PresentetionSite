@@ -9,7 +9,7 @@ export default function Header(props) {
   return (
     <div className={style.header}>
       <HeaderBackground>
-        <NavigationBar iconColor={props.iconColor} backgroundColor="transparent"></NavigationBar>
+        <NavigationBar iconColor={props.iconColor} ></NavigationBar>
         <Title></Title>
       </HeaderBackground>
 

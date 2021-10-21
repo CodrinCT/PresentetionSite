@@ -33,6 +33,11 @@
   }
   .Dropdown {
     display: block !important;
+    color: white;
+    display: none;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
   }
   .btn {
     margin-right: 5px !important;
@@ -40,13 +45,6 @@
 }
 .DropMenu {
   transform: translateX(-200%);
-}
-.Dropdown {
-  color: white;
-  display: none;
-  font-size: 1.5rem;
-  margin-right: 7rem;
-  cursor: pointer;
 }
 
 

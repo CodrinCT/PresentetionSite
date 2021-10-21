@@ -13,7 +13,7 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [mailSent, setMail] = useState(false);
   const [error, setError] = useState(null);
-  const API_PATH = `/contact`;
+  const API_PATH = `https://formsubmit.co/tapusacodrin@yahoo.ro`;
 
   function submitHandler(event) {
     event.preventDefault();

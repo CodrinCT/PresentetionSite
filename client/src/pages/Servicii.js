@@ -28,13 +28,13 @@ function Servicii() {
       <NavigationBar></NavigationBar>
       <Header></Header>
       <CardsDiv style={{ justifyContent: "center" }}>
-        <div class="card-container">
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.platforme_linux_subtitle")}
               </h2>
-              <h1 class="title">{t("servicii.enterprise_linux_title1")}</h1>
+              <CardTitle class="title">{t("servicii.enterprise_linux_title1")}</CardTitle>
               <img class="image" src={linuxPhoto1} alt="" />
             </div>
             <div class="back">
@@ -47,14 +47,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.platforme_linux_subtitle")}
               </h2>
-              <h1 class="title">OpenStack Platform</h1>
+              <CardTitle class="title">OpenStack Platform</CardTitle>
               <img class="image" src={linuxPhoto2} alt="" />
             </div>
             <div class="back">
@@ -67,14 +67,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.platforme_linux_subtitle")}
               </h2>
-              <h1 class="title">Sattelite</h1>
+              <CardTitle class="title">Sattelite</CardTitle>
               <img class="image" src={linuxPhoto3} alt="" />
             </div>
             <div class="back">
@@ -84,16 +84,16 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
+        </CardContainer>
       </CardsDiv>
       <CardsDiv style={{ justifyContent: "center" }}>
-        <div class="card-container">
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.cloud_computing_subtitle")}
               </h2>
-              <h1 class="title">OpenShift</h1>
+              <CardTitle class="title">OpenShift</CardTitle>
               <img class="image" src={cloudImg1} alt="" />
             </div>
             <div class="back">
@@ -103,14 +103,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.cloud_computing_subtitle")}
               </h2>
-              <h1 class="title">Directory Server</h1>
+              <CardTitle class="title">Directory Server</CardTitle>
               <img class="image" src={cloudImg2} alt="" />
             </div>
             <div class="back">
@@ -120,14 +120,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">
                 {t("servicii.cloud_computing_subtitle")}
               </h2>
-              <h1 class="title">Quay</h1>
+              <CardTitle class="title">Quay</CardTitle>
               <img class="image" src={cloudImg3} alt="" />
             </div>
             <div class="back">
@@ -137,14 +137,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
+        </CardContainer>
       </CardsDiv>
       <CardsDiv style={{ justifyContent: "center" }}>
-        <div class="card-container">
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
-              <h1 class="title">{t("servicii.consultare_title")}</h1>
+              <CardTitle class="title">{t("servicii.consultare_title")}</CardTitle>
               <img class="image" src={consultImg1} alt="" />
             </div>
             <div class="back">
@@ -154,12 +154,12 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
-              <h1 class="title">{t("servicii.consultare_title2")}</h1>
+              <CardTitle class="title">{t("servicii.consultare_title2")}</CardTitle>
               <img class="image" src={consultImg2} alt="" />
             </div>
             <div class="back">
@@ -169,12 +169,12 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.consultare_subtitle")}</h2>
-              <h1 class="title">{t("servicii.consultare_title3")}</h1>
+              <CardTitle class="title">{t("servicii.consultare_title3")}</CardTitle>
               <img class="image" src={consultImg3} alt="" />
             </div>
             <div class="back">
@@ -184,14 +184,14 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
+        </CardContainer>
       </CardsDiv>
       <CardsDiv style={{ justifyContent: "center" }}>
-        <div class="card-container">
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.storage_title")}</h2>
-              <h1 class="title">{t("servicii.storage_subtitle")}</h1>
+              <CardTitle class="title">{t("servicii.storage_subtitle")}</CardTitle>
               <img class="image" src={storage1} alt="" />
             </div>
             <div class="back">
@@ -201,12 +201,12 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.storage_title")}</h2>
-              <h1 class="title">{t("servicii.storage_subtitle2")}</h1>
+              <CardTitle class="title">{t("servicii.storage_subtitle2")}</CardTitle>
               <img class="image" src={storage2} alt="" />
             </div>
             <div class="back">
@@ -216,12 +216,12 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
-        <div class="card-container">
+        </CardContainer>
+        <CardContainer>
           <div class="card">
             <div class="front">
               <h2 class="sub-title">{t("servicii.storage_title")}</h2>
-              <h1 class="title">{t("servicii.storage_subtitle3")}</h1>
+              <CardTitle class="title">{t("servicii.storage_subtitle3")}</CardTitle>
               <img class="image" src={storage3} alt="" />
             </div>
             <div class="back">
@@ -231,7 +231,7 @@ function Servicii() {
               </CardDescription>
             </div>
           </div>
-        </div>
+        </CardContainer>
       </CardsDiv>
       <CookiePopUp></CookiePopUp>
       <Footer></Footer>
@@ -275,5 +275,28 @@ const CardDescription = styled.p`
   color: white;
   font-family: "Roboto";
 `;
+
+const CardContainer = styled.div`
+display: flex;
+margin: 50px;
+width: 400px;
+justify-content: center;
+`
+const CardTitle = styled.h1`
+color: #333741;
+    animation: slide-in-slow 0.75s;
+    animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+
+
+    @media (max-width:600px){
+      font-size: 20px;
+    }
+
+`
+
 
 export default Servicii;

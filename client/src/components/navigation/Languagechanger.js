@@ -44,7 +44,7 @@ transition: none;
 }
 
 @media (max-width:600px){
-  font-size: 0.5rem;
+  font-size: 0.7rem !important;
 }
 
 `

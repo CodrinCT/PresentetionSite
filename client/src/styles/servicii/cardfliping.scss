@@ -91,6 +91,12 @@ img {
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+}
 
 @media screen and (max-width: 300px) {
   .card {
@@ -99,12 +105,7 @@ img {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .card {
-    width: 320px;
-    height: 350px;
-  }
-}
+
 .sub-title {
   color: $pink;
   animation: slide-in 0.75s;

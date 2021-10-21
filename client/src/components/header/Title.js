@@ -32,7 +32,7 @@ const Paragraph = styled.p`
   filter: drop-shadow(2px 4px 6px black);
   width: 50%;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 `;

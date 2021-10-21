@@ -41,9 +41,6 @@ const ObjectieDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-top: 5rem;
-margin-bottom: 5rem; */
-
   @media screen and (max-width: 600px) {
     background-blend-mode: 8px;
     height: 100vh;

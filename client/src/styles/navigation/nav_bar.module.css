@@ -29,4 +29,11 @@
     width: 3rem;
 
   }
+
+}
+
+@media screen and (max-width:700px) {
+  .linksDiv{
+    stroke-width: 20%;
+  }
 }
